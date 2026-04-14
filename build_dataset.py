@@ -16,8 +16,8 @@ For an MVP you can swap the loader below for OVEN later while keeping the same J
 
 Fallback used here: CIFAR-100 via torchvision (one `pip install` stack you likely
 already have). It provides 100 fine-grained labels under 20 coarse superclasses.
-We pick a subset of superclasses (default: 10 → 50 leaf classes), sample a fixed
-number of train images per leaf, save PNGs under data/images/, and build:
+We pick a subset of superclasses (default: 15 → 75 leaf classes), sample a fixed
+number of train images per leaf (default: 48), save PNGs under data/images/, and build:
   data/dataset.json, data/train.json, data/test.json
 
 Usage:
@@ -183,13 +183,13 @@ def main() -> None:
     parser.add_argument(
         "--num-coarse",
         type=int,
-        default=10,
+        default=15,
         help="Number of CIFAR-100 coarse superclasses to include (5 fine classes each).",
     )
     parser.add_argument(
         "--per-class",
         type=int,
-        default=32,
+        default=48,
         help="Samples per leaf class (total = num_coarse * 5 * per_class).",
     )
     parser.add_argument("--seed", type=int, default=42, help="Random seed for sampling and train/test split.")
