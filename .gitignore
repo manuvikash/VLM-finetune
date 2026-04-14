@@ -1,0 +1,48 @@
+# Byte-compiled / optimized
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Distribution / packaging
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# PyTorch / torchvision download caches (project-local)
+.cifar_cache/
+.cache_cifar/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Testing / typing
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environment and secrets
+.env
+.env.*
+
+# OS
+Thumbs.db
+.Desktop.ini
+.DS_Store
+
+# Editor (optional — remove if you commit shared settings)
+.idea/
+
+# Model checkpoints (uncomment if you save weights next to the repo)
+# *.pt
+# *.pth
+# checkpoints/
+
+# Large generated data (uncomment if you do not want images in git)
+# data/images/

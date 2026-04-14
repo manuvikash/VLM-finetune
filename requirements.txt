@@ -1,0 +1,9 @@
+# train.ipynb
+torch>=2.2.0
+torchvision>=0.17.0
+Pillow>=10.0.0
+scikit-learn>=1.4.0
+
+# run the notebook
+jupyter>=1.0.0
+ipykernel>=6.29.0

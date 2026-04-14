@@ -1,0 +1,11522 @@
+[
+  {
+    "image": "data/images/0932.jpg",
+    "label": "otter",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "otter"
+    ]
+  },
+  {
+    "image": "data/images/0563.jpg",
+    "label": "couch",
+    "path": [
+      "object",
+      "household_furniture",
+      "couch"
+    ]
+  },
+  {
+    "image": "data/images/1479.jpg",
+    "label": "tulip",
+    "path": [
+      "plant",
+      "flowers",
+      "tulip"
+    ]
+  },
+  {
+    "image": "data/images/0449.jpg",
+    "label": "chair",
+    "path": [
+      "object",
+      "household_furniture",
+      "chair"
+    ]
+  },
+  {
+    "image": "data/images/1123.jpg",
+    "label": "rose",
+    "path": [
+      "plant",
+      "flowers",
+      "rose"
+    ]
+  },
+  {
+    "image": "data/images/1563.jpg",
+    "label": "whale",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "whale"
+    ]
+  },
+  {
+    "image": "data/images/0723.jpg",
+    "label": "keyboard",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "keyboard"
+    ]
+  },
+  {
+    "image": "data/images/1146.jpg",
+    "label": "rose",
+    "path": [
+      "plant",
+      "flowers",
+      "rose"
+    ]
+  },
+  {
+    "image": "data/images/1253.jpg",
+    "label": "sunflower",
+    "path": [
+      "plant",
+      "flowers",
+      "sunflower"
+    ]
+  },
+  {
+    "image": "data/images/0751.jpg",
+    "label": "lamp",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "lamp"
+    ]
+  },
+  {
+    "image": "data/images/1020.jpg",
+    "label": "plate",
+    "path": [
+      "object",
+      "food_containers",
+      "plate"
+    ]
+  },
+  {
+    "image": "data/images/1091.jpg",
+    "label": "road",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "road"
+    ]
+  },
+  {
+    "image": "data/images/0267.jpg",
+    "label": "bowl",
+    "path": [
+      "object",
+      "food_containers",
+      "bowl"
+    ]
+  },
+  {
+    "image": "data/images/0574.jpg",
+    "label": "couch",
+    "path": [
+      "object",
+      "household_furniture",
+      "couch"
+    ]
+  },
+  {
+    "image": "data/images/0748.jpg",
+    "label": "lamp",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "lamp"
+    ]
+  },
+  {
+    "image": "data/images/0678.jpg",
+    "label": "house",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "house"
+    ]
+  },
+  {
+    "image": "data/images/0342.jpg",
+    "label": "butterfly",
+    "path": [
+      "animal",
+      "insects",
+      "butterfly"
+    ]
+  },
+  {
+    "image": "data/images/0871.jpg",
+    "label": "orange",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "orange"
+    ]
+  },
+  {
+    "image": "data/images/0327.jpg",
+    "label": "butterfly",
+    "path": [
+      "animal",
+      "insects",
+      "butterfly"
+    ]
+  },
+  {
+    "image": "data/images/0743.jpg",
+    "label": "lamp",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "lamp"
+    ]
+  },
+  {
+    "image": "data/images/1397.jpg",
+    "label": "television",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "television"
+    ]
+  },
+  {
+    "image": "data/images/0951.jpg",
+    "label": "otter",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "otter"
+    ]
+  },
+  {
+    "image": "data/images/0495.jpg",
+    "label": "clock",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "clock"
+    ]
+  },
+  {
+    "image": "data/images/0501.jpg",
+    "label": "clock",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "clock"
+    ]
+  },
+  {
+    "image": "data/images/0750.jpg",
+    "label": "lamp",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "lamp"
+    ]
+  },
+  {
+    "image": "data/images/0122.jpg",
+    "label": "beaver",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "beaver"
+    ]
+  },
+  {
+    "image": "data/images/1416.jpg",
+    "label": "tiger",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "tiger"
+    ]
+  },
+  {
+    "image": "data/images/0936.jpg",
+    "label": "otter",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "otter"
+    ]
+  },
+  {
+    "image": "data/images/0350.jpg",
+    "label": "butterfly",
+    "path": [
+      "animal",
+      "insects",
+      "butterfly"
+    ]
+  },
+  {
+    "image": "data/images/0256.jpg",
+    "label": "bottle",
+    "path": [
+      "object",
+      "food_containers",
+      "bottle"
+    ]
+  },
+  {
+    "image": "data/images/0768.jpg",
+    "label": "lamp",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "lamp"
+    ]
+  },
+  {
+    "image": "data/images/1465.jpg",
+    "label": "trout",
+    "path": [
+      "animal",
+      "fish",
+      "trout"
+    ]
+  },
+  {
+    "image": "data/images/0363.jpg",
+    "label": "can",
+    "path": [
+      "object",
+      "food_containers",
+      "can"
+    ]
+  },
+  {
+    "image": "data/images/0210.jpg",
+    "label": "beetle",
+    "path": [
+      "animal",
+      "insects",
+      "beetle"
+    ]
+  },
+  {
+    "image": "data/images/0655.jpg",
+    "label": "flatfish",
+    "path": [
+      "animal",
+      "fish",
+      "flatfish"
+    ]
+  },
+  {
+    "image": "data/images/0692.jpg",
+    "label": "house",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "house"
+    ]
+  },
+  {
+    "image": "data/images/0246.jpg",
+    "label": "bottle",
+    "path": [
+      "object",
+      "food_containers",
+      "bottle"
+    ]
+  },
+  {
+    "image": "data/images/1552.jpg",
+    "label": "whale",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "whale"
+    ]
+  },
+  {
+    "image": "data/images/0364.jpg",
+    "label": "can",
+    "path": [
+      "object",
+      "food_containers",
+      "can"
+    ]
+  },
+  {
+    "image": "data/images/1087.jpg",
+    "label": "ray",
+    "path": [
+      "animal",
+      "fish",
+      "ray"
+    ]
+  },
+  {
+    "image": "data/images/0114.jpg",
+    "label": "beaver",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "beaver"
+    ]
+  },
+  {
+    "image": "data/images/1375.jpg",
+    "label": "telephone",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "telephone"
+    ]
+  },
+  {
+    "image": "data/images/1527.jpg",
+    "label": "wardrobe",
+    "path": [
+      "object",
+      "household_furniture",
+      "wardrobe"
+    ]
+  },
+  {
+    "image": "data/images/0051.jpg",
+    "label": "aquarium_fish",
+    "path": [
+      "animal",
+      "fish",
+      "aquarium_fish"
+    ]
+  },
+  {
+    "image": "data/images/0174.jpg",
+    "label": "bee",
+    "path": [
+      "animal",
+      "insects",
+      "bee"
+    ]
+  },
+  {
+    "image": "data/images/1271.jpg",
+    "label": "sunflower",
+    "path": [
+      "plant",
+      "flowers",
+      "sunflower"
+    ]
+  },
+  {
+    "image": "data/images/0549.jpg",
+    "label": "couch",
+    "path": [
+      "object",
+      "household_furniture",
+      "couch"
+    ]
+  },
+  {
+    "image": "data/images/1133.jpg",
+    "label": "rose",
+    "path": [
+      "plant",
+      "flowers",
+      "rose"
+    ]
+  },
+  {
+    "image": "data/images/0917.jpg",
+    "label": "orchid",
+    "path": [
+      "plant",
+      "flowers",
+      "orchid"
+    ]
+  },
+  {
+    "image": "data/images/0556.jpg",
+    "label": "couch",
+    "path": [
+      "object",
+      "household_furniture",
+      "couch"
+    ]
+  },
+  {
+    "image": "data/images/1306.jpg",
+    "label": "sweet_pepper",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "sweet_pepper"
+    ]
+  },
+  {
+    "image": "data/images/0698.jpg",
+    "label": "house",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "house"
+    ]
+  },
+  {
+    "image": "data/images/0670.jpg",
+    "label": "flatfish",
+    "path": [
+      "animal",
+      "fish",
+      "flatfish"
+    ]
+  },
+  {
+    "image": "data/images/0022.jpg",
+    "label": "apple",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "apple"
+    ]
+  },
+  {
+    "image": "data/images/0716.jpg",
+    "label": "keyboard",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "keyboard"
+    ]
+  },
+  {
+    "image": "data/images/0775.jpg",
+    "label": "leopard",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "leopard"
+    ]
+  },
+  {
+    "image": "data/images/0072.jpg",
+    "label": "bear",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "bear"
+    ]
+  },
+  {
+    "image": "data/images/0811.jpg",
+    "label": "lion",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "lion"
+    ]
+  },
+  {
+    "image": "data/images/1063.jpg",
+    "label": "ray",
+    "path": [
+      "animal",
+      "fish",
+      "ray"
+    ]
+  },
+  {
+    "image": "data/images/1534.jpg",
+    "label": "wardrobe",
+    "path": [
+      "object",
+      "household_furniture",
+      "wardrobe"
+    ]
+  },
+  {
+    "image": "data/images/1247.jpg",
+    "label": "skyscraper",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "skyscraper"
+    ]
+  },
+  {
+    "image": "data/images/0550.jpg",
+    "label": "couch",
+    "path": [
+      "object",
+      "household_furniture",
+      "couch"
+    ]
+  },
+  {
+    "image": "data/images/1275.jpg",
+    "label": "sunflower",
+    "path": [
+      "plant",
+      "flowers",
+      "sunflower"
+    ]
+  },
+  {
+    "image": "data/images/0619.jpg",
+    "label": "dolphin",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "dolphin"
+    ]
+  },
+  {
+    "image": "data/images/0776.jpg",
+    "label": "leopard",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "leopard"
+    ]
+  },
+  {
+    "image": "data/images/0594.jpg",
+    "label": "cup",
+    "path": [
+      "object",
+      "food_containers",
+      "cup"
+    ]
+  },
+  {
+    "image": "data/images/1019.jpg",
+    "label": "plate",
+    "path": [
+      "object",
+      "food_containers",
+      "plate"
+    ]
+  },
+  {
+    "image": "data/images/1205.jpg",
+    "label": "shark",
+    "path": [
+      "animal",
+      "fish",
+      "shark"
+    ]
+  },
+  {
+    "image": "data/images/0201.jpg",
+    "label": "beetle",
+    "path": [
+      "animal",
+      "insects",
+      "beetle"
+    ]
+  },
+  {
+    "image": "data/images/0635.jpg",
+    "label": "dolphin",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "dolphin"
+    ]
+  },
+  {
+    "image": "data/images/0293.jpg",
+    "label": "bridge",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "bridge"
+    ]
+  },
+  {
+    "image": "data/images/0189.jpg",
+    "label": "bee",
+    "path": [
+      "animal",
+      "insects",
+      "bee"
+    ]
+  },
+  {
+    "image": "data/images/1029.jpg",
+    "label": "poppy",
+    "path": [
+      "plant",
+      "flowers",
+      "poppy"
+    ]
+  },
+  {
+    "image": "data/images/0618.jpg",
+    "label": "dolphin",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "dolphin"
+    ]
+  },
+  {
+    "image": "data/images/1583.jpg",
+    "label": "wolf",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "wolf"
+    ]
+  },
+  {
+    "image": "data/images/1257.jpg",
+    "label": "sunflower",
+    "path": [
+      "plant",
+      "flowers",
+      "sunflower"
+    ]
+  },
+  {
+    "image": "data/images/0018.jpg",
+    "label": "apple",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "apple"
+    ]
+  },
+  {
+    "image": "data/images/1280.jpg",
+    "label": "sunflower",
+    "path": [
+      "plant",
+      "flowers",
+      "sunflower"
+    ]
+  },
+  {
+    "image": "data/images/1403.jpg",
+    "label": "television",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "television"
+    ]
+  },
+  {
+    "image": "data/images/1355.jpg",
+    "label": "telephone",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "telephone"
+    ]
+  },
+  {
+    "image": "data/images/1336.jpg",
+    "label": "table",
+    "path": [
+      "object",
+      "household_furniture",
+      "table"
+    ]
+  },
+  {
+    "image": "data/images/1258.jpg",
+    "label": "sunflower",
+    "path": [
+      "plant",
+      "flowers",
+      "sunflower"
+    ]
+  },
+  {
+    "image": "data/images/0028.jpg",
+    "label": "apple",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "apple"
+    ]
+  },
+  {
+    "image": "data/images/1162.jpg",
+    "label": "seal",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "seal"
+    ]
+  },
+  {
+    "image": "data/images/0638.jpg",
+    "label": "dolphin",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "dolphin"
+    ]
+  },
+  {
+    "image": "data/images/1228.jpg",
+    "label": "skyscraper",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "skyscraper"
+    ]
+  },
+  {
+    "image": "data/images/0577.jpg",
+    "label": "cup",
+    "path": [
+      "object",
+      "food_containers",
+      "cup"
+    ]
+  },
+  {
+    "image": "data/images/1471.jpg",
+    "label": "trout",
+    "path": [
+      "animal",
+      "fish",
+      "trout"
+    ]
+  },
+  {
+    "image": "data/images/0063.jpg",
+    "label": "aquarium_fish",
+    "path": [
+      "animal",
+      "fish",
+      "aquarium_fish"
+    ]
+  },
+  {
+    "image": "data/images/1328.jpg",
+    "label": "table",
+    "path": [
+      "object",
+      "household_furniture",
+      "table"
+    ]
+  },
+  {
+    "image": "data/images/0931.jpg",
+    "label": "otter",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "otter"
+    ]
+  },
+  {
+    "image": "data/images/1524.jpg",
+    "label": "wardrobe",
+    "path": [
+      "object",
+      "household_furniture",
+      "wardrobe"
+    ]
+  },
+  {
+    "image": "data/images/0045.jpg",
+    "label": "aquarium_fish",
+    "path": [
+      "animal",
+      "fish",
+      "aquarium_fish"
+    ]
+  },
+  {
+    "image": "data/images/0458.jpg",
+    "label": "chair",
+    "path": [
+      "object",
+      "household_furniture",
+      "chair"
+    ]
+  },
+  {
+    "image": "data/images/1473.jpg",
+    "label": "tulip",
+    "path": [
+      "plant",
+      "flowers",
+      "tulip"
+    ]
+  },
+  {
+    "image": "data/images/0318.jpg",
+    "label": "bridge",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "bridge"
+    ]
+  },
+  {
+    "image": "data/images/0627.jpg",
+    "label": "dolphin",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "dolphin"
+    ]
+  },
+  {
+    "image": "data/images/1034.jpg",
+    "label": "poppy",
+    "path": [
+      "plant",
+      "flowers",
+      "poppy"
+    ]
+  },
+  {
+    "image": "data/images/0101.jpg",
+    "label": "beaver",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "beaver"
+    ]
+  },
+  {
+    "image": "data/images/0060.jpg",
+    "label": "aquarium_fish",
+    "path": [
+      "animal",
+      "fish",
+      "aquarium_fish"
+    ]
+  },
+  {
+    "image": "data/images/1195.jpg",
+    "label": "shark",
+    "path": [
+      "animal",
+      "fish",
+      "shark"
+    ]
+  },
+  {
+    "image": "data/images/0888.jpg",
+    "label": "orange",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "orange"
+    ]
+  },
+  {
+    "image": "data/images/0193.jpg",
+    "label": "beetle",
+    "path": [
+      "animal",
+      "insects",
+      "beetle"
+    ]
+  },
+  {
+    "image": "data/images/1528.jpg",
+    "label": "wardrobe",
+    "path": [
+      "object",
+      "household_furniture",
+      "wardrobe"
+    ]
+  },
+  {
+    "image": "data/images/0298.jpg",
+    "label": "bridge",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "bridge"
+    ]
+  },
+  {
+    "image": "data/images/0804.jpg",
+    "label": "lion",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "lion"
+    ]
+  },
+  {
+    "image": "data/images/0218.jpg",
+    "label": "beetle",
+    "path": [
+      "animal",
+      "insects",
+      "beetle"
+    ]
+  },
+  {
+    "image": "data/images/0155.jpg",
+    "label": "bed",
+    "path": [
+      "object",
+      "household_furniture",
+      "bed"
+    ]
+  },
+  {
+    "image": "data/images/0892.jpg",
+    "label": "orange",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "orange"
+    ]
+  },
+  {
+    "image": "data/images/0722.jpg",
+    "label": "keyboard",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "keyboard"
+    ]
+  },
+  {
+    "image": "data/images/1448.jpg",
+    "label": "trout",
+    "path": [
+      "animal",
+      "fish",
+      "trout"
+    ]
+  },
+  {
+    "image": "data/images/0279.jpg",
+    "label": "bowl",
+    "path": [
+      "object",
+      "food_containers",
+      "bowl"
+    ]
+  },
+  {
+    "image": "data/images/0538.jpg",
+    "label": "cockroach",
+    "path": [
+      "animal",
+      "insects",
+      "cockroach"
+    ]
+  },
+  {
+    "image": "data/images/1109.jpg",
+    "label": "road",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "road"
+    ]
+  },
+  {
+    "image": "data/images/1131.jpg",
+    "label": "rose",
+    "path": [
+      "plant",
+      "flowers",
+      "rose"
+    ]
+  },
+  {
+    "image": "data/images/0997.jpg",
+    "label": "plate",
+    "path": [
+      "object",
+      "food_containers",
+      "plate"
+    ]
+  },
+  {
+    "image": "data/images/0589.jpg",
+    "label": "cup",
+    "path": [
+      "object",
+      "food_containers",
+      "cup"
+    ]
+  },
+  {
+    "image": "data/images/0381.jpg",
+    "label": "can",
+    "path": [
+      "object",
+      "food_containers",
+      "can"
+    ]
+  },
+  {
+    "image": "data/images/0389.jpg",
+    "label": "castle",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "castle"
+    ]
+  },
+  {
+    "image": "data/images/0944.jpg",
+    "label": "otter",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "otter"
+    ]
+  },
+  {
+    "image": "data/images/1005.jpg",
+    "label": "plate",
+    "path": [
+      "object",
+      "food_containers",
+      "plate"
+    ]
+  },
+  {
+    "image": "data/images/0626.jpg",
+    "label": "dolphin",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "dolphin"
+    ]
+  },
+  {
+    "image": "data/images/0235.jpg",
+    "label": "bottle",
+    "path": [
+      "object",
+      "food_containers",
+      "bottle"
+    ]
+  },
+  {
+    "image": "data/images/0438.jpg",
+    "label": "caterpillar",
+    "path": [
+      "animal",
+      "insects",
+      "caterpillar"
+    ]
+  },
+  {
+    "image": "data/images/0774.jpg",
+    "label": "leopard",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "leopard"
+    ]
+  },
+  {
+    "image": "data/images/0861.jpg",
+    "label": "mushroom",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "mushroom"
+    ]
+  },
+  {
+    "image": "data/images/0368.jpg",
+    "label": "can",
+    "path": [
+      "object",
+      "food_containers",
+      "can"
+    ]
+  },
+  {
+    "image": "data/images/0964.jpg",
+    "label": "pear",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "pear"
+    ]
+  },
+  {
+    "image": "data/images/0695.jpg",
+    "label": "house",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "house"
+    ]
+  },
+  {
+    "image": "data/images/0492.jpg",
+    "label": "clock",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "clock"
+    ]
+  },
+  {
+    "image": "data/images/0852.jpg",
+    "label": "mushroom",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "mushroom"
+    ]
+  },
+  {
+    "image": "data/images/0810.jpg",
+    "label": "lion",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "lion"
+    ]
+  },
+  {
+    "image": "data/images/0992.jpg",
+    "label": "pear",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "pear"
+    ]
+  },
+  {
+    "image": "data/images/0096.jpg",
+    "label": "bear",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "bear"
+    ]
+  },
+  {
+    "image": "data/images/1368.jpg",
+    "label": "telephone",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "telephone"
+    ]
+  },
+  {
+    "image": "data/images/0910.jpg",
+    "label": "orchid",
+    "path": [
+      "plant",
+      "flowers",
+      "orchid"
+    ]
+  },
+  {
+    "image": "data/images/0520.jpg",
+    "label": "cockroach",
+    "path": [
+      "animal",
+      "insects",
+      "cockroach"
+    ]
+  },
+  {
+    "image": "data/images/0093.jpg",
+    "label": "bear",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "bear"
+    ]
+  },
+  {
+    "image": "data/images/0011.jpg",
+    "label": "apple",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "apple"
+    ]
+  },
+  {
+    "image": "data/images/1155.jpg",
+    "label": "seal",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "seal"
+    ]
+  },
+  {
+    "image": "data/images/1339.jpg",
+    "label": "table",
+    "path": [
+      "object",
+      "household_furniture",
+      "table"
+    ]
+  },
+  {
+    "image": "data/images/1315.jpg",
+    "label": "table",
+    "path": [
+      "object",
+      "household_furniture",
+      "table"
+    ]
+  },
+  {
+    "image": "data/images/1433.jpg",
+    "label": "tiger",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "tiger"
+    ]
+  },
+  {
+    "image": "data/images/1354.jpg",
+    "label": "telephone",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "telephone"
+    ]
+  },
+  {
+    "image": "data/images/0525.jpg",
+    "label": "cockroach",
+    "path": [
+      "animal",
+      "insects",
+      "cockroach"
+    ]
+  },
+  {
+    "image": "data/images/0643.jpg",
+    "label": "flatfish",
+    "path": [
+      "animal",
+      "fish",
+      "flatfish"
+    ]
+  },
+  {
+    "image": "data/images/1125.jpg",
+    "label": "rose",
+    "path": [
+      "plant",
+      "flowers",
+      "rose"
+    ]
+  },
+  {
+    "image": "data/images/0129.jpg",
+    "label": "bed",
+    "path": [
+      "object",
+      "household_furniture",
+      "bed"
+    ]
+  },
+  {
+    "image": "data/images/1043.jpg",
+    "label": "poppy",
+    "path": [
+      "plant",
+      "flowers",
+      "poppy"
+    ]
+  },
+  {
+    "image": "data/images/1058.jpg",
+    "label": "ray",
+    "path": [
+      "animal",
+      "fish",
+      "ray"
+    ]
+  },
+  {
+    "image": "data/images/1372.jpg",
+    "label": "telephone",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "telephone"
+    ]
+  },
+  {
+    "image": "data/images/0518.jpg",
+    "label": "cockroach",
+    "path": [
+      "animal",
+      "insects",
+      "cockroach"
+    ]
+  },
+  {
+    "image": "data/images/0957.jpg",
+    "label": "otter",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "otter"
+    ]
+  },
+  {
+    "image": "data/images/1474.jpg",
+    "label": "tulip",
+    "path": [
+      "plant",
+      "flowers",
+      "tulip"
+    ]
+  },
+  {
+    "image": "data/images/0095.jpg",
+    "label": "bear",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "bear"
+    ]
+  },
+  {
+    "image": "data/images/0529.jpg",
+    "label": "cockroach",
+    "path": [
+      "animal",
+      "insects",
+      "cockroach"
+    ]
+  },
+  {
+    "image": "data/images/1366.jpg",
+    "label": "telephone",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "telephone"
+    ]
+  },
+  {
+    "image": "data/images/1255.jpg",
+    "label": "sunflower",
+    "path": [
+      "plant",
+      "flowers",
+      "sunflower"
+    ]
+  },
+  {
+    "image": "data/images/0479.jpg",
+    "label": "chair",
+    "path": [
+      "object",
+      "household_furniture",
+      "chair"
+    ]
+  },
+  {
+    "image": "data/images/1481.jpg",
+    "label": "tulip",
+    "path": [
+      "plant",
+      "flowers",
+      "tulip"
+    ]
+  },
+  {
+    "image": "data/images/1565.jpg",
+    "label": "whale",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "whale"
+    ]
+  },
+  {
+    "image": "data/images/0683.jpg",
+    "label": "house",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "house"
+    ]
+  },
+  {
+    "image": "data/images/0885.jpg",
+    "label": "orange",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "orange"
+    ]
+  },
+  {
+    "image": "data/images/1135.jpg",
+    "label": "rose",
+    "path": [
+      "plant",
+      "flowers",
+      "rose"
+    ]
+  },
+  {
+    "image": "data/images/0628.jpg",
+    "label": "dolphin",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "dolphin"
+    ]
+  },
+  {
+    "image": "data/images/0188.jpg",
+    "label": "bee",
+    "path": [
+      "animal",
+      "insects",
+      "bee"
+    ]
+  },
+  {
+    "image": "data/images/0745.jpg",
+    "label": "lamp",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "lamp"
+    ]
+  },
+  {
+    "image": "data/images/0914.jpg",
+    "label": "orchid",
+    "path": [
+      "plant",
+      "flowers",
+      "orchid"
+    ]
+  },
+  {
+    "image": "data/images/0583.jpg",
+    "label": "cup",
+    "path": [
+      "object",
+      "food_containers",
+      "cup"
+    ]
+  },
+  {
+    "image": "data/images/0475.jpg",
+    "label": "chair",
+    "path": [
+      "object",
+      "household_furniture",
+      "chair"
+    ]
+  },
+  {
+    "image": "data/images/0320.jpg",
+    "label": "bridge",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "bridge"
+    ]
+  },
+  {
+    "image": "data/images/1385.jpg",
+    "label": "television",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "television"
+    ]
+  },
+  {
+    "image": "data/images/0689.jpg",
+    "label": "house",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "house"
+    ]
+  },
+  {
+    "image": "data/images/1166.jpg",
+    "label": "seal",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "seal"
+    ]
+  },
+  {
+    "image": "data/images/0126.jpg",
+    "label": "beaver",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "beaver"
+    ]
+  },
+  {
+    "image": "data/images/1598.jpg",
+    "label": "wolf",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "wolf"
+    ]
+  },
+  {
+    "image": "data/images/0075.jpg",
+    "label": "bear",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "bear"
+    ]
+  },
+  {
+    "image": "data/images/0416.jpg",
+    "label": "castle",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "castle"
+    ]
+  },
+  {
+    "image": "data/images/0176.jpg",
+    "label": "bee",
+    "path": [
+      "animal",
+      "insects",
+      "bee"
+    ]
+  },
+  {
+    "image": "data/images/0225.jpg",
+    "label": "bottle",
+    "path": [
+      "object",
+      "food_containers",
+      "bottle"
+    ]
+  },
+  {
+    "image": "data/images/1490.jpg",
+    "label": "tulip",
+    "path": [
+      "plant",
+      "flowers",
+      "tulip"
+    ]
+  },
+  {
+    "image": "data/images/0970.jpg",
+    "label": "pear",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "pear"
+    ]
+  },
+  {
+    "image": "data/images/0509.jpg",
+    "label": "clock",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "clock"
+    ]
+  },
+  {
+    "image": "data/images/1322.jpg",
+    "label": "table",
+    "path": [
+      "object",
+      "household_furniture",
+      "table"
+    ]
+  },
+  {
+    "image": "data/images/1517.jpg",
+    "label": "wardrobe",
+    "path": [
+      "object",
+      "household_furniture",
+      "wardrobe"
+    ]
+  },
+  {
+    "image": "data/images/1128.jpg",
+    "label": "rose",
+    "path": [
+      "plant",
+      "flowers",
+      "rose"
+    ]
+  },
+  {
+    "image": "data/images/0831.jpg",
+    "label": "lion",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "lion"
+    ]
+  },
+  {
+    "image": "data/images/0295.jpg",
+    "label": "bridge",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "bridge"
+    ]
+  },
+  {
+    "image": "data/images/1600.jpg",
+    "label": "wolf",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "wolf"
+    ]
+  },
+  {
+    "image": "data/images/0554.jpg",
+    "label": "couch",
+    "path": [
+      "object",
+      "household_furniture",
+      "couch"
+    ]
+  },
+  {
+    "image": "data/images/0682.jpg",
+    "label": "house",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "house"
+    ]
+  },
+  {
+    "image": "data/images/1411.jpg",
+    "label": "tiger",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "tiger"
+    ]
+  },
+  {
+    "image": "data/images/0761.jpg",
+    "label": "lamp",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "lamp"
+    ]
+  },
+  {
+    "image": "data/images/0305.jpg",
+    "label": "bridge",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "bridge"
+    ]
+  },
+  {
+    "image": "data/images/0042.jpg",
+    "label": "aquarium_fish",
+    "path": [
+      "animal",
+      "fish",
+      "aquarium_fish"
+    ]
+  },
+  {
+    "image": "data/images/1381.jpg",
+    "label": "television",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "television"
+    ]
+  },
+  {
+    "image": "data/images/0008.jpg",
+    "label": "apple",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "apple"
+    ]
+  },
+  {
+    "image": "data/images/1556.jpg",
+    "label": "whale",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "whale"
+    ]
+  },
+  {
+    "image": "data/images/1577.jpg",
+    "label": "wolf",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "wolf"
+    ]
+  },
+  {
+    "image": "data/images/1254.jpg",
+    "label": "sunflower",
+    "path": [
+      "plant",
+      "flowers",
+      "sunflower"
+    ]
+  },
+  {
+    "image": "data/images/0881.jpg",
+    "label": "orange",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "orange"
+    ]
+  },
+  {
+    "image": "data/images/1347.jpg",
+    "label": "telephone",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "telephone"
+    ]
+  },
+  {
+    "image": "data/images/1284.jpg",
+    "label": "sweet_pepper",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "sweet_pepper"
+    ]
+  },
+  {
+    "image": "data/images/0253.jpg",
+    "label": "bottle",
+    "path": [
+      "object",
+      "food_containers",
+      "bottle"
+    ]
+  },
+  {
+    "image": "data/images/1056.jpg",
+    "label": "poppy",
+    "path": [
+      "plant",
+      "flowers",
+      "poppy"
+    ]
+  },
+  {
+    "image": "data/images/0211.jpg",
+    "label": "beetle",
+    "path": [
+      "animal",
+      "insects",
+      "beetle"
+    ]
+  },
+  {
+    "image": "data/images/1307.jpg",
+    "label": "sweet_pepper",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "sweet_pepper"
+    ]
+  },
+  {
+    "image": "data/images/0250.jpg",
+    "label": "bottle",
+    "path": [
+      "object",
+      "food_containers",
+      "bottle"
+    ]
+  },
+  {
+    "image": "data/images/0057.jpg",
+    "label": "aquarium_fish",
+    "path": [
+      "animal",
+      "fish",
+      "aquarium_fish"
+    ]
+  },
+  {
+    "image": "data/images/0119.jpg",
+    "label": "beaver",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "beaver"
+    ]
+  },
+  {
+    "image": "data/images/0884.jpg",
+    "label": "orange",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "orange"
+    ]
+  },
+  {
+    "image": "data/images/1423.jpg",
+    "label": "tiger",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "tiger"
+    ]
+  },
+  {
+    "image": "data/images/0601.jpg",
+    "label": "cup",
+    "path": [
+      "object",
+      "food_containers",
+      "cup"
+    ]
+  },
+  {
+    "image": "data/images/0779.jpg",
+    "label": "leopard",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "leopard"
+    ]
+  },
+  {
+    "image": "data/images/0034.jpg",
+    "label": "aquarium_fish",
+    "path": [
+      "animal",
+      "fish",
+      "aquarium_fish"
+    ]
+  },
+  {
+    "image": "data/images/0642.jpg",
+    "label": "flatfish",
+    "path": [
+      "animal",
+      "fish",
+      "flatfish"
+    ]
+  },
+  {
+    "image": "data/images/1160.jpg",
+    "label": "seal",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "seal"
+    ]
+  },
+  {
+    "image": "data/images/1152.jpg",
+    "label": "rose",
+    "path": [
+      "plant",
+      "flowers",
+      "rose"
+    ]
+  },
+  {
+    "image": "data/images/0357.jpg",
+    "label": "can",
+    "path": [
+      "object",
+      "food_containers",
+      "can"
+    ]
+  },
+  {
+    "image": "data/images/0814.jpg",
+    "label": "lion",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "lion"
+    ]
+  },
+  {
+    "image": "data/images/1544.jpg",
+    "label": "whale",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "whale"
+    ]
+  },
+  {
+    "image": "data/images/1443.jpg",
+    "label": "trout",
+    "path": [
+      "animal",
+      "fish",
+      "trout"
+    ]
+  },
+  {
+    "image": "data/images/0392.jpg",
+    "label": "castle",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "castle"
+    ]
+  },
+  {
+    "image": "data/images/0783.jpg",
+    "label": "leopard",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "leopard"
+    ]
+  },
+  {
+    "image": "data/images/1233.jpg",
+    "label": "skyscraper",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "skyscraper"
+    ]
+  },
+  {
+    "image": "data/images/1335.jpg",
+    "label": "table",
+    "path": [
+      "object",
+      "household_furniture",
+      "table"
+    ]
+  },
+  {
+    "image": "data/images/0183.jpg",
+    "label": "bee",
+    "path": [
+      "animal",
+      "insects",
+      "bee"
+    ]
+  },
+  {
+    "image": "data/images/1488.jpg",
+    "label": "tulip",
+    "path": [
+      "plant",
+      "flowers",
+      "tulip"
+    ]
+  },
+  {
+    "image": "data/images/1268.jpg",
+    "label": "sunflower",
+    "path": [
+      "plant",
+      "flowers",
+      "sunflower"
+    ]
+  },
+  {
+    "image": "data/images/1494.jpg",
+    "label": "tulip",
+    "path": [
+      "plant",
+      "flowers",
+      "tulip"
+    ]
+  },
+  {
+    "image": "data/images/1083.jpg",
+    "label": "ray",
+    "path": [
+      "animal",
+      "fish",
+      "ray"
+    ]
+  },
+  {
+    "image": "data/images/0169.jpg",
+    "label": "bee",
+    "path": [
+      "animal",
+      "insects",
+      "bee"
+    ]
+  },
+  {
+    "image": "data/images/1522.jpg",
+    "label": "wardrobe",
+    "path": [
+      "object",
+      "household_furniture",
+      "wardrobe"
+    ]
+  },
+  {
+    "image": "data/images/0050.jpg",
+    "label": "aquarium_fish",
+    "path": [
+      "animal",
+      "fish",
+      "aquarium_fish"
+    ]
+  },
+  {
+    "image": "data/images/1464.jpg",
+    "label": "trout",
+    "path": [
+      "animal",
+      "fish",
+      "trout"
+    ]
+  },
+  {
+    "image": "data/images/1001.jpg",
+    "label": "plate",
+    "path": [
+      "object",
+      "food_containers",
+      "plate"
+    ]
+  },
+  {
+    "image": "data/images/1116.jpg",
+    "label": "road",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "road"
+    ]
+  },
+  {
+    "image": "data/images/0546.jpg",
+    "label": "couch",
+    "path": [
+      "object",
+      "household_furniture",
+      "couch"
+    ]
+  },
+  {
+    "image": "data/images/0999.jpg",
+    "label": "plate",
+    "path": [
+      "object",
+      "food_containers",
+      "plate"
+    ]
+  },
+  {
+    "image": "data/images/0004.jpg",
+    "label": "apple",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "apple"
+    ]
+  },
+  {
+    "image": "data/images/0972.jpg",
+    "label": "pear",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "pear"
+    ]
+  },
+  {
+    "image": "data/images/0427.jpg",
+    "label": "caterpillar",
+    "path": [
+      "animal",
+      "insects",
+      "caterpillar"
+    ]
+  },
+  {
+    "image": "data/images/1391.jpg",
+    "label": "television",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "television"
+    ]
+  },
+  {
+    "image": "data/images/1185.jpg",
+    "label": "shark",
+    "path": [
+      "animal",
+      "fish",
+      "shark"
+    ]
+  },
+  {
+    "image": "data/images/0829.jpg",
+    "label": "lion",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "lion"
+    ]
+  },
+  {
+    "image": "data/images/0346.jpg",
+    "label": "butterfly",
+    "path": [
+      "animal",
+      "insects",
+      "butterfly"
+    ]
+  },
+  {
+    "image": "data/images/0288.jpg",
+    "label": "bowl",
+    "path": [
+      "object",
+      "food_containers",
+      "bowl"
+    ]
+  },
+  {
+    "image": "data/images/0585.jpg",
+    "label": "cup",
+    "path": [
+      "object",
+      "food_containers",
+      "cup"
+    ]
+  },
+  {
+    "image": "data/images/1206.jpg",
+    "label": "shark",
+    "path": [
+      "animal",
+      "fish",
+      "shark"
+    ]
+  },
+  {
+    "image": "data/images/1580.jpg",
+    "label": "wolf",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "wolf"
+    ]
+  },
+  {
+    "image": "data/images/0322.jpg",
+    "label": "butterfly",
+    "path": [
+      "animal",
+      "insects",
+      "butterfly"
+    ]
+  },
+  {
+    "image": "data/images/0399.jpg",
+    "label": "castle",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "castle"
+    ]
+  },
+  {
+    "image": "data/images/0535.jpg",
+    "label": "cockroach",
+    "path": [
+      "animal",
+      "insects",
+      "cockroach"
+    ]
+  },
+  {
+    "image": "data/images/0224.jpg",
+    "label": "beetle",
+    "path": [
+      "animal",
+      "insects",
+      "beetle"
+    ]
+  },
+  {
+    "image": "data/images/0208.jpg",
+    "label": "beetle",
+    "path": [
+      "animal",
+      "insects",
+      "beetle"
+    ]
+  },
+  {
+    "image": "data/images/0035.jpg",
+    "label": "aquarium_fish",
+    "path": [
+      "animal",
+      "fish",
+      "aquarium_fish"
+    ]
+  },
+  {
+    "image": "data/images/0781.jpg",
+    "label": "leopard",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "leopard"
+    ]
+  },
+  {
+    "image": "data/images/1453.jpg",
+    "label": "trout",
+    "path": [
+      "animal",
+      "fish",
+      "trout"
+    ]
+  },
+  {
+    "image": "data/images/0665.jpg",
+    "label": "flatfish",
+    "path": [
+      "animal",
+      "fish",
+      "flatfish"
+    ]
+  },
+  {
+    "image": "data/images/0511.jpg",
+    "label": "clock",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "clock"
+    ]
+  },
+  {
+    "image": "data/images/0192.jpg",
+    "label": "bee",
+    "path": [
+      "animal",
+      "insects",
+      "bee"
+    ]
+  },
+  {
+    "image": "data/images/0819.jpg",
+    "label": "lion",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "lion"
+    ]
+  },
+  {
+    "image": "data/images/0411.jpg",
+    "label": "castle",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "castle"
+    ]
+  },
+  {
+    "image": "data/images/1326.jpg",
+    "label": "table",
+    "path": [
+      "object",
+      "household_furniture",
+      "table"
+    ]
+  },
+  {
+    "image": "data/images/1588.jpg",
+    "label": "wolf",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "wolf"
+    ]
+  },
+  {
+    "image": "data/images/1211.jpg",
+    "label": "shark",
+    "path": [
+      "animal",
+      "fish",
+      "shark"
+    ]
+  },
+  {
+    "image": "data/images/0539.jpg",
+    "label": "cockroach",
+    "path": [
+      "animal",
+      "insects",
+      "cockroach"
+    ]
+  },
+  {
+    "image": "data/images/0324.jpg",
+    "label": "butterfly",
+    "path": [
+      "animal",
+      "insects",
+      "butterfly"
+    ]
+  },
+  {
+    "image": "data/images/0178.jpg",
+    "label": "bee",
+    "path": [
+      "animal",
+      "insects",
+      "bee"
+    ]
+  },
+  {
+    "image": "data/images/0425.jpg",
+    "label": "caterpillar",
+    "path": [
+      "animal",
+      "insects",
+      "caterpillar"
+    ]
+  },
+  {
+    "image": "data/images/1049.jpg",
+    "label": "poppy",
+    "path": [
+      "plant",
+      "flowers",
+      "poppy"
+    ]
+  },
+  {
+    "image": "data/images/0821.jpg",
+    "label": "lion",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "lion"
+    ]
+  },
+  {
+    "image": "data/images/0296.jpg",
+    "label": "bridge",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "bridge"
+    ]
+  },
+  {
+    "image": "data/images/1045.jpg",
+    "label": "poppy",
+    "path": [
+      "plant",
+      "flowers",
+      "poppy"
+    ]
+  },
+  {
+    "image": "data/images/0959.jpg",
+    "label": "otter",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "otter"
+    ]
+  },
+  {
+    "image": "data/images/1018.jpg",
+    "label": "plate",
+    "path": [
+      "object",
+      "food_containers",
+      "plate"
+    ]
+  },
+  {
+    "image": "data/images/0209.jpg",
+    "label": "beetle",
+    "path": [
+      "animal",
+      "insects",
+      "beetle"
+    ]
+  },
+  {
+    "image": "data/images/0404.jpg",
+    "label": "castle",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "castle"
+    ]
+  },
+  {
+    "image": "data/images/0121.jpg",
+    "label": "beaver",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "beaver"
+    ]
+  },
+  {
+    "image": "data/images/1492.jpg",
+    "label": "tulip",
+    "path": [
+      "plant",
+      "flowers",
+      "tulip"
+    ]
+  },
+  {
+    "image": "data/images/0824.jpg",
+    "label": "lion",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "lion"
+    ]
+  },
+  {
+    "image": "data/images/0164.jpg",
+    "label": "bee",
+    "path": [
+      "animal",
+      "insects",
+      "bee"
+    ]
+  },
+  {
+    "image": "data/images/1102.jpg",
+    "label": "road",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "road"
+    ]
+  },
+  {
+    "image": "data/images/0895.jpg",
+    "label": "orange",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "orange"
+    ]
+  },
+  {
+    "image": "data/images/1250.jpg",
+    "label": "sunflower",
+    "path": [
+      "plant",
+      "flowers",
+      "sunflower"
+    ]
+  },
+  {
+    "image": "data/images/1526.jpg",
+    "label": "wardrobe",
+    "path": [
+      "object",
+      "household_furniture",
+      "wardrobe"
+    ]
+  },
+  {
+    "image": "data/images/0476.jpg",
+    "label": "chair",
+    "path": [
+      "object",
+      "household_furniture",
+      "chair"
+    ]
+  },
+  {
+    "image": "data/images/1159.jpg",
+    "label": "seal",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "seal"
+    ]
+  },
+  {
+    "image": "data/images/0402.jpg",
+    "label": "castle",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "castle"
+    ]
+  },
+  {
+    "image": "data/images/1064.jpg",
+    "label": "ray",
+    "path": [
+      "animal",
+      "fish",
+      "ray"
+    ]
+  },
+  {
+    "image": "data/images/0841.jpg",
+    "label": "mushroom",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "mushroom"
+    ]
+  },
+  {
+    "image": "data/images/1349.jpg",
+    "label": "telephone",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "telephone"
+    ]
+  },
+  {
+    "image": "data/images/0278.jpg",
+    "label": "bowl",
+    "path": [
+      "object",
+      "food_containers",
+      "bowl"
+    ]
+  },
+  {
+    "image": "data/images/0170.jpg",
+    "label": "bee",
+    "path": [
+      "animal",
+      "insects",
+      "bee"
+    ]
+  },
+  {
+    "image": "data/images/0270.jpg",
+    "label": "bowl",
+    "path": [
+      "object",
+      "food_containers",
+      "bowl"
+    ]
+  },
+  {
+    "image": "data/images/0925.jpg",
+    "label": "orchid",
+    "path": [
+      "plant",
+      "flowers",
+      "orchid"
+    ]
+  },
+  {
+    "image": "data/images/0408.jpg",
+    "label": "castle",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "castle"
+    ]
+  },
+  {
+    "image": "data/images/0187.jpg",
+    "label": "bee",
+    "path": [
+      "animal",
+      "insects",
+      "bee"
+    ]
+  },
+  {
+    "image": "data/images/1352.jpg",
+    "label": "telephone",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "telephone"
+    ]
+  },
+  {
+    "image": "data/images/0915.jpg",
+    "label": "orchid",
+    "path": [
+      "plant",
+      "flowers",
+      "orchid"
+    ]
+  },
+  {
+    "image": "data/images/1384.jpg",
+    "label": "television",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "television"
+    ]
+  },
+  {
+    "image": "data/images/0138.jpg",
+    "label": "bed",
+    "path": [
+      "object",
+      "household_furniture",
+      "bed"
+    ]
+  },
+  {
+    "image": "data/images/1477.jpg",
+    "label": "tulip",
+    "path": [
+      "plant",
+      "flowers",
+      "tulip"
+    ]
+  },
+  {
+    "image": "data/images/0962.jpg",
+    "label": "pear",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "pear"
+    ]
+  },
+  {
+    "image": "data/images/0807.jpg",
+    "label": "lion",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "lion"
+    ]
+  },
+  {
+    "image": "data/images/0968.jpg",
+    "label": "pear",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "pear"
+    ]
+  },
+  {
+    "image": "data/images/0508.jpg",
+    "label": "clock",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "clock"
+    ]
+  },
+  {
+    "image": "data/images/1240.jpg",
+    "label": "skyscraper",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "skyscraper"
+    ]
+  },
+  {
+    "image": "data/images/0949.jpg",
+    "label": "otter",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "otter"
+    ]
+  },
+  {
+    "image": "data/images/0437.jpg",
+    "label": "caterpillar",
+    "path": [
+      "animal",
+      "insects",
+      "caterpillar"
+    ]
+  },
+  {
+    "image": "data/images/0454.jpg",
+    "label": "chair",
+    "path": [
+      "object",
+      "household_furniture",
+      "chair"
+    ]
+  },
+  {
+    "image": "data/images/0249.jpg",
+    "label": "bottle",
+    "path": [
+      "object",
+      "food_containers",
+      "bottle"
+    ]
+  },
+  {
+    "image": "data/images/1309.jpg",
+    "label": "sweet_pepper",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "sweet_pepper"
+    ]
+  },
+  {
+    "image": "data/images/0726.jpg",
+    "label": "keyboard",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "keyboard"
+    ]
+  },
+  {
+    "image": "data/images/0361.jpg",
+    "label": "can",
+    "path": [
+      "object",
+      "food_containers",
+      "can"
+    ]
+  },
+  {
+    "image": "data/images/0291.jpg",
+    "label": "bridge",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "bridge"
+    ]
+  },
+  {
+    "image": "data/images/0241.jpg",
+    "label": "bottle",
+    "path": [
+      "object",
+      "food_containers",
+      "bottle"
+    ]
+  },
+  {
+    "image": "data/images/1036.jpg",
+    "label": "poppy",
+    "path": [
+      "plant",
+      "flowers",
+      "poppy"
+    ]
+  },
+  {
+    "image": "data/images/1069.jpg",
+    "label": "ray",
+    "path": [
+      "animal",
+      "fish",
+      "ray"
+    ]
+  },
+  {
+    "image": "data/images/1107.jpg",
+    "label": "road",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "road"
+    ]
+  },
+  {
+    "image": "data/images/1316.jpg",
+    "label": "table",
+    "path": [
+      "object",
+      "household_furniture",
+      "table"
+    ]
+  },
+  {
+    "image": "data/images/0770.jpg",
+    "label": "leopard",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "leopard"
+    ]
+  },
+  {
+    "image": "data/images/0780.jpg",
+    "label": "leopard",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "leopard"
+    ]
+  },
+  {
+    "image": "data/images/0498.jpg",
+    "label": "clock",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "clock"
+    ]
+  },
+  {
+    "image": "data/images/1408.jpg",
+    "label": "television",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "television"
+    ]
+  },
+  {
+    "image": "data/images/0061.jpg",
+    "label": "aquarium_fish",
+    "path": [
+      "animal",
+      "fish",
+      "aquarium_fish"
+    ]
+  },
+  {
+    "image": "data/images/0696.jpg",
+    "label": "house",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "house"
+    ]
+  },
+  {
+    "image": "data/images/0537.jpg",
+    "label": "cockroach",
+    "path": [
+      "animal",
+      "insects",
+      "cockroach"
+    ]
+  },
+  {
+    "image": "data/images/1540.jpg",
+    "label": "whale",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "whale"
+    ]
+  },
+  {
+    "image": "data/images/0131.jpg",
+    "label": "bed",
+    "path": [
+      "object",
+      "household_furniture",
+      "bed"
+    ]
+  },
+  {
+    "image": "data/images/1445.jpg",
+    "label": "trout",
+    "path": [
+      "animal",
+      "fish",
+      "trout"
+    ]
+  },
+  {
+    "image": "data/images/1428.jpg",
+    "label": "tiger",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "tiger"
+    ]
+  },
+  {
+    "image": "data/images/0158.jpg",
+    "label": "bed",
+    "path": [
+      "object",
+      "household_furniture",
+      "bed"
+    ]
+  },
+  {
+    "image": "data/images/0150.jpg",
+    "label": "bed",
+    "path": [
+      "object",
+      "household_furniture",
+      "bed"
+    ]
+  },
+  {
+    "image": "data/images/0419.jpg",
+    "label": "caterpillar",
+    "path": [
+      "animal",
+      "insects",
+      "caterpillar"
+    ]
+  },
+  {
+    "image": "data/images/0921.jpg",
+    "label": "orchid",
+    "path": [
+      "plant",
+      "flowers",
+      "orchid"
+    ]
+  },
+  {
+    "image": "data/images/0660.jpg",
+    "label": "flatfish",
+    "path": [
+      "animal",
+      "fish",
+      "flatfish"
+    ]
+  },
+  {
+    "image": "data/images/0541.jpg",
+    "label": "cockroach",
+    "path": [
+      "animal",
+      "insects",
+      "cockroach"
+    ]
+  },
+  {
+    "image": "data/images/0312.jpg",
+    "label": "bridge",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "bridge"
+    ]
+  },
+  {
+    "image": "data/images/0280.jpg",
+    "label": "bowl",
+    "path": [
+      "object",
+      "food_containers",
+      "bowl"
+    ]
+  },
+  {
+    "image": "data/images/0297.jpg",
+    "label": "bridge",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "bridge"
+    ]
+  },
+  {
+    "image": "data/images/0857.jpg",
+    "label": "mushroom",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "mushroom"
+    ]
+  },
+  {
+    "image": "data/images/1282.jpg",
+    "label": "sweet_pepper",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "sweet_pepper"
+    ]
+  },
+  {
+    "image": "data/images/0146.jpg",
+    "label": "bed",
+    "path": [
+      "object",
+      "household_furniture",
+      "bed"
+    ]
+  },
+  {
+    "image": "data/images/0079.jpg",
+    "label": "bear",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "bear"
+    ]
+  },
+  {
+    "image": "data/images/0058.jpg",
+    "label": "aquarium_fish",
+    "path": [
+      "animal",
+      "fish",
+      "aquarium_fish"
+    ]
+  },
+  {
+    "image": "data/images/1154.jpg",
+    "label": "seal",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "seal"
+    ]
+  },
+  {
+    "image": "data/images/0994.jpg",
+    "label": "plate",
+    "path": [
+      "object",
+      "food_containers",
+      "plate"
+    ]
+  },
+  {
+    "image": "data/images/0645.jpg",
+    "label": "flatfish",
+    "path": [
+      "animal",
+      "fish",
+      "flatfish"
+    ]
+  },
+  {
+    "image": "data/images/0990.jpg",
+    "label": "pear",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "pear"
+    ]
+  },
+  {
+    "image": "data/images/0663.jpg",
+    "label": "flatfish",
+    "path": [
+      "animal",
+      "fish",
+      "flatfish"
+    ]
+  },
+  {
+    "image": "data/images/1570.jpg",
+    "label": "wolf",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "wolf"
+    ]
+  },
+  {
+    "image": "data/images/1219.jpg",
+    "label": "skyscraper",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "skyscraper"
+    ]
+  },
+  {
+    "image": "data/images/0228.jpg",
+    "label": "bottle",
+    "path": [
+      "object",
+      "food_containers",
+      "bottle"
+    ]
+  },
+  {
+    "image": "data/images/0584.jpg",
+    "label": "cup",
+    "path": [
+      "object",
+      "food_containers",
+      "cup"
+    ]
+  },
+  {
+    "image": "data/images/1585.jpg",
+    "label": "wolf",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "wolf"
+    ]
+  },
+  {
+    "image": "data/images/0552.jpg",
+    "label": "couch",
+    "path": [
+      "object",
+      "household_furniture",
+      "couch"
+    ]
+  },
+  {
+    "image": "data/images/1318.jpg",
+    "label": "table",
+    "path": [
+      "object",
+      "household_furniture",
+      "table"
+    ]
+  },
+  {
+    "image": "data/images/0255.jpg",
+    "label": "bottle",
+    "path": [
+      "object",
+      "food_containers",
+      "bottle"
+    ]
+  },
+  {
+    "image": "data/images/0796.jpg",
+    "label": "leopard",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "leopard"
+    ]
+  },
+  {
+    "image": "data/images/1207.jpg",
+    "label": "shark",
+    "path": [
+      "animal",
+      "fish",
+      "shark"
+    ]
+  },
+  {
+    "image": "data/images/0285.jpg",
+    "label": "bowl",
+    "path": [
+      "object",
+      "food_containers",
+      "bowl"
+    ]
+  },
+  {
+    "image": "data/images/0006.jpg",
+    "label": "apple",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "apple"
+    ]
+  },
+  {
+    "image": "data/images/1389.jpg",
+    "label": "television",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "television"
+    ]
+  },
+  {
+    "image": "data/images/1244.jpg",
+    "label": "skyscraper",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "skyscraper"
+    ]
+  },
+  {
+    "image": "data/images/0166.jpg",
+    "label": "bee",
+    "path": [
+      "animal",
+      "insects",
+      "bee"
+    ]
+  },
+  {
+    "image": "data/images/0496.jpg",
+    "label": "clock",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "clock"
+    ]
+  },
+  {
+    "image": "data/images/1040.jpg",
+    "label": "poppy",
+    "path": [
+      "plant",
+      "flowers",
+      "poppy"
+    ]
+  },
+  {
+    "image": "data/images/1198.jpg",
+    "label": "shark",
+    "path": [
+      "animal",
+      "fish",
+      "shark"
+    ]
+  },
+  {
+    "image": "data/images/1401.jpg",
+    "label": "television",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "television"
+    ]
+  },
+  {
+    "image": "data/images/0275.jpg",
+    "label": "bowl",
+    "path": [
+      "object",
+      "food_containers",
+      "bowl"
+    ]
+  },
+  {
+    "image": "data/images/0873.jpg",
+    "label": "orange",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "orange"
+    ]
+  },
+  {
+    "image": "data/images/0238.jpg",
+    "label": "bottle",
+    "path": [
+      "object",
+      "food_containers",
+      "bottle"
+    ]
+  },
+  {
+    "image": "data/images/1023.jpg",
+    "label": "plate",
+    "path": [
+      "object",
+      "food_containers",
+      "plate"
+    ]
+  },
+  {
+    "image": "data/images/0977.jpg",
+    "label": "pear",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "pear"
+    ]
+  },
+  {
+    "image": "data/images/1292.jpg",
+    "label": "sweet_pepper",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "sweet_pepper"
+    ]
+  },
+  {
+    "image": "data/images/1190.jpg",
+    "label": "shark",
+    "path": [
+      "animal",
+      "fish",
+      "shark"
+    ]
+  },
+  {
+    "image": "data/images/0576.jpg",
+    "label": "couch",
+    "path": [
+      "object",
+      "household_furniture",
+      "couch"
+    ]
+  },
+  {
+    "image": "data/images/0213.jpg",
+    "label": "beetle",
+    "path": [
+      "animal",
+      "insects",
+      "beetle"
+    ]
+  },
+  {
+    "image": "data/images/0597.jpg",
+    "label": "cup",
+    "path": [
+      "object",
+      "food_containers",
+      "cup"
+    ]
+  },
+  {
+    "image": "data/images/0599.jpg",
+    "label": "cup",
+    "path": [
+      "object",
+      "food_containers",
+      "cup"
+    ]
+  },
+  {
+    "image": "data/images/1564.jpg",
+    "label": "whale",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "whale"
+    ]
+  },
+  {
+    "image": "data/images/1478.jpg",
+    "label": "tulip",
+    "path": [
+      "plant",
+      "flowers",
+      "tulip"
+    ]
+  },
+  {
+    "image": "data/images/0681.jpg",
+    "label": "house",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "house"
+    ]
+  },
+  {
+    "image": "data/images/0081.jpg",
+    "label": "bear",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "bear"
+    ]
+  },
+  {
+    "image": "data/images/0528.jpg",
+    "label": "cockroach",
+    "path": [
+      "animal",
+      "insects",
+      "cockroach"
+    ]
+  },
+  {
+    "image": "data/images/1108.jpg",
+    "label": "road",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "road"
+    ]
+  },
+  {
+    "image": "data/images/1061.jpg",
+    "label": "ray",
+    "path": [
+      "animal",
+      "fish",
+      "ray"
+    ]
+  },
+  {
+    "image": "data/images/0488.jpg",
+    "label": "clock",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "clock"
+    ]
+  },
+  {
+    "image": "data/images/1214.jpg",
+    "label": "shark",
+    "path": [
+      "animal",
+      "fish",
+      "shark"
+    ]
+  },
+  {
+    "image": "data/images/0969.jpg",
+    "label": "pear",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "pear"
+    ]
+  },
+  {
+    "image": "data/images/0468.jpg",
+    "label": "chair",
+    "path": [
+      "object",
+      "household_furniture",
+      "chair"
+    ]
+  },
+  {
+    "image": "data/images/1261.jpg",
+    "label": "sunflower",
+    "path": [
+      "plant",
+      "flowers",
+      "sunflower"
+    ]
+  },
+  {
+    "image": "data/images/1560.jpg",
+    "label": "whale",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "whale"
+    ]
+  },
+  {
+    "image": "data/images/0326.jpg",
+    "label": "butterfly",
+    "path": [
+      "animal",
+      "insects",
+      "butterfly"
+    ]
+  },
+  {
+    "image": "data/images/1482.jpg",
+    "label": "tulip",
+    "path": [
+      "plant",
+      "flowers",
+      "tulip"
+    ]
+  },
+  {
+    "image": "data/images/0149.jpg",
+    "label": "bed",
+    "path": [
+      "object",
+      "household_furniture",
+      "bed"
+    ]
+  },
+  {
+    "image": "data/images/1467.jpg",
+    "label": "trout",
+    "path": [
+      "animal",
+      "fish",
+      "trout"
+    ]
+  },
+  {
+    "image": "data/images/0325.jpg",
+    "label": "butterfly",
+    "path": [
+      "animal",
+      "insects",
+      "butterfly"
+    ]
+  },
+  {
+    "image": "data/images/0113.jpg",
+    "label": "beaver",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "beaver"
+    ]
+  },
+  {
+    "image": "data/images/0289.jpg",
+    "label": "bridge",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "bridge"
+    ]
+  },
+  {
+    "image": "data/images/0697.jpg",
+    "label": "house",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "house"
+    ]
+  },
+  {
+    "image": "data/images/0124.jpg",
+    "label": "beaver",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "beaver"
+    ]
+  },
+  {
+    "image": "data/images/1498.jpg",
+    "label": "tulip",
+    "path": [
+      "plant",
+      "flowers",
+      "tulip"
+    ]
+  },
+  {
+    "image": "data/images/1243.jpg",
+    "label": "skyscraper",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "skyscraper"
+    ]
+  },
+  {
+    "image": "data/images/0239.jpg",
+    "label": "bottle",
+    "path": [
+      "object",
+      "food_containers",
+      "bottle"
+    ]
+  },
+  {
+    "image": "data/images/1013.jpg",
+    "label": "plate",
+    "path": [
+      "object",
+      "food_containers",
+      "plate"
+    ]
+  },
+  {
+    "image": "data/images/1536.jpg",
+    "label": "wardrobe",
+    "path": [
+      "object",
+      "household_furniture",
+      "wardrobe"
+    ]
+  },
+  {
+    "image": "data/images/0823.jpg",
+    "label": "lion",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "lion"
+    ]
+  },
+  {
+    "image": "data/images/0115.jpg",
+    "label": "beaver",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "beaver"
+    ]
+  },
+  {
+    "image": "data/images/0503.jpg",
+    "label": "clock",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "clock"
+    ]
+  },
+  {
+    "image": "data/images/0098.jpg",
+    "label": "beaver",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "beaver"
+    ]
+  },
+  {
+    "image": "data/images/0077.jpg",
+    "label": "bear",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "bear"
+    ]
+  },
+  {
+    "image": "data/images/1449.jpg",
+    "label": "trout",
+    "path": [
+      "animal",
+      "fish",
+      "trout"
+    ]
+  },
+  {
+    "image": "data/images/0991.jpg",
+    "label": "pear",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "pear"
+    ]
+  },
+  {
+    "image": "data/images/0889.jpg",
+    "label": "orange",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "orange"
+    ]
+  },
+  {
+    "image": "data/images/1184.jpg",
+    "label": "seal",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "seal"
+    ]
+  },
+  {
+    "image": "data/images/1447.jpg",
+    "label": "trout",
+    "path": [
+      "animal",
+      "fish",
+      "trout"
+    ]
+  },
+  {
+    "image": "data/images/1089.jpg",
+    "label": "road",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "road"
+    ]
+  },
+  {
+    "image": "data/images/1038.jpg",
+    "label": "poppy",
+    "path": [
+      "plant",
+      "flowers",
+      "poppy"
+    ]
+  },
+  {
+    "image": "data/images/1142.jpg",
+    "label": "rose",
+    "path": [
+      "plant",
+      "flowers",
+      "rose"
+    ]
+  },
+  {
+    "image": "data/images/0031.jpg",
+    "label": "apple",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "apple"
+    ]
+  },
+  {
+    "image": "data/images/1196.jpg",
+    "label": "shark",
+    "path": [
+      "animal",
+      "fish",
+      "shark"
+    ]
+  },
+  {
+    "image": "data/images/0976.jpg",
+    "label": "pear",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "pear"
+    ]
+  },
+  {
+    "image": "data/images/0786.jpg",
+    "label": "leopard",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "leopard"
+    ]
+  },
+  {
+    "image": "data/images/1532.jpg",
+    "label": "wardrobe",
+    "path": [
+      "object",
+      "household_furniture",
+      "wardrobe"
+    ]
+  },
+  {
+    "image": "data/images/0752.jpg",
+    "label": "lamp",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "lamp"
+    ]
+  },
+  {
+    "image": "data/images/1032.jpg",
+    "label": "poppy",
+    "path": [
+      "plant",
+      "flowers",
+      "poppy"
+    ]
+  },
+  {
+    "image": "data/images/1358.jpg",
+    "label": "telephone",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "telephone"
+    ]
+  },
+  {
+    "image": "data/images/0715.jpg",
+    "label": "keyboard",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "keyboard"
+    ]
+  },
+  {
+    "image": "data/images/0971.jpg",
+    "label": "pear",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "pear"
+    ]
+  },
+  {
+    "image": "data/images/0610.jpg",
+    "label": "dolphin",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "dolphin"
+    ]
+  },
+  {
+    "image": "data/images/0784.jpg",
+    "label": "leopard",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "leopard"
+    ]
+  },
+  {
+    "image": "data/images/1017.jpg",
+    "label": "plate",
+    "path": [
+      "object",
+      "food_containers",
+      "plate"
+    ]
+  },
+  {
+    "image": "data/images/0856.jpg",
+    "label": "mushroom",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "mushroom"
+    ]
+  },
+  {
+    "image": "data/images/0038.jpg",
+    "label": "aquarium_fish",
+    "path": [
+      "animal",
+      "fish",
+      "aquarium_fish"
+    ]
+  },
+  {
+    "image": "data/images/0598.jpg",
+    "label": "cup",
+    "path": [
+      "object",
+      "food_containers",
+      "cup"
+    ]
+  },
+  {
+    "image": "data/images/1286.jpg",
+    "label": "sweet_pepper",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "sweet_pepper"
+    ]
+  },
+  {
+    "image": "data/images/0116.jpg",
+    "label": "beaver",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "beaver"
+    ]
+  },
+  {
+    "image": "data/images/0139.jpg",
+    "label": "bed",
+    "path": [
+      "object",
+      "household_furniture",
+      "bed"
+    ]
+  },
+  {
+    "image": "data/images/0747.jpg",
+    "label": "lamp",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "lamp"
+    ]
+  },
+  {
+    "image": "data/images/0611.jpg",
+    "label": "dolphin",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "dolphin"
+    ]
+  },
+  {
+    "image": "data/images/0195.jpg",
+    "label": "beetle",
+    "path": [
+      "animal",
+      "insects",
+      "beetle"
+    ]
+  },
+  {
+    "image": "data/images/0067.jpg",
+    "label": "bear",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "bear"
+    ]
+  },
+  {
+    "image": "data/images/1378.jpg",
+    "label": "television",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "television"
+    ]
+  },
+  {
+    "image": "data/images/0545.jpg",
+    "label": "couch",
+    "path": [
+      "object",
+      "household_furniture",
+      "couch"
+    ]
+  },
+  {
+    "image": "data/images/1311.jpg",
+    "label": "sweet_pepper",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "sweet_pepper"
+    ]
+  },
+  {
+    "image": "data/images/0494.jpg",
+    "label": "clock",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "clock"
+    ]
+  },
+  {
+    "image": "data/images/0846.jpg",
+    "label": "mushroom",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "mushroom"
+    ]
+  },
+  {
+    "image": "data/images/1033.jpg",
+    "label": "poppy",
+    "path": [
+      "plant",
+      "flowers",
+      "poppy"
+    ]
+  },
+  {
+    "image": "data/images/0853.jpg",
+    "label": "mushroom",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "mushroom"
+    ]
+  },
+  {
+    "image": "data/images/1234.jpg",
+    "label": "skyscraper",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "skyscraper"
+    ]
+  },
+  {
+    "image": "data/images/0706.jpg",
+    "label": "keyboard",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "keyboard"
+    ]
+  },
+  {
+    "image": "data/images/1361.jpg",
+    "label": "telephone",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "telephone"
+    ]
+  },
+  {
+    "image": "data/images/0581.jpg",
+    "label": "cup",
+    "path": [
+      "object",
+      "food_containers",
+      "cup"
+    ]
+  },
+  {
+    "image": "data/images/0833.jpg",
+    "label": "mushroom",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "mushroom"
+    ]
+  },
+  {
+    "image": "data/images/0300.jpg",
+    "label": "bridge",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "bridge"
+    ]
+  },
+  {
+    "image": "data/images/0887.jpg",
+    "label": "orange",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "orange"
+    ]
+  },
+  {
+    "image": "data/images/0630.jpg",
+    "label": "dolphin",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "dolphin"
+    ]
+  },
+  {
+    "image": "data/images/0145.jpg",
+    "label": "bed",
+    "path": [
+      "object",
+      "household_furniture",
+      "bed"
+    ]
+  },
+  {
+    "image": "data/images/0658.jpg",
+    "label": "flatfish",
+    "path": [
+      "animal",
+      "fish",
+      "flatfish"
+    ]
+  },
+  {
+    "image": "data/images/1073.jpg",
+    "label": "ray",
+    "path": [
+      "animal",
+      "fish",
+      "ray"
+    ]
+  },
+  {
+    "image": "data/images/0100.jpg",
+    "label": "beaver",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "beaver"
+    ]
+  },
+  {
+    "image": "data/images/0215.jpg",
+    "label": "beetle",
+    "path": [
+      "animal",
+      "insects",
+      "beetle"
+    ]
+  },
+  {
+    "image": "data/images/0358.jpg",
+    "label": "can",
+    "path": [
+      "object",
+      "food_containers",
+      "can"
+    ]
+  },
+  {
+    "image": "data/images/0400.jpg",
+    "label": "castle",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "castle"
+    ]
+  },
+  {
+    "image": "data/images/0309.jpg",
+    "label": "bridge",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "bridge"
+    ]
+  },
+  {
+    "image": "data/images/0352.jpg",
+    "label": "butterfly",
+    "path": [
+      "animal",
+      "insects",
+      "butterfly"
+    ]
+  },
+  {
+    "image": "data/images/1501.jpg",
+    "label": "tulip",
+    "path": [
+      "plant",
+      "flowers",
+      "tulip"
+    ]
+  },
+  {
+    "image": "data/images/0007.jpg",
+    "label": "apple",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "apple"
+    ]
+  },
+  {
+    "image": "data/images/0345.jpg",
+    "label": "butterfly",
+    "path": [
+      "animal",
+      "insects",
+      "butterfly"
+    ]
+  },
+  {
+    "image": "data/images/0319.jpg",
+    "label": "bridge",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "bridge"
+    ]
+  },
+  {
+    "image": "data/images/0603.jpg",
+    "label": "cup",
+    "path": [
+      "object",
+      "food_containers",
+      "cup"
+    ]
+  },
+  {
+    "image": "data/images/0993.jpg",
+    "label": "plate",
+    "path": [
+      "object",
+      "food_containers",
+      "plate"
+    ]
+  },
+  {
+    "image": "data/images/1596.jpg",
+    "label": "wolf",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "wolf"
+    ]
+  },
+  {
+    "image": "data/images/0704.jpg",
+    "label": "house",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "house"
+    ]
+  },
+  {
+    "image": "data/images/1122.jpg",
+    "label": "rose",
+    "path": [
+      "plant",
+      "flowers",
+      "rose"
+    ]
+  },
+  {
+    "image": "data/images/0675.jpg",
+    "label": "house",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "house"
+    ]
+  },
+  {
+    "image": "data/images/0422.jpg",
+    "label": "caterpillar",
+    "path": [
+      "animal",
+      "insects",
+      "caterpillar"
+    ]
+  },
+  {
+    "image": "data/images/1059.jpg",
+    "label": "ray",
+    "path": [
+      "animal",
+      "fish",
+      "ray"
+    ]
+  },
+  {
+    "image": "data/images/1137.jpg",
+    "label": "rose",
+    "path": [
+      "plant",
+      "flowers",
+      "rose"
+    ]
+  },
+  {
+    "image": "data/images/0497.jpg",
+    "label": "clock",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "clock"
+    ]
+  },
+  {
+    "image": "data/images/1450.jpg",
+    "label": "trout",
+    "path": [
+      "animal",
+      "fish",
+      "trout"
+    ]
+  },
+  {
+    "image": "data/images/1591.jpg",
+    "label": "wolf",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "wolf"
+    ]
+  },
+  {
+    "image": "data/images/1098.jpg",
+    "label": "road",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "road"
+    ]
+  },
+  {
+    "image": "data/images/0515.jpg",
+    "label": "cockroach",
+    "path": [
+      "animal",
+      "insects",
+      "cockroach"
+    ]
+  },
+  {
+    "image": "data/images/1246.jpg",
+    "label": "skyscraper",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "skyscraper"
+    ]
+  },
+  {
+    "image": "data/images/0843.jpg",
+    "label": "mushroom",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "mushroom"
+    ]
+  },
+  {
+    "image": "data/images/0714.jpg",
+    "label": "keyboard",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "keyboard"
+    ]
+  },
+  {
+    "image": "data/images/0175.jpg",
+    "label": "bee",
+    "path": [
+      "animal",
+      "insects",
+      "bee"
+    ]
+  },
+  {
+    "image": "data/images/0562.jpg",
+    "label": "couch",
+    "path": [
+      "object",
+      "household_furniture",
+      "couch"
+    ]
+  },
+  {
+    "image": "data/images/1555.jpg",
+    "label": "whale",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "whale"
+    ]
+  },
+  {
+    "image": "data/images/1099.jpg",
+    "label": "road",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "road"
+    ]
+  },
+  {
+    "image": "data/images/1283.jpg",
+    "label": "sweet_pepper",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "sweet_pepper"
+    ]
+  },
+  {
+    "image": "data/images/0222.jpg",
+    "label": "beetle",
+    "path": [
+      "animal",
+      "insects",
+      "beetle"
+    ]
+  },
+  {
+    "image": "data/images/0815.jpg",
+    "label": "lion",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "lion"
+    ]
+  },
+  {
+    "image": "data/images/0521.jpg",
+    "label": "cockroach",
+    "path": [
+      "animal",
+      "insects",
+      "cockroach"
+    ]
+  },
+  {
+    "image": "data/images/1446.jpg",
+    "label": "trout",
+    "path": [
+      "animal",
+      "fish",
+      "trout"
+    ]
+  },
+  {
+    "image": "data/images/1329.jpg",
+    "label": "table",
+    "path": [
+      "object",
+      "household_furniture",
+      "table"
+    ]
+  },
+  {
+    "image": "data/images/0052.jpg",
+    "label": "aquarium_fish",
+    "path": [
+      "animal",
+      "fish",
+      "aquarium_fish"
+    ]
+  },
+  {
+    "image": "data/images/0879.jpg",
+    "label": "orange",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "orange"
+    ]
+  },
+  {
+    "image": "data/images/0308.jpg",
+    "label": "bridge",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "bridge"
+    ]
+  },
+  {
+    "image": "data/images/0674.jpg",
+    "label": "house",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "house"
+    ]
+  },
+  {
+    "image": "data/images/1169.jpg",
+    "label": "seal",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "seal"
+    ]
+  },
+  {
+    "image": "data/images/0314.jpg",
+    "label": "bridge",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "bridge"
+    ]
+  },
+  {
+    "image": "data/images/0106.jpg",
+    "label": "beaver",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "beaver"
+    ]
+  },
+  {
+    "image": "data/images/0398.jpg",
+    "label": "castle",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "castle"
+    ]
+  },
+  {
+    "image": "data/images/0718.jpg",
+    "label": "keyboard",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "keyboard"
+    ]
+  },
+  {
+    "image": "data/images/0874.jpg",
+    "label": "orange",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "orange"
+    ]
+  },
+  {
+    "image": "data/images/0838.jpg",
+    "label": "mushroom",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "mushroom"
+    ]
+  },
+  {
+    "image": "data/images/0641.jpg",
+    "label": "flatfish",
+    "path": [
+      "animal",
+      "fish",
+      "flatfish"
+    ]
+  },
+  {
+    "image": "data/images/0739.jpg",
+    "label": "lamp",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "lamp"
+    ]
+  },
+  {
+    "image": "data/images/0347.jpg",
+    "label": "butterfly",
+    "path": [
+      "animal",
+      "insects",
+      "butterfly"
+    ]
+  },
+  {
+    "image": "data/images/0679.jpg",
+    "label": "house",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "house"
+    ]
+  },
+  {
+    "image": "data/images/0582.jpg",
+    "label": "cup",
+    "path": [
+      "object",
+      "food_containers",
+      "cup"
+    ]
+  },
+  {
+    "image": "data/images/0248.jpg",
+    "label": "bottle",
+    "path": [
+      "object",
+      "food_containers",
+      "bottle"
+    ]
+  },
+  {
+    "image": "data/images/0850.jpg",
+    "label": "mushroom",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "mushroom"
+    ]
+  },
+  {
+    "image": "data/images/0203.jpg",
+    "label": "beetle",
+    "path": [
+      "animal",
+      "insects",
+      "beetle"
+    ]
+  },
+  {
+    "image": "data/images/1076.jpg",
+    "label": "ray",
+    "path": [
+      "animal",
+      "fish",
+      "ray"
+    ]
+  },
+  {
+    "image": "data/images/1295.jpg",
+    "label": "sweet_pepper",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "sweet_pepper"
+    ]
+  },
+  {
+    "image": "data/images/1362.jpg",
+    "label": "telephone",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "telephone"
+    ]
+  },
+  {
+    "image": "data/images/1390.jpg",
+    "label": "television",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "television"
+    ]
+  },
+  {
+    "image": "data/images/0608.jpg",
+    "label": "cup",
+    "path": [
+      "object",
+      "food_containers",
+      "cup"
+    ]
+  },
+  {
+    "image": "data/images/0755.jpg",
+    "label": "lamp",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "lamp"
+    ]
+  },
+  {
+    "image": "data/images/0609.jpg",
+    "label": "dolphin",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "dolphin"
+    ]
+  },
+  {
+    "image": "data/images/1539.jpg",
+    "label": "whale",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "whale"
+    ]
+  },
+  {
+    "image": "data/images/0911.jpg",
+    "label": "orchid",
+    "path": [
+      "plant",
+      "flowers",
+      "orchid"
+    ]
+  },
+  {
+    "image": "data/images/0569.jpg",
+    "label": "couch",
+    "path": [
+      "object",
+      "household_furniture",
+      "couch"
+    ]
+  },
+  {
+    "image": "data/images/0482.jpg",
+    "label": "clock",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "clock"
+    ]
+  },
+  {
+    "image": "data/images/0800.jpg",
+    "label": "leopard",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "leopard"
+    ]
+  },
+  {
+    "image": "data/images/0720.jpg",
+    "label": "keyboard",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "keyboard"
+    ]
+  },
+  {
+    "image": "data/images/0384.jpg",
+    "label": "can",
+    "path": [
+      "object",
+      "food_containers",
+      "can"
+    ]
+  },
+  {
+    "image": "data/images/0391.jpg",
+    "label": "castle",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "castle"
+    ]
+  },
+  {
+    "image": "data/images/1042.jpg",
+    "label": "poppy",
+    "path": [
+      "plant",
+      "flowers",
+      "poppy"
+    ]
+  },
+  {
+    "image": "data/images/0304.jpg",
+    "label": "bridge",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "bridge"
+    ]
+  },
+  {
+    "image": "data/images/1515.jpg",
+    "label": "wardrobe",
+    "path": [
+      "object",
+      "household_furniture",
+      "wardrobe"
+    ]
+  },
+  {
+    "image": "data/images/0130.jpg",
+    "label": "bed",
+    "path": [
+      "object",
+      "household_furniture",
+      "bed"
+    ]
+  },
+  {
+    "image": "data/images/0430.jpg",
+    "label": "caterpillar",
+    "path": [
+      "animal",
+      "insects",
+      "caterpillar"
+    ]
+  },
+  {
+    "image": "data/images/0901.jpg",
+    "label": "orchid",
+    "path": [
+      "plant",
+      "flowers",
+      "orchid"
+    ]
+  },
+  {
+    "image": "data/images/1181.jpg",
+    "label": "seal",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "seal"
+    ]
+  },
+  {
+    "image": "data/images/1231.jpg",
+    "label": "skyscraper",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "skyscraper"
+    ]
+  },
+  {
+    "image": "data/images/0512.jpg",
+    "label": "clock",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "clock"
+    ]
+  },
+  {
+    "image": "data/images/0877.jpg",
+    "label": "orange",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "orange"
+    ]
+  },
+  {
+    "image": "data/images/0088.jpg",
+    "label": "bear",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "bear"
+    ]
+  },
+  {
+    "image": "data/images/0570.jpg",
+    "label": "couch",
+    "path": [
+      "object",
+      "household_furniture",
+      "couch"
+    ]
+  },
+  {
+    "image": "data/images/1312.jpg",
+    "label": "sweet_pepper",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "sweet_pepper"
+    ]
+  },
+  {
+    "image": "data/images/0986.jpg",
+    "label": "pear",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "pear"
+    ]
+  },
+  {
+    "image": "data/images/0943.jpg",
+    "label": "otter",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "otter"
+    ]
+  },
+  {
+    "image": "data/images/1546.jpg",
+    "label": "whale",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "whale"
+    ]
+  },
+  {
+    "image": "data/images/0586.jpg",
+    "label": "cup",
+    "path": [
+      "object",
+      "food_containers",
+      "cup"
+    ]
+  },
+  {
+    "image": "data/images/0553.jpg",
+    "label": "couch",
+    "path": [
+      "object",
+      "household_furniture",
+      "couch"
+    ]
+  },
+  {
+    "image": "data/images/0699.jpg",
+    "label": "house",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "house"
+    ]
+  },
+  {
+    "image": "data/images/0566.jpg",
+    "label": "couch",
+    "path": [
+      "object",
+      "household_furniture",
+      "couch"
+    ]
+  },
+  {
+    "image": "data/images/1260.jpg",
+    "label": "sunflower",
+    "path": [
+      "plant",
+      "flowers",
+      "sunflower"
+    ]
+  },
+  {
+    "image": "data/images/1291.jpg",
+    "label": "sweet_pepper",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "sweet_pepper"
+    ]
+  },
+  {
+    "image": "data/images/0593.jpg",
+    "label": "cup",
+    "path": [
+      "object",
+      "food_containers",
+      "cup"
+    ]
+  },
+  {
+    "image": "data/images/0428.jpg",
+    "label": "caterpillar",
+    "path": [
+      "animal",
+      "insects",
+      "caterpillar"
+    ]
+  },
+  {
+    "image": "data/images/0266.jpg",
+    "label": "bowl",
+    "path": [
+      "object",
+      "food_containers",
+      "bowl"
+    ]
+  },
+  {
+    "image": "data/images/0793.jpg",
+    "label": "leopard",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "leopard"
+    ]
+  },
+  {
+    "image": "data/images/1238.jpg",
+    "label": "skyscraper",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "skyscraper"
+    ]
+  },
+  {
+    "image": "data/images/0423.jpg",
+    "label": "caterpillar",
+    "path": [
+      "animal",
+      "insects",
+      "caterpillar"
+    ]
+  },
+  {
+    "image": "data/images/1537.jpg",
+    "label": "whale",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "whale"
+    ]
+  },
+  {
+    "image": "data/images/0078.jpg",
+    "label": "bear",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "bear"
+    ]
+  },
+  {
+    "image": "data/images/1153.jpg",
+    "label": "seal",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "seal"
+    ]
+  },
+  {
+    "image": "data/images/0086.jpg",
+    "label": "bear",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "bear"
+    ]
+  },
+  {
+    "image": "data/images/1168.jpg",
+    "label": "seal",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "seal"
+    ]
+  },
+  {
+    "image": "data/images/0284.jpg",
+    "label": "bowl",
+    "path": [
+      "object",
+      "food_containers",
+      "bowl"
+    ]
+  },
+  {
+    "image": "data/images/0182.jpg",
+    "label": "bee",
+    "path": [
+      "animal",
+      "insects",
+      "bee"
+    ]
+  },
+  {
+    "image": "data/images/1454.jpg",
+    "label": "trout",
+    "path": [
+      "animal",
+      "fish",
+      "trout"
+    ]
+  },
+  {
+    "image": "data/images/0864.jpg",
+    "label": "mushroom",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "mushroom"
+    ]
+  },
+  {
+    "image": "data/images/0989.jpg",
+    "label": "pear",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "pear"
+    ]
+  },
+  {
+    "image": "data/images/0980.jpg",
+    "label": "pear",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "pear"
+    ]
+  },
+  {
+    "image": "data/images/1176.jpg",
+    "label": "seal",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "seal"
+    ]
+  },
+  {
+    "image": "data/images/0517.jpg",
+    "label": "cockroach",
+    "path": [
+      "animal",
+      "insects",
+      "cockroach"
+    ]
+  },
+  {
+    "image": "data/images/0080.jpg",
+    "label": "bear",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "bear"
+    ]
+  },
+  {
+    "image": "data/images/1143.jpg",
+    "label": "rose",
+    "path": [
+      "plant",
+      "flowers",
+      "rose"
+    ]
+  },
+  {
+    "image": "data/images/1334.jpg",
+    "label": "table",
+    "path": [
+      "object",
+      "household_furniture",
+      "table"
+    ]
+  },
+  {
+    "image": "data/images/1158.jpg",
+    "label": "seal",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "seal"
+    ]
+  },
+  {
+    "image": "data/images/0809.jpg",
+    "label": "lion",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "lion"
+    ]
+  },
+  {
+    "image": "data/images/1111.jpg",
+    "label": "road",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "road"
+    ]
+  },
+  {
+    "image": "data/images/1202.jpg",
+    "label": "shark",
+    "path": [
+      "animal",
+      "fish",
+      "shark"
+    ]
+  },
+  {
+    "image": "data/images/1062.jpg",
+    "label": "ray",
+    "path": [
+      "animal",
+      "fish",
+      "ray"
+    ]
+  },
+  {
+    "image": "data/images/0942.jpg",
+    "label": "otter",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "otter"
+    ]
+  },
+  {
+    "image": "data/images/0941.jpg",
+    "label": "otter",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "otter"
+    ]
+  },
+  {
+    "image": "data/images/0845.jpg",
+    "label": "mushroom",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "mushroom"
+    ]
+  },
+  {
+    "image": "data/images/1145.jpg",
+    "label": "rose",
+    "path": [
+      "plant",
+      "flowers",
+      "rose"
+    ]
+  },
+  {
+    "image": "data/images/0353.jpg",
+    "label": "can",
+    "path": [
+      "object",
+      "food_containers",
+      "can"
+    ]
+  },
+  {
+    "image": "data/images/0338.jpg",
+    "label": "butterfly",
+    "path": [
+      "animal",
+      "insects",
+      "butterfly"
+    ]
+  },
+  {
+    "image": "data/images/0826.jpg",
+    "label": "lion",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "lion"
+    ]
+  },
+  {
+    "image": "data/images/0928.jpg",
+    "label": "orchid",
+    "path": [
+      "plant",
+      "flowers",
+      "orchid"
+    ]
+  },
+  {
+    "image": "data/images/0455.jpg",
+    "label": "chair",
+    "path": [
+      "object",
+      "household_furniture",
+      "chair"
+    ]
+  },
+  {
+    "image": "data/images/0673.jpg",
+    "label": "house",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "house"
+    ]
+  },
+  {
+    "image": "data/images/0820.jpg",
+    "label": "lion",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "lion"
+    ]
+  },
+  {
+    "image": "data/images/0388.jpg",
+    "label": "castle",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "castle"
+    ]
+  },
+  {
+    "image": "data/images/0290.jpg",
+    "label": "bridge",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "bridge"
+    ]
+  },
+  {
+    "image": "data/images/0565.jpg",
+    "label": "couch",
+    "path": [
+      "object",
+      "household_furniture",
+      "couch"
+    ]
+  },
+  {
+    "image": "data/images/0617.jpg",
+    "label": "dolphin",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "dolphin"
+    ]
+  },
+  {
+    "image": "data/images/0104.jpg",
+    "label": "beaver",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "beaver"
+    ]
+  },
+  {
+    "image": "data/images/0740.jpg",
+    "label": "lamp",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "lamp"
+    ]
+  },
+  {
+    "image": "data/images/0654.jpg",
+    "label": "flatfish",
+    "path": [
+      "animal",
+      "fish",
+      "flatfish"
+    ]
+  },
+  {
+    "image": "data/images/1549.jpg",
+    "label": "whale",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "whale"
+    ]
+  },
+  {
+    "image": "data/images/0883.jpg",
+    "label": "orange",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "orange"
+    ]
+  },
+  {
+    "image": "data/images/1553.jpg",
+    "label": "whale",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "whale"
+    ]
+  },
+  {
+    "image": "data/images/1579.jpg",
+    "label": "wolf",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "wolf"
+    ]
+  },
+  {
+    "image": "data/images/1554.jpg",
+    "label": "whale",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "whale"
+    ]
+  },
+  {
+    "image": "data/images/0818.jpg",
+    "label": "lion",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "lion"
+    ]
+  },
+  {
+    "image": "data/images/0606.jpg",
+    "label": "cup",
+    "path": [
+      "object",
+      "food_containers",
+      "cup"
+    ]
+  },
+  {
+    "image": "data/images/0676.jpg",
+    "label": "house",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "house"
+    ]
+  },
+  {
+    "image": "data/images/0705.jpg",
+    "label": "keyboard",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "keyboard"
+    ]
+  },
+  {
+    "image": "data/images/1015.jpg",
+    "label": "plate",
+    "path": [
+      "object",
+      "food_containers",
+      "plate"
+    ]
+  },
+  {
+    "image": "data/images/0555.jpg",
+    "label": "couch",
+    "path": [
+      "object",
+      "household_furniture",
+      "couch"
+    ]
+  },
+  {
+    "image": "data/images/1587.jpg",
+    "label": "wolf",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "wolf"
+    ]
+  },
+  {
+    "image": "data/images/0226.jpg",
+    "label": "bottle",
+    "path": [
+      "object",
+      "food_containers",
+      "bottle"
+    ]
+  },
+  {
+    "image": "data/images/0199.jpg",
+    "label": "beetle",
+    "path": [
+      "animal",
+      "insects",
+      "beetle"
+    ]
+  },
+  {
+    "image": "data/images/0082.jpg",
+    "label": "bear",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "bear"
+    ]
+  },
+  {
+    "image": "data/images/0754.jpg",
+    "label": "lamp",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "lamp"
+    ]
+  },
+  {
+    "image": "data/images/0649.jpg",
+    "label": "flatfish",
+    "path": [
+      "animal",
+      "fish",
+      "flatfish"
+    ]
+  },
+  {
+    "image": "data/images/0059.jpg",
+    "label": "aquarium_fish",
+    "path": [
+      "animal",
+      "fish",
+      "aquarium_fish"
+    ]
+  },
+  {
+    "image": "data/images/1520.jpg",
+    "label": "wardrobe",
+    "path": [
+      "object",
+      "household_furniture",
+      "wardrobe"
+    ]
+  },
+  {
+    "image": "data/images/1399.jpg",
+    "label": "television",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "television"
+    ]
+  },
+  {
+    "image": "data/images/0872.jpg",
+    "label": "orange",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "orange"
+    ]
+  },
+  {
+    "image": "data/images/0053.jpg",
+    "label": "aquarium_fish",
+    "path": [
+      "animal",
+      "fish",
+      "aquarium_fish"
+    ]
+  },
+  {
+    "image": "data/images/1170.jpg",
+    "label": "seal",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "seal"
+    ]
+  },
+  {
+    "image": "data/images/1325.jpg",
+    "label": "table",
+    "path": [
+      "object",
+      "household_furniture",
+      "table"
+    ]
+  },
+  {
+    "image": "data/images/1357.jpg",
+    "label": "telephone",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "telephone"
+    ]
+  },
+  {
+    "image": "data/images/1472.jpg",
+    "label": "trout",
+    "path": [
+      "animal",
+      "fish",
+      "trout"
+    ]
+  },
+  {
+    "image": "data/images/1317.jpg",
+    "label": "table",
+    "path": [
+      "object",
+      "household_furniture",
+      "table"
+    ]
+  },
+  {
+    "image": "data/images/0015.jpg",
+    "label": "apple",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "apple"
+    ]
+  },
+  {
+    "image": "data/images/0963.jpg",
+    "label": "pear",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "pear"
+    ]
+  },
+  {
+    "image": "data/images/0328.jpg",
+    "label": "butterfly",
+    "path": [
+      "animal",
+      "insects",
+      "butterfly"
+    ]
+  },
+  {
+    "image": "data/images/0160.jpg",
+    "label": "bed",
+    "path": [
+      "object",
+      "household_furniture",
+      "bed"
+    ]
+  },
+  {
+    "image": "data/images/1542.jpg",
+    "label": "whale",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "whale"
+    ]
+  },
+  {
+    "image": "data/images/0691.jpg",
+    "label": "house",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "house"
+    ]
+  },
+  {
+    "image": "data/images/0457.jpg",
+    "label": "chair",
+    "path": [
+      "object",
+      "household_furniture",
+      "chair"
+    ]
+  },
+  {
+    "image": "data/images/1592.jpg",
+    "label": "wolf",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "wolf"
+    ]
+  },
+  {
+    "image": "data/images/0196.jpg",
+    "label": "beetle",
+    "path": [
+      "animal",
+      "insects",
+      "beetle"
+    ]
+  },
+  {
+    "image": "data/images/0486.jpg",
+    "label": "clock",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "clock"
+    ]
+  },
+  {
+    "image": "data/images/0558.jpg",
+    "label": "couch",
+    "path": [
+      "object",
+      "household_furniture",
+      "couch"
+    ]
+  },
+  {
+    "image": "data/images/1092.jpg",
+    "label": "road",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "road"
+    ]
+  },
+  {
+    "image": "data/images/0044.jpg",
+    "label": "aquarium_fish",
+    "path": [
+      "animal",
+      "fish",
+      "aquarium_fish"
+    ]
+  },
+  {
+    "image": "data/images/1105.jpg",
+    "label": "road",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "road"
+    ]
+  },
+  {
+    "image": "data/images/1177.jpg",
+    "label": "seal",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "seal"
+    ]
+  },
+  {
+    "image": "data/images/0316.jpg",
+    "label": "bridge",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "bridge"
+    ]
+  },
+  {
+    "image": "data/images/1523.jpg",
+    "label": "wardrobe",
+    "path": [
+      "object",
+      "household_furniture",
+      "wardrobe"
+    ]
+  },
+  {
+    "image": "data/images/0721.jpg",
+    "label": "keyboard",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "keyboard"
+    ]
+  },
+  {
+    "image": "data/images/0909.jpg",
+    "label": "orchid",
+    "path": [
+      "plant",
+      "flowers",
+      "orchid"
+    ]
+  },
+  {
+    "image": "data/images/1021.jpg",
+    "label": "plate",
+    "path": [
+      "object",
+      "food_containers",
+      "plate"
+    ]
+  },
+  {
+    "image": "data/images/1439.jpg",
+    "label": "tiger",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "tiger"
+    ]
+  },
+  {
+    "image": "data/images/0144.jpg",
+    "label": "bed",
+    "path": [
+      "object",
+      "household_furniture",
+      "bed"
+    ]
+  },
+  {
+    "image": "data/images/0431.jpg",
+    "label": "caterpillar",
+    "path": [
+      "animal",
+      "insects",
+      "caterpillar"
+    ]
+  },
+  {
+    "image": "data/images/0337.jpg",
+    "label": "butterfly",
+    "path": [
+      "animal",
+      "insects",
+      "butterfly"
+    ]
+  },
+  {
+    "image": "data/images/1227.jpg",
+    "label": "skyscraper",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "skyscraper"
+    ]
+  },
+  {
+    "image": "data/images/0418.jpg",
+    "label": "caterpillar",
+    "path": [
+      "animal",
+      "insects",
+      "caterpillar"
+    ]
+  },
+  {
+    "image": "data/images/0934.jpg",
+    "label": "otter",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "otter"
+    ]
+  },
+  {
+    "image": "data/images/1300.jpg",
+    "label": "sweet_pepper",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "sweet_pepper"
+    ]
+  },
+  {
+    "image": "data/images/1342.jpg",
+    "label": "table",
+    "path": [
+      "object",
+      "household_furniture",
+      "table"
+    ]
+  },
+  {
+    "image": "data/images/1337.jpg",
+    "label": "table",
+    "path": [
+      "object",
+      "household_furniture",
+      "table"
+    ]
+  },
+  {
+    "image": "data/images/1090.jpg",
+    "label": "road",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "road"
+    ]
+  },
+  {
+    "image": "data/images/0802.jpg",
+    "label": "lion",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "lion"
+    ]
+  },
+  {
+    "image": "data/images/1509.jpg",
+    "label": "wardrobe",
+    "path": [
+      "object",
+      "household_furniture",
+      "wardrobe"
+    ]
+  },
+  {
+    "image": "data/images/1305.jpg",
+    "label": "sweet_pepper",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "sweet_pepper"
+    ]
+  },
+  {
+    "image": "data/images/0181.jpg",
+    "label": "bee",
+    "path": [
+      "animal",
+      "insects",
+      "bee"
+    ]
+  },
+  {
+    "image": "data/images/0952.jpg",
+    "label": "otter",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "otter"
+    ]
+  },
+  {
+    "image": "data/images/1409.jpg",
+    "label": "tiger",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "tiger"
+    ]
+  },
+  {
+    "image": "data/images/1100.jpg",
+    "label": "road",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "road"
+    ]
+  },
+  {
+    "image": "data/images/0680.jpg",
+    "label": "house",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "house"
+    ]
+  },
+  {
+    "image": "data/images/0907.jpg",
+    "label": "orchid",
+    "path": [
+      "plant",
+      "flowers",
+      "orchid"
+    ]
+  },
+  {
+    "image": "data/images/1545.jpg",
+    "label": "whale",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "whale"
+    ]
+  },
+  {
+    "image": "data/images/0452.jpg",
+    "label": "chair",
+    "path": [
+      "object",
+      "household_furniture",
+      "chair"
+    ]
+  },
+  {
+    "image": "data/images/1048.jpg",
+    "label": "poppy",
+    "path": [
+      "plant",
+      "flowers",
+      "poppy"
+    ]
+  },
+  {
+    "image": "data/images/0587.jpg",
+    "label": "cup",
+    "path": [
+      "object",
+      "food_containers",
+      "cup"
+    ]
+  },
+  {
+    "image": "data/images/0179.jpg",
+    "label": "bee",
+    "path": [
+      "animal",
+      "insects",
+      "bee"
+    ]
+  },
+  {
+    "image": "data/images/1338.jpg",
+    "label": "table",
+    "path": [
+      "object",
+      "household_furniture",
+      "table"
+    ]
+  },
+  {
+    "image": "data/images/0055.jpg",
+    "label": "aquarium_fish",
+    "path": [
+      "animal",
+      "fish",
+      "aquarium_fish"
+    ]
+  },
+  {
+    "image": "data/images/1597.jpg",
+    "label": "wolf",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "wolf"
+    ]
+  },
+  {
+    "image": "data/images/0153.jpg",
+    "label": "bed",
+    "path": [
+      "object",
+      "household_furniture",
+      "bed"
+    ]
+  },
+  {
+    "image": "data/images/1144.jpg",
+    "label": "rose",
+    "path": [
+      "plant",
+      "flowers",
+      "rose"
+    ]
+  },
+  {
+    "image": "data/images/0967.jpg",
+    "label": "pear",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "pear"
+    ]
+  },
+  {
+    "image": "data/images/0771.jpg",
+    "label": "leopard",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "leopard"
+    ]
+  },
+  {
+    "image": "data/images/0505.jpg",
+    "label": "clock",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "clock"
+    ]
+  },
+  {
+    "image": "data/images/1223.jpg",
+    "label": "skyscraper",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "skyscraper"
+    ]
+  },
+  {
+    "image": "data/images/0948.jpg",
+    "label": "otter",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "otter"
+    ]
+  },
+  {
+    "image": "data/images/1165.jpg",
+    "label": "seal",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "seal"
+    ]
+  },
+  {
+    "image": "data/images/0612.jpg",
+    "label": "dolphin",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "dolphin"
+    ]
+  },
+  {
+    "image": "data/images/0385.jpg",
+    "label": "castle",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "castle"
+    ]
+  },
+  {
+    "image": "data/images/0445.jpg",
+    "label": "caterpillar",
+    "path": [
+      "animal",
+      "insects",
+      "caterpillar"
+    ]
+  },
+  {
+    "image": "data/images/0041.jpg",
+    "label": "aquarium_fish",
+    "path": [
+      "animal",
+      "fish",
+      "aquarium_fish"
+    ]
+  },
+  {
+    "image": "data/images/0366.jpg",
+    "label": "can",
+    "path": [
+      "object",
+      "food_containers",
+      "can"
+    ]
+  },
+  {
+    "image": "data/images/1039.jpg",
+    "label": "poppy",
+    "path": [
+      "plant",
+      "flowers",
+      "poppy"
+    ]
+  },
+  {
+    "image": "data/images/1215.jpg",
+    "label": "shark",
+    "path": [
+      "animal",
+      "fish",
+      "shark"
+    ]
+  },
+  {
+    "image": "data/images/1075.jpg",
+    "label": "ray",
+    "path": [
+      "animal",
+      "fish",
+      "ray"
+    ]
+  },
+  {
+    "image": "data/images/0995.jpg",
+    "label": "plate",
+    "path": [
+      "object",
+      "food_containers",
+      "plate"
+    ]
+  },
+  {
+    "image": "data/images/0816.jpg",
+    "label": "lion",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "lion"
+    ]
+  },
+  {
+    "image": "data/images/0163.jpg",
+    "label": "bee",
+    "path": [
+      "animal",
+      "insects",
+      "bee"
+    ]
+  },
+  {
+    "image": "data/images/0257.jpg",
+    "label": "bowl",
+    "path": [
+      "object",
+      "food_containers",
+      "bowl"
+    ]
+  },
+  {
+    "image": "data/images/0795.jpg",
+    "label": "leopard",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "leopard"
+    ]
+  },
+  {
+    "image": "data/images/1333.jpg",
+    "label": "table",
+    "path": [
+      "object",
+      "household_furniture",
+      "table"
+    ]
+  },
+  {
+    "image": "data/images/0559.jpg",
+    "label": "couch",
+    "path": [
+      "object",
+      "household_furniture",
+      "couch"
+    ]
+  },
+  {
+    "image": "data/images/1511.jpg",
+    "label": "wardrobe",
+    "path": [
+      "object",
+      "household_furniture",
+      "wardrobe"
+    ]
+  },
+  {
+    "image": "data/images/0102.jpg",
+    "label": "beaver",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "beaver"
+    ]
+  },
+  {
+    "image": "data/images/1559.jpg",
+    "label": "whale",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "whale"
+    ]
+  },
+  {
+    "image": "data/images/0791.jpg",
+    "label": "leopard",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "leopard"
+    ]
+  },
+  {
+    "image": "data/images/0332.jpg",
+    "label": "butterfly",
+    "path": [
+      "animal",
+      "insects",
+      "butterfly"
+    ]
+  },
+  {
+    "image": "data/images/1432.jpg",
+    "label": "tiger",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "tiger"
+    ]
+  },
+  {
+    "image": "data/images/0374.jpg",
+    "label": "can",
+    "path": [
+      "object",
+      "food_containers",
+      "can"
+    ]
+  },
+  {
+    "image": "data/images/1046.jpg",
+    "label": "poppy",
+    "path": [
+      "plant",
+      "flowers",
+      "poppy"
+    ]
+  },
+  {
+    "image": "data/images/1050.jpg",
+    "label": "poppy",
+    "path": [
+      "plant",
+      "flowers",
+      "poppy"
+    ]
+  },
+  {
+    "image": "data/images/0544.jpg",
+    "label": "cockroach",
+    "path": [
+      "animal",
+      "insects",
+      "cockroach"
+    ]
+  },
+  {
+    "image": "data/images/0605.jpg",
+    "label": "cup",
+    "path": [
+      "object",
+      "food_containers",
+      "cup"
+    ]
+  },
+  {
+    "image": "data/images/1081.jpg",
+    "label": "ray",
+    "path": [
+      "animal",
+      "fish",
+      "ray"
+    ]
+  },
+  {
+    "image": "data/images/1289.jpg",
+    "label": "sweet_pepper",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "sweet_pepper"
+    ]
+  },
+  {
+    "image": "data/images/0870.jpg",
+    "label": "orange",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "orange"
+    ]
+  },
+  {
+    "image": "data/images/0092.jpg",
+    "label": "bear",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "bear"
+    ]
+  },
+  {
+    "image": "data/images/0070.jpg",
+    "label": "bear",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "bear"
+    ]
+  },
+  {
+    "image": "data/images/0806.jpg",
+    "label": "lion",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "lion"
+    ]
+  },
+  {
+    "image": "data/images/0766.jpg",
+    "label": "lamp",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "lamp"
+    ]
+  },
+  {
+    "image": "data/images/1456.jpg",
+    "label": "trout",
+    "path": [
+      "animal",
+      "fish",
+      "trout"
+    ]
+  },
+  {
+    "image": "data/images/0441.jpg",
+    "label": "caterpillar",
+    "path": [
+      "animal",
+      "insects",
+      "caterpillar"
+    ]
+  },
+  {
+    "image": "data/images/0813.jpg",
+    "label": "lion",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "lion"
+    ]
+  },
+  {
+    "image": "data/images/0390.jpg",
+    "label": "castle",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "castle"
+    ]
+  },
+  {
+    "image": "data/images/1460.jpg",
+    "label": "trout",
+    "path": [
+      "animal",
+      "fish",
+      "trout"
+    ]
+  },
+  {
+    "image": "data/images/0330.jpg",
+    "label": "butterfly",
+    "path": [
+      "animal",
+      "insects",
+      "butterfly"
+    ]
+  },
+  {
+    "image": "data/images/1387.jpg",
+    "label": "television",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "television"
+    ]
+  },
+  {
+    "image": "data/images/1191.jpg",
+    "label": "shark",
+    "path": [
+      "animal",
+      "fish",
+      "shark"
+    ]
+  },
+  {
+    "image": "data/images/0580.jpg",
+    "label": "cup",
+    "path": [
+      "object",
+      "food_containers",
+      "cup"
+    ]
+  },
+  {
+    "image": "data/images/1530.jpg",
+    "label": "wardrobe",
+    "path": [
+      "object",
+      "household_furniture",
+      "wardrobe"
+    ]
+  },
+  {
+    "image": "data/images/0017.jpg",
+    "label": "apple",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "apple"
+    ]
+  },
+  {
+    "image": "data/images/0799.jpg",
+    "label": "leopard",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "leopard"
+    ]
+  },
+  {
+    "image": "data/images/0801.jpg",
+    "label": "lion",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "lion"
+    ]
+  },
+  {
+    "image": "data/images/0629.jpg",
+    "label": "dolphin",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "dolphin"
+    ]
+  },
+  {
+    "image": "data/images/1321.jpg",
+    "label": "table",
+    "path": [
+      "object",
+      "household_furniture",
+      "table"
+    ]
+  },
+  {
+    "image": "data/images/1112.jpg",
+    "label": "road",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "road"
+    ]
+  },
+  {
+    "image": "data/images/0753.jpg",
+    "label": "lamp",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "lamp"
+    ]
+  },
+  {
+    "image": "data/images/1595.jpg",
+    "label": "wolf",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "wolf"
+    ]
+  },
+  {
+    "image": "data/images/0623.jpg",
+    "label": "dolphin",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "dolphin"
+    ]
+  },
+  {
+    "image": "data/images/1174.jpg",
+    "label": "seal",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "seal"
+    ]
+  },
+  {
+    "image": "data/images/1290.jpg",
+    "label": "sweet_pepper",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "sweet_pepper"
+    ]
+  },
+  {
+    "image": "data/images/1209.jpg",
+    "label": "shark",
+    "path": [
+      "animal",
+      "fish",
+      "shark"
+    ]
+  },
+  {
+    "image": "data/images/0863.jpg",
+    "label": "mushroom",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "mushroom"
+    ]
+  },
+  {
+    "image": "data/images/0112.jpg",
+    "label": "beaver",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "beaver"
+    ]
+  },
+  {
+    "image": "data/images/0859.jpg",
+    "label": "mushroom",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "mushroom"
+    ]
+  },
+  {
+    "image": "data/images/1371.jpg",
+    "label": "telephone",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "telephone"
+    ]
+  },
+  {
+    "image": "data/images/1572.jpg",
+    "label": "wolf",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "wolf"
+    ]
+  },
+  {
+    "image": "data/images/0710.jpg",
+    "label": "keyboard",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "keyboard"
+    ]
+  },
+  {
+    "image": "data/images/1440.jpg",
+    "label": "tiger",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "tiger"
+    ]
+  },
+  {
+    "image": "data/images/0273.jpg",
+    "label": "bowl",
+    "path": [
+      "object",
+      "food_containers",
+      "bowl"
+    ]
+  },
+  {
+    "image": "data/images/0764.jpg",
+    "label": "lamp",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "lamp"
+    ]
+  },
+  {
+    "image": "data/images/1066.jpg",
+    "label": "ray",
+    "path": [
+      "animal",
+      "fish",
+      "ray"
+    ]
+  },
+  {
+    "image": "data/images/0094.jpg",
+    "label": "bear",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "bear"
+    ]
+  },
+  {
+    "image": "data/images/0379.jpg",
+    "label": "can",
+    "path": [
+      "object",
+      "food_containers",
+      "can"
+    ]
+  },
+  {
+    "image": "data/images/0068.jpg",
+    "label": "bear",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "bear"
+    ]
+  },
+  {
+    "image": "data/images/0832.jpg",
+    "label": "lion",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "lion"
+    ]
+  },
+  {
+    "image": "data/images/1078.jpg",
+    "label": "ray",
+    "path": [
+      "animal",
+      "fish",
+      "ray"
+    ]
+  },
+  {
+    "image": "data/images/1217.jpg",
+    "label": "skyscraper",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "skyscraper"
+    ]
+  },
+  {
+    "image": "data/images/1476.jpg",
+    "label": "tulip",
+    "path": [
+      "plant",
+      "flowers",
+      "tulip"
+    ]
+  },
+  {
+    "image": "data/images/0424.jpg",
+    "label": "caterpillar",
+    "path": [
+      "animal",
+      "insects",
+      "caterpillar"
+    ]
+  },
+  {
+    "image": "data/images/1377.jpg",
+    "label": "television",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "television"
+    ]
+  },
+  {
+    "image": "data/images/0958.jpg",
+    "label": "otter",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "otter"
+    ]
+  },
+  {
+    "image": "data/images/1084.jpg",
+    "label": "ray",
+    "path": [
+      "animal",
+      "fish",
+      "ray"
+    ]
+  },
+  {
+    "image": "data/images/0803.jpg",
+    "label": "lion",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "lion"
+    ]
+  },
+  {
+    "image": "data/images/0659.jpg",
+    "label": "flatfish",
+    "path": [
+      "animal",
+      "fish",
+      "flatfish"
+    ]
+  },
+  {
+    "image": "data/images/1395.jpg",
+    "label": "television",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "television"
+    ]
+  },
+  {
+    "image": "data/images/0133.jpg",
+    "label": "bed",
+    "path": [
+      "object",
+      "household_furniture",
+      "bed"
+    ]
+  },
+  {
+    "image": "data/images/1417.jpg",
+    "label": "tiger",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "tiger"
+    ]
+  },
+  {
+    "image": "data/images/0982.jpg",
+    "label": "pear",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "pear"
+    ]
+  },
+  {
+    "image": "data/images/1567.jpg",
+    "label": "whale",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "whale"
+    ]
+  },
+  {
+    "image": "data/images/1000.jpg",
+    "label": "plate",
+    "path": [
+      "object",
+      "food_containers",
+      "plate"
+    ]
+  },
+  {
+    "image": "data/images/0393.jpg",
+    "label": "castle",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "castle"
+    ]
+  },
+  {
+    "image": "data/images/0233.jpg",
+    "label": "bottle",
+    "path": [
+      "object",
+      "food_containers",
+      "bottle"
+    ]
+  },
+  {
+    "image": "data/images/0220.jpg",
+    "label": "beetle",
+    "path": [
+      "animal",
+      "insects",
+      "beetle"
+    ]
+  },
+  {
+    "image": "data/images/0099.jpg",
+    "label": "beaver",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "beaver"
+    ]
+  },
+  {
+    "image": "data/images/1351.jpg",
+    "label": "telephone",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "telephone"
+    ]
+  },
+  {
+    "image": "data/images/0644.jpg",
+    "label": "flatfish",
+    "path": [
+      "animal",
+      "fish",
+      "flatfish"
+    ]
+  },
+  {
+    "image": "data/images/0421.jpg",
+    "label": "caterpillar",
+    "path": [
+      "animal",
+      "insects",
+      "caterpillar"
+    ]
+  },
+  {
+    "image": "data/images/1187.jpg",
+    "label": "shark",
+    "path": [
+      "animal",
+      "fish",
+      "shark"
+    ]
+  },
+  {
+    "image": "data/images/0848.jpg",
+    "label": "mushroom",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "mushroom"
+    ]
+  },
+  {
+    "image": "data/images/1406.jpg",
+    "label": "television",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "television"
+    ]
+  },
+  {
+    "image": "data/images/0168.jpg",
+    "label": "bee",
+    "path": [
+      "animal",
+      "insects",
+      "bee"
+    ]
+  },
+  {
+    "image": "data/images/0446.jpg",
+    "label": "caterpillar",
+    "path": [
+      "animal",
+      "insects",
+      "caterpillar"
+    ]
+  },
+  {
+    "image": "data/images/0005.jpg",
+    "label": "apple",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "apple"
+    ]
+  },
+  {
+    "image": "data/images/1285.jpg",
+    "label": "sweet_pepper",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "sweet_pepper"
+    ]
+  },
+  {
+    "image": "data/images/0939.jpg",
+    "label": "otter",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "otter"
+    ]
+  },
+  {
+    "image": "data/images/1475.jpg",
+    "label": "tulip",
+    "path": [
+      "plant",
+      "flowers",
+      "tulip"
+    ]
+  },
+  {
+    "image": "data/images/0403.jpg",
+    "label": "castle",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "castle"
+    ]
+  },
+  {
+    "image": "data/images/0782.jpg",
+    "label": "leopard",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "leopard"
+    ]
+  },
+  {
+    "image": "data/images/0477.jpg",
+    "label": "chair",
+    "path": [
+      "object",
+      "household_furniture",
+      "chair"
+    ]
+  },
+  {
+    "image": "data/images/0185.jpg",
+    "label": "bee",
+    "path": [
+      "animal",
+      "insects",
+      "bee"
+    ]
+  },
+  {
+    "image": "data/images/0367.jpg",
+    "label": "can",
+    "path": [
+      "object",
+      "food_containers",
+      "can"
+    ]
+  },
+  {
+    "image": "data/images/1269.jpg",
+    "label": "sunflower",
+    "path": [
+      "plant",
+      "flowers",
+      "sunflower"
+    ]
+  },
+  {
+    "image": "data/images/0217.jpg",
+    "label": "beetle",
+    "path": [
+      "animal",
+      "insects",
+      "beetle"
+    ]
+  },
+  {
+    "image": "data/images/0516.jpg",
+    "label": "cockroach",
+    "path": [
+      "animal",
+      "insects",
+      "cockroach"
+    ]
+  },
+  {
+    "image": "data/images/0631.jpg",
+    "label": "dolphin",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "dolphin"
+    ]
+  },
+  {
+    "image": "data/images/0243.jpg",
+    "label": "bottle",
+    "path": [
+      "object",
+      "food_containers",
+      "bottle"
+    ]
+  },
+  {
+    "image": "data/images/1262.jpg",
+    "label": "sunflower",
+    "path": [
+      "plant",
+      "flowers",
+      "sunflower"
+    ]
+  },
+  {
+    "image": "data/images/1380.jpg",
+    "label": "television",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "television"
+    ]
+  },
+  {
+    "image": "data/images/0232.jpg",
+    "label": "bottle",
+    "path": [
+      "object",
+      "food_containers",
+      "bottle"
+    ]
+  },
+  {
+    "image": "data/images/1431.jpg",
+    "label": "tiger",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "tiger"
+    ]
+  },
+  {
+    "image": "data/images/0271.jpg",
+    "label": "bowl",
+    "path": [
+      "object",
+      "food_containers",
+      "bowl"
+    ]
+  },
+  {
+    "image": "data/images/0135.jpg",
+    "label": "bed",
+    "path": [
+      "object",
+      "household_furniture",
+      "bed"
+    ]
+  },
+  {
+    "image": "data/images/1044.jpg",
+    "label": "poppy",
+    "path": [
+      "plant",
+      "flowers",
+      "poppy"
+    ]
+  },
+  {
+    "image": "data/images/1495.jpg",
+    "label": "tulip",
+    "path": [
+      "plant",
+      "flowers",
+      "tulip"
+    ]
+  },
+  {
+    "image": "data/images/1293.jpg",
+    "label": "sweet_pepper",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "sweet_pepper"
+    ]
+  },
+  {
+    "image": "data/images/1369.jpg",
+    "label": "telephone",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "telephone"
+    ]
+  },
+  {
+    "image": "data/images/1025.jpg",
+    "label": "poppy",
+    "path": [
+      "plant",
+      "flowers",
+      "poppy"
+    ]
+  },
+  {
+    "image": "data/images/0624.jpg",
+    "label": "dolphin",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "dolphin"
+    ]
+  },
+  {
+    "image": "data/images/1220.jpg",
+    "label": "skyscraper",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "skyscraper"
+    ]
+  },
+  {
+    "image": "data/images/1568.jpg",
+    "label": "whale",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "whale"
+    ]
+  },
+  {
+    "image": "data/images/0849.jpg",
+    "label": "mushroom",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "mushroom"
+    ]
+  },
+  {
+    "image": "data/images/0205.jpg",
+    "label": "beetle",
+    "path": [
+      "animal",
+      "insects",
+      "beetle"
+    ]
+  },
+  {
+    "image": "data/images/1199.jpg",
+    "label": "shark",
+    "path": [
+      "animal",
+      "fish",
+      "shark"
+    ]
+  },
+  {
+    "image": "data/images/0956.jpg",
+    "label": "otter",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "otter"
+    ]
+  },
+  {
+    "image": "data/images/0579.jpg",
+    "label": "cup",
+    "path": [
+      "object",
+      "food_containers",
+      "cup"
+    ]
+  },
+  {
+    "image": "data/images/0229.jpg",
+    "label": "bottle",
+    "path": [
+      "object",
+      "food_containers",
+      "bottle"
+    ]
+  },
+  {
+    "image": "data/images/1172.jpg",
+    "label": "seal",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "seal"
+    ]
+  },
+  {
+    "image": "data/images/0152.jpg",
+    "label": "bed",
+    "path": [
+      "object",
+      "household_furniture",
+      "bed"
+    ]
+  },
+  {
+    "image": "data/images/0001.jpg",
+    "label": "apple",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "apple"
+    ]
+  },
+  {
+    "image": "data/images/1396.jpg",
+    "label": "television",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "television"
+    ]
+  },
+  {
+    "image": "data/images/0349.jpg",
+    "label": "butterfly",
+    "path": [
+      "animal",
+      "insects",
+      "butterfly"
+    ]
+  },
+  {
+    "image": "data/images/0014.jpg",
+    "label": "apple",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "apple"
+    ]
+  },
+  {
+    "image": "data/images/1427.jpg",
+    "label": "tiger",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "tiger"
+    ]
+  },
+  {
+    "image": "data/images/0616.jpg",
+    "label": "dolphin",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "dolphin"
+    ]
+  },
+  {
+    "image": "data/images/0822.jpg",
+    "label": "lion",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "lion"
+    ]
+  },
+  {
+    "image": "data/images/1297.jpg",
+    "label": "sweet_pepper",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "sweet_pepper"
+    ]
+  },
+  {
+    "image": "data/images/1276.jpg",
+    "label": "sunflower",
+    "path": [
+      "plant",
+      "flowers",
+      "sunflower"
+    ]
+  },
+  {
+    "image": "data/images/0794.jpg",
+    "label": "leopard",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "leopard"
+    ]
+  },
+  {
+    "image": "data/images/0905.jpg",
+    "label": "orchid",
+    "path": [
+      "plant",
+      "flowers",
+      "orchid"
+    ]
+  },
+  {
+    "image": "data/images/0478.jpg",
+    "label": "chair",
+    "path": [
+      "object",
+      "household_furniture",
+      "chair"
+    ]
+  },
+  {
+    "image": "data/images/0204.jpg",
+    "label": "beetle",
+    "path": [
+      "animal",
+      "insects",
+      "beetle"
+    ]
+  },
+  {
+    "image": "data/images/1052.jpg",
+    "label": "poppy",
+    "path": [
+      "plant",
+      "flowers",
+      "poppy"
+    ]
+  },
+  {
+    "image": "data/images/0702.jpg",
+    "label": "house",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "house"
+    ]
+  },
+  {
+    "image": "data/images/0788.jpg",
+    "label": "leopard",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "leopard"
+    ]
+  },
+  {
+    "image": "data/images/0640.jpg",
+    "label": "dolphin",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "dolphin"
+    ]
+  },
+  {
+    "image": "data/images/1265.jpg",
+    "label": "sunflower",
+    "path": [
+      "plant",
+      "flowers",
+      "sunflower"
+    ]
+  },
+  {
+    "image": "data/images/0219.jpg",
+    "label": "beetle",
+    "path": [
+      "animal",
+      "insects",
+      "beetle"
+    ]
+  },
+  {
+    "image": "data/images/0244.jpg",
+    "label": "bottle",
+    "path": [
+      "object",
+      "food_containers",
+      "bottle"
+    ]
+  },
+  {
+    "image": "data/images/1438.jpg",
+    "label": "tiger",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "tiger"
+    ]
+  },
+  {
+    "image": "data/images/0142.jpg",
+    "label": "bed",
+    "path": [
+      "object",
+      "household_furniture",
+      "bed"
+    ]
+  },
+  {
+    "image": "data/images/0137.jpg",
+    "label": "bed",
+    "path": [
+      "object",
+      "household_furniture",
+      "bed"
+    ]
+  },
+  {
+    "image": "data/images/0383.jpg",
+    "label": "can",
+    "path": [
+      "object",
+      "food_containers",
+      "can"
+    ]
+  },
+  {
+    "image": "data/images/0707.jpg",
+    "label": "keyboard",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "keyboard"
+    ]
+  },
+  {
+    "image": "data/images/0407.jpg",
+    "label": "castle",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "castle"
+    ]
+  },
+  {
+    "image": "data/images/0622.jpg",
+    "label": "dolphin",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "dolphin"
+    ]
+  },
+  {
+    "image": "data/images/0834.jpg",
+    "label": "mushroom",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "mushroom"
+    ]
+  },
+  {
+    "image": "data/images/0983.jpg",
+    "label": "pear",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "pear"
+    ]
+  },
+  {
+    "image": "data/images/0334.jpg",
+    "label": "butterfly",
+    "path": [
+      "animal",
+      "insects",
+      "butterfly"
+    ]
+  },
+  {
+    "image": "data/images/1468.jpg",
+    "label": "trout",
+    "path": [
+      "animal",
+      "fish",
+      "trout"
+    ]
+  },
+  {
+    "image": "data/images/0307.jpg",
+    "label": "bridge",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "bridge"
+    ]
+  },
+  {
+    "image": "data/images/0456.jpg",
+    "label": "chair",
+    "path": [
+      "object",
+      "household_furniture",
+      "chair"
+    ]
+  },
+  {
+    "image": "data/images/1030.jpg",
+    "label": "poppy",
+    "path": [
+      "plant",
+      "flowers",
+      "poppy"
+    ]
+  },
+  {
+    "image": "data/images/0979.jpg",
+    "label": "pear",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "pear"
+    ]
+  },
+  {
+    "image": "data/images/0738.jpg",
+    "label": "lamp",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "lamp"
+    ]
+  },
+  {
+    "image": "data/images/1541.jpg",
+    "label": "whale",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "whale"
+    ]
+  },
+  {
+    "image": "data/images/0331.jpg",
+    "label": "butterfly",
+    "path": [
+      "animal",
+      "insects",
+      "butterfly"
+    ]
+  },
+  {
+    "image": "data/images/0790.jpg",
+    "label": "leopard",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "leopard"
+    ]
+  },
+  {
+    "image": "data/images/0876.jpg",
+    "label": "orange",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "orange"
+    ]
+  },
+  {
+    "image": "data/images/0016.jpg",
+    "label": "apple",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "apple"
+    ]
+  },
+  {
+    "image": "data/images/1323.jpg",
+    "label": "table",
+    "path": [
+      "object",
+      "household_furniture",
+      "table"
+    ]
+  },
+  {
+    "image": "data/images/0373.jpg",
+    "label": "can",
+    "path": [
+      "object",
+      "food_containers",
+      "can"
+    ]
+  },
+  {
+    "image": "data/images/1359.jpg",
+    "label": "telephone",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "telephone"
+    ]
+  },
+  {
+    "image": "data/images/1379.jpg",
+    "label": "television",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "television"
+    ]
+  },
+  {
+    "image": "data/images/0844.jpg",
+    "label": "mushroom",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "mushroom"
+    ]
+  },
+  {
+    "image": "data/images/1394.jpg",
+    "label": "television",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "television"
+    ]
+  },
+  {
+    "image": "data/images/0533.jpg",
+    "label": "cockroach",
+    "path": [
+      "animal",
+      "insects",
+      "cockroach"
+    ]
+  },
+  {
+    "image": "data/images/0571.jpg",
+    "label": "couch",
+    "path": [
+      "object",
+      "household_furniture",
+      "couch"
+    ]
+  },
+  {
+    "image": "data/images/0333.jpg",
+    "label": "butterfly",
+    "path": [
+      "animal",
+      "insects",
+      "butterfly"
+    ]
+  },
+  {
+    "image": "data/images/0274.jpg",
+    "label": "bowl",
+    "path": [
+      "object",
+      "food_containers",
+      "bowl"
+    ]
+  },
+  {
+    "image": "data/images/0200.jpg",
+    "label": "beetle",
+    "path": [
+      "animal",
+      "insects",
+      "beetle"
+    ]
+  },
+  {
+    "image": "data/images/0087.jpg",
+    "label": "bear",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "bear"
+    ]
+  },
+  {
+    "image": "data/images/0043.jpg",
+    "label": "aquarium_fish",
+    "path": [
+      "animal",
+      "fish",
+      "aquarium_fish"
+    ]
+  },
+  {
+    "image": "data/images/1072.jpg",
+    "label": "ray",
+    "path": [
+      "animal",
+      "fish",
+      "ray"
+    ]
+  },
+  {
+    "image": "data/images/0161.jpg",
+    "label": "bee",
+    "path": [
+      "animal",
+      "insects",
+      "bee"
+    ]
+  },
+  {
+    "image": "data/images/1026.jpg",
+    "label": "poppy",
+    "path": [
+      "plant",
+      "flowers",
+      "poppy"
+    ]
+  },
+  {
+    "image": "data/images/0947.jpg",
+    "label": "otter",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "otter"
+    ]
+  },
+  {
+    "image": "data/images/0173.jpg",
+    "label": "bee",
+    "path": [
+      "animal",
+      "insects",
+      "bee"
+    ]
+  },
+  {
+    "image": "data/images/1222.jpg",
+    "label": "skyscraper",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "skyscraper"
+    ]
+  },
+  {
+    "image": "data/images/0281.jpg",
+    "label": "bowl",
+    "path": [
+      "object",
+      "food_containers",
+      "bowl"
+    ]
+  },
+  {
+    "image": "data/images/0636.jpg",
+    "label": "dolphin",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "dolphin"
+    ]
+  },
+  {
+    "image": "data/images/1224.jpg",
+    "label": "skyscraper",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "skyscraper"
+    ]
+  },
+  {
+    "image": "data/images/0797.jpg",
+    "label": "leopard",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "leopard"
+    ]
+  },
+  {
+    "image": "data/images/1548.jpg",
+    "label": "whale",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "whale"
+    ]
+  },
+  {
+    "image": "data/images/1041.jpg",
+    "label": "poppy",
+    "path": [
+      "plant",
+      "flowers",
+      "poppy"
+    ]
+  },
+  {
+    "image": "data/images/0632.jpg",
+    "label": "dolphin",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "dolphin"
+    ]
+  },
+  {
+    "image": "data/images/1252.jpg",
+    "label": "sunflower",
+    "path": [
+      "plant",
+      "flowers",
+      "sunflower"
+    ]
+  },
+  {
+    "image": "data/images/1251.jpg",
+    "label": "sunflower",
+    "path": [
+      "plant",
+      "flowers",
+      "sunflower"
+    ]
+  },
+  {
+    "image": "data/images/1053.jpg",
+    "label": "poppy",
+    "path": [
+      "plant",
+      "flowers",
+      "poppy"
+    ]
+  },
+  {
+    "image": "data/images/1590.jpg",
+    "label": "wolf",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "wolf"
+    ]
+  },
+  {
+    "image": "data/images/0469.jpg",
+    "label": "chair",
+    "path": [
+      "object",
+      "household_furniture",
+      "chair"
+    ]
+  },
+  {
+    "image": "data/images/1287.jpg",
+    "label": "sweet_pepper",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "sweet_pepper"
+    ]
+  },
+  {
+    "image": "data/images/0426.jpg",
+    "label": "caterpillar",
+    "path": [
+      "animal",
+      "insects",
+      "caterpillar"
+    ]
+  },
+  {
+    "image": "data/images/0671.jpg",
+    "label": "flatfish",
+    "path": [
+      "animal",
+      "fish",
+      "flatfish"
+    ]
+  },
+  {
+    "image": "data/images/0380.jpg",
+    "label": "can",
+    "path": [
+      "object",
+      "food_containers",
+      "can"
+    ]
+  },
+  {
+    "image": "data/images/0742.jpg",
+    "label": "lamp",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "lamp"
+    ]
+  },
+  {
+    "image": "data/images/0600.jpg",
+    "label": "cup",
+    "path": [
+      "object",
+      "food_containers",
+      "cup"
+    ]
+  },
+  {
+    "image": "data/images/0929.jpg",
+    "label": "otter",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "otter"
+    ]
+  },
+  {
+    "image": "data/images/0109.jpg",
+    "label": "beaver",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "beaver"
+    ]
+  },
+  {
+    "image": "data/images/1370.jpg",
+    "label": "telephone",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "telephone"
+    ]
+  },
+  {
+    "image": "data/images/1012.jpg",
+    "label": "plate",
+    "path": [
+      "object",
+      "food_containers",
+      "plate"
+    ]
+  },
+  {
+    "image": "data/images/1079.jpg",
+    "label": "ray",
+    "path": [
+      "animal",
+      "fish",
+      "ray"
+    ]
+  },
+  {
+    "image": "data/images/0898.jpg",
+    "label": "orchid",
+    "path": [
+      "plant",
+      "flowers",
+      "orchid"
+    ]
+  },
+  {
+    "image": "data/images/1376.jpg",
+    "label": "telephone",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "telephone"
+    ]
+  },
+  {
+    "image": "data/images/0700.jpg",
+    "label": "house",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "house"
+    ]
+  },
+  {
+    "image": "data/images/0664.jpg",
+    "label": "flatfish",
+    "path": [
+      "animal",
+      "fish",
+      "flatfish"
+    ]
+  },
+  {
+    "image": "data/images/0299.jpg",
+    "label": "bridge",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "bridge"
+    ]
+  },
+  {
+    "image": "data/images/1582.jpg",
+    "label": "wolf",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "wolf"
+    ]
+  },
+  {
+    "image": "data/images/0339.jpg",
+    "label": "butterfly",
+    "path": [
+      "animal",
+      "insects",
+      "butterfly"
+    ]
+  },
+  {
+    "image": "data/images/0777.jpg",
+    "label": "leopard",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "leopard"
+    ]
+  },
+  {
+    "image": "data/images/0292.jpg",
+    "label": "bridge",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "bridge"
+    ]
+  },
+  {
+    "image": "data/images/0245.jpg",
+    "label": "bottle",
+    "path": [
+      "object",
+      "food_containers",
+      "bottle"
+    ]
+  },
+  {
+    "image": "data/images/0471.jpg",
+    "label": "chair",
+    "path": [
+      "object",
+      "household_furniture",
+      "chair"
+    ]
+  },
+  {
+    "image": "data/images/1157.jpg",
+    "label": "seal",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "seal"
+    ]
+  },
+  {
+    "image": "data/images/1576.jpg",
+    "label": "wolf",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "wolf"
+    ]
+  },
+  {
+    "image": "data/images/1272.jpg",
+    "label": "sunflower",
+    "path": [
+      "plant",
+      "flowers",
+      "sunflower"
+    ]
+  },
+  {
+    "image": "data/images/0527.jpg",
+    "label": "cockroach",
+    "path": [
+      "animal",
+      "insects",
+      "cockroach"
+    ]
+  },
+  {
+    "image": "data/images/1413.jpg",
+    "label": "tiger",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "tiger"
+    ]
+  },
+  {
+    "image": "data/images/0724.jpg",
+    "label": "keyboard",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "keyboard"
+    ]
+  },
+  {
+    "image": "data/images/0918.jpg",
+    "label": "orchid",
+    "path": [
+      "plant",
+      "flowers",
+      "orchid"
+    ]
+  },
+  {
+    "image": "data/images/0621.jpg",
+    "label": "dolphin",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "dolphin"
+    ]
+  },
+  {
+    "image": "data/images/1470.jpg",
+    "label": "trout",
+    "path": [
+      "animal",
+      "fish",
+      "trout"
+    ]
+  },
+  {
+    "image": "data/images/1331.jpg",
+    "label": "table",
+    "path": [
+      "object",
+      "household_furniture",
+      "table"
+    ]
+  },
+  {
+    "image": "data/images/0313.jpg",
+    "label": "bridge",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "bridge"
+    ]
+  },
+  {
+    "image": "data/images/0536.jpg",
+    "label": "cockroach",
+    "path": [
+      "animal",
+      "insects",
+      "cockroach"
+    ]
+  },
+  {
+    "image": "data/images/0792.jpg",
+    "label": "leopard",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "leopard"
+    ]
+  },
+  {
+    "image": "data/images/0762.jpg",
+    "label": "lamp",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "lamp"
+    ]
+  },
+  {
+    "image": "data/images/1538.jpg",
+    "label": "whale",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "whale"
+    ]
+  },
+  {
+    "image": "data/images/0677.jpg",
+    "label": "house",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "house"
+    ]
+  },
+  {
+    "image": "data/images/0165.jpg",
+    "label": "bee",
+    "path": [
+      "animal",
+      "insects",
+      "bee"
+    ]
+  },
+  {
+    "image": "data/images/0648.jpg",
+    "label": "flatfish",
+    "path": [
+      "animal",
+      "fish",
+      "flatfish"
+    ]
+  },
+  {
+    "image": "data/images/0465.jpg",
+    "label": "chair",
+    "path": [
+      "object",
+      "household_furniture",
+      "chair"
+    ]
+  },
+  {
+    "image": "data/images/0459.jpg",
+    "label": "chair",
+    "path": [
+      "object",
+      "household_furniture",
+      "chair"
+    ]
+  },
+  {
+    "image": "data/images/0920.jpg",
+    "label": "orchid",
+    "path": [
+      "plant",
+      "flowers",
+      "orchid"
+    ]
+  },
+  {
+    "image": "data/images/1382.jpg",
+    "label": "television",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "television"
+    ]
+  },
+  {
+    "image": "data/images/1006.jpg",
+    "label": "plate",
+    "path": [
+      "object",
+      "food_containers",
+      "plate"
+    ]
+  },
+  {
+    "image": "data/images/0500.jpg",
+    "label": "clock",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "clock"
+    ]
+  },
+  {
+    "image": "data/images/0012.jpg",
+    "label": "apple",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "apple"
+    ]
+  },
+  {
+    "image": "data/images/0202.jpg",
+    "label": "beetle",
+    "path": [
+      "animal",
+      "insects",
+      "beetle"
+    ]
+  },
+  {
+    "image": "data/images/0912.jpg",
+    "label": "orchid",
+    "path": [
+      "plant",
+      "flowers",
+      "orchid"
+    ]
+  },
+  {
+    "image": "data/images/1082.jpg",
+    "label": "ray",
+    "path": [
+      "animal",
+      "fish",
+      "ray"
+    ]
+  },
+  {
+    "image": "data/images/1573.jpg",
+    "label": "wolf",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "wolf"
+    ]
+  },
+  {
+    "image": "data/images/0394.jpg",
+    "label": "castle",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "castle"
+    ]
+  },
+  {
+    "image": "data/images/1129.jpg",
+    "label": "rose",
+    "path": [
+      "plant",
+      "flowers",
+      "rose"
+    ]
+  },
+  {
+    "image": "data/images/1496.jpg",
+    "label": "tulip",
+    "path": [
+      "plant",
+      "flowers",
+      "tulip"
+    ]
+  },
+  {
+    "image": "data/images/0277.jpg",
+    "label": "bowl",
+    "path": [
+      "object",
+      "food_containers",
+      "bowl"
+    ]
+  },
+  {
+    "image": "data/images/0118.jpg",
+    "label": "beaver",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "beaver"
+    ]
+  },
+  {
+    "image": "data/images/0572.jpg",
+    "label": "couch",
+    "path": [
+      "object",
+      "household_furniture",
+      "couch"
+    ]
+  },
+  {
+    "image": "data/images/0056.jpg",
+    "label": "aquarium_fish",
+    "path": [
+      "animal",
+      "fish",
+      "aquarium_fish"
+    ]
+  },
+  {
+    "image": "data/images/0930.jpg",
+    "label": "otter",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "otter"
+    ]
+  },
+  {
+    "image": "data/images/1421.jpg",
+    "label": "tiger",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "tiger"
+    ]
+  },
+  {
+    "image": "data/images/1161.jpg",
+    "label": "seal",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "seal"
+    ]
+  },
+  {
+    "image": "data/images/0808.jpg",
+    "label": "lion",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "lion"
+    ]
+  },
+  {
+    "image": "data/images/0089.jpg",
+    "label": "bear",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "bear"
+    ]
+  },
+  {
+    "image": "data/images/1120.jpg",
+    "label": "road",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "road"
+    ]
+  },
+  {
+    "image": "data/images/0386.jpg",
+    "label": "castle",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "castle"
+    ]
+  },
+  {
+    "image": "data/images/0436.jpg",
+    "label": "caterpillar",
+    "path": [
+      "animal",
+      "insects",
+      "caterpillar"
+    ]
+  },
+  {
+    "image": "data/images/0684.jpg",
+    "label": "house",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "house"
+    ]
+  },
+  {
+    "image": "data/images/0828.jpg",
+    "label": "lion",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "lion"
+    ]
+  },
+  {
+    "image": "data/images/0926.jpg",
+    "label": "orchid",
+    "path": [
+      "plant",
+      "flowers",
+      "orchid"
+    ]
+  },
+  {
+    "image": "data/images/1507.jpg",
+    "label": "wardrobe",
+    "path": [
+      "object",
+      "household_furniture",
+      "wardrobe"
+    ]
+  },
+  {
+    "image": "data/images/0757.jpg",
+    "label": "lamp",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "lamp"
+    ]
+  },
+  {
+    "image": "data/images/1004.jpg",
+    "label": "plate",
+    "path": [
+      "object",
+      "food_containers",
+      "plate"
+    ]
+  },
+  {
+    "image": "data/images/0365.jpg",
+    "label": "can",
+    "path": [
+      "object",
+      "food_containers",
+      "can"
+    ]
+  },
+  {
+    "image": "data/images/0369.jpg",
+    "label": "can",
+    "path": [
+      "object",
+      "food_containers",
+      "can"
+    ]
+  },
+  {
+    "image": "data/images/0886.jpg",
+    "label": "orange",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "orange"
+    ]
+  },
+  {
+    "image": "data/images/0409.jpg",
+    "label": "castle",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "castle"
+    ]
+  },
+  {
+    "image": "data/images/0772.jpg",
+    "label": "leopard",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "leopard"
+    ]
+  },
+  {
+    "image": "data/images/0923.jpg",
+    "label": "orchid",
+    "path": [
+      "plant",
+      "flowers",
+      "orchid"
+    ]
+  },
+  {
+    "image": "data/images/1138.jpg",
+    "label": "rose",
+    "path": [
+      "plant",
+      "flowers",
+      "rose"
+    ]
+  },
+  {
+    "image": "data/images/0854.jpg",
+    "label": "mushroom",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "mushroom"
+    ]
+  },
+  {
+    "image": "data/images/1594.jpg",
+    "label": "wolf",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "wolf"
+    ]
+  },
+  {
+    "image": "data/images/0946.jpg",
+    "label": "otter",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "otter"
+    ]
+  },
+  {
+    "image": "data/images/0734.jpg",
+    "label": "keyboard",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "keyboard"
+    ]
+  },
+  {
+    "image": "data/images/0190.jpg",
+    "label": "bee",
+    "path": [
+      "animal",
+      "insects",
+      "bee"
+    ]
+  },
+  {
+    "image": "data/images/1301.jpg",
+    "label": "sweet_pepper",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "sweet_pepper"
+    ]
+  },
+  {
+    "image": "data/images/0315.jpg",
+    "label": "bridge",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "bridge"
+    ]
+  },
+  {
+    "image": "data/images/0360.jpg",
+    "label": "can",
+    "path": [
+      "object",
+      "food_containers",
+      "can"
+    ]
+  },
+  {
+    "image": "data/images/0672.jpg",
+    "label": "flatfish",
+    "path": [
+      "animal",
+      "fish",
+      "flatfish"
+    ]
+  },
+  {
+    "image": "data/images/1141.jpg",
+    "label": "rose",
+    "path": [
+      "plant",
+      "flowers",
+      "rose"
+    ]
+  },
+  {
+    "image": "data/images/1505.jpg",
+    "label": "wardrobe",
+    "path": [
+      "object",
+      "household_furniture",
+      "wardrobe"
+    ]
+  },
+  {
+    "image": "data/images/0117.jpg",
+    "label": "beaver",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "beaver"
+    ]
+  },
+  {
+    "image": "data/images/0013.jpg",
+    "label": "apple",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "apple"
+    ]
+  },
+  {
+    "image": "data/images/1221.jpg",
+    "label": "skyscraper",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "skyscraper"
+    ]
+  },
+  {
+    "image": "data/images/1273.jpg",
+    "label": "sunflower",
+    "path": [
+      "plant",
+      "flowers",
+      "sunflower"
+    ]
+  },
+  {
+    "image": "data/images/0027.jpg",
+    "label": "apple",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "apple"
+    ]
+  },
+  {
+    "image": "data/images/1101.jpg",
+    "label": "road",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "road"
+    ]
+  },
+  {
+    "image": "data/images/1455.jpg",
+    "label": "trout",
+    "path": [
+      "animal",
+      "fish",
+      "trout"
+    ]
+  },
+  {
+    "image": "data/images/1002.jpg",
+    "label": "plate",
+    "path": [
+      "object",
+      "food_containers",
+      "plate"
+    ]
+  },
+  {
+    "image": "data/images/0151.jpg",
+    "label": "bed",
+    "path": [
+      "object",
+      "household_furniture",
+      "bed"
+    ]
+  },
+  {
+    "image": "data/images/0657.jpg",
+    "label": "flatfish",
+    "path": [
+      "animal",
+      "fish",
+      "flatfish"
+    ]
+  },
+  {
+    "image": "data/images/1094.jpg",
+    "label": "road",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "road"
+    ]
+  },
+  {
+    "image": "data/images/0484.jpg",
+    "label": "clock",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "clock"
+    ]
+  },
+  {
+    "image": "data/images/1424.jpg",
+    "label": "tiger",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "tiger"
+    ]
+  },
+  {
+    "image": "data/images/0405.jpg",
+    "label": "castle",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "castle"
+    ]
+  },
+  {
+    "image": "data/images/0502.jpg",
+    "label": "clock",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "clock"
+    ]
+  },
+  {
+    "image": "data/images/1136.jpg",
+    "label": "rose",
+    "path": [
+      "plant",
+      "flowers",
+      "rose"
+    ]
+  },
+  {
+    "image": "data/images/1356.jpg",
+    "label": "telephone",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "telephone"
+    ]
+  },
+  {
+    "image": "data/images/1263.jpg",
+    "label": "sunflower",
+    "path": [
+      "plant",
+      "flowers",
+      "sunflower"
+    ]
+  },
+  {
+    "image": "data/images/1407.jpg",
+    "label": "television",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "television"
+    ]
+  },
+  {
+    "image": "data/images/1566.jpg",
+    "label": "whale",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "whale"
+    ]
+  },
+  {
+    "image": "data/images/0463.jpg",
+    "label": "chair",
+    "path": [
+      "object",
+      "household_furniture",
+      "chair"
+    ]
+  },
+  {
+    "image": "data/images/0303.jpg",
+    "label": "bridge",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "bridge"
+    ]
+  },
+  {
+    "image": "data/images/0143.jpg",
+    "label": "bed",
+    "path": [
+      "object",
+      "household_furniture",
+      "bed"
+    ]
+  },
+  {
+    "image": "data/images/1264.jpg",
+    "label": "sunflower",
+    "path": [
+      "plant",
+      "flowers",
+      "sunflower"
+    ]
+  },
+  {
+    "image": "data/images/1364.jpg",
+    "label": "telephone",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "telephone"
+    ]
+  },
+  {
+    "image": "data/images/1480.jpg",
+    "label": "tulip",
+    "path": [
+      "plant",
+      "flowers",
+      "tulip"
+    ]
+  },
+  {
+    "image": "data/images/1086.jpg",
+    "label": "ray",
+    "path": [
+      "animal",
+      "fish",
+      "ray"
+    ]
+  },
+  {
+    "image": "data/images/1547.jpg",
+    "label": "whale",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "whale"
+    ]
+  },
+  {
+    "image": "data/images/1047.jpg",
+    "label": "poppy",
+    "path": [
+      "plant",
+      "flowers",
+      "poppy"
+    ]
+  },
+  {
+    "image": "data/images/0329.jpg",
+    "label": "butterfly",
+    "path": [
+      "animal",
+      "insects",
+      "butterfly"
+    ]
+  },
+  {
+    "image": "data/images/1422.jpg",
+    "label": "tiger",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "tiger"
+    ]
+  },
+  {
+    "image": "data/images/0472.jpg",
+    "label": "chair",
+    "path": [
+      "object",
+      "household_furniture",
+      "chair"
+    ]
+  },
+  {
+    "image": "data/images/0686.jpg",
+    "label": "house",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "house"
+    ]
+  },
+  {
+    "image": "data/images/0513.jpg",
+    "label": "cockroach",
+    "path": [
+      "animal",
+      "insects",
+      "cockroach"
+    ]
+  },
+  {
+    "image": "data/images/0265.jpg",
+    "label": "bowl",
+    "path": [
+      "object",
+      "food_containers",
+      "bowl"
+    ]
+  },
+  {
+    "image": "data/images/0439.jpg",
+    "label": "caterpillar",
+    "path": [
+      "animal",
+      "insects",
+      "caterpillar"
+    ]
+  },
+  {
+    "image": "data/images/0076.jpg",
+    "label": "bear",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "bear"
+    ]
+  },
+  {
+    "image": "data/images/0978.jpg",
+    "label": "pear",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "pear"
+    ]
+  },
+  {
+    "image": "data/images/0024.jpg",
+    "label": "apple",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "apple"
+    ]
+  },
+  {
+    "image": "data/images/1134.jpg",
+    "label": "rose",
+    "path": [
+      "plant",
+      "flowers",
+      "rose"
+    ]
+  },
+  {
+    "image": "data/images/1512.jpg",
+    "label": "wardrobe",
+    "path": [
+      "object",
+      "household_furniture",
+      "wardrobe"
+    ]
+  },
+  {
+    "image": "data/images/1213.jpg",
+    "label": "shark",
+    "path": [
+      "animal",
+      "fish",
+      "shark"
+    ]
+  },
+  {
+    "image": "data/images/0387.jpg",
+    "label": "castle",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "castle"
+    ]
+  },
+  {
+    "image": "data/images/1203.jpg",
+    "label": "shark",
+    "path": [
+      "animal",
+      "fish",
+      "shark"
+    ]
+  },
+  {
+    "image": "data/images/1119.jpg",
+    "label": "road",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "road"
+    ]
+  },
+  {
+    "image": "data/images/0356.jpg",
+    "label": "can",
+    "path": [
+      "object",
+      "food_containers",
+      "can"
+    ]
+  },
+  {
+    "image": "data/images/0519.jpg",
+    "label": "cockroach",
+    "path": [
+      "animal",
+      "insects",
+      "cockroach"
+    ]
+  },
+  {
+    "image": "data/images/1392.jpg",
+    "label": "television",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "television"
+    ]
+  },
+  {
+    "image": "data/images/0132.jpg",
+    "label": "bed",
+    "path": [
+      "object",
+      "household_furniture",
+      "bed"
+    ]
+  },
+  {
+    "image": "data/images/1410.jpg",
+    "label": "tiger",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "tiger"
+    ]
+  },
+  {
+    "image": "data/images/0191.jpg",
+    "label": "bee",
+    "path": [
+      "animal",
+      "insects",
+      "bee"
+    ]
+  },
+  {
+    "image": "data/images/0141.jpg",
+    "label": "bed",
+    "path": [
+      "object",
+      "household_furniture",
+      "bed"
+    ]
+  },
+  {
+    "image": "data/images/0107.jpg",
+    "label": "beaver",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "beaver"
+    ]
+  },
+  {
+    "image": "data/images/1065.jpg",
+    "label": "ray",
+    "path": [
+      "animal",
+      "fish",
+      "ray"
+    ]
+  },
+  {
+    "image": "data/images/0251.jpg",
+    "label": "bottle",
+    "path": [
+      "object",
+      "food_containers",
+      "bottle"
+    ]
+  },
+  {
+    "image": "data/images/1452.jpg",
+    "label": "trout",
+    "path": [
+      "animal",
+      "fish",
+      "trout"
+    ]
+  },
+  {
+    "image": "data/images/0154.jpg",
+    "label": "bed",
+    "path": [
+      "object",
+      "household_furniture",
+      "bed"
+    ]
+  },
+  {
+    "image": "data/images/1466.jpg",
+    "label": "trout",
+    "path": [
+      "animal",
+      "fish",
+      "trout"
+    ]
+  },
+  {
+    "image": "data/images/1353.jpg",
+    "label": "telephone",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "telephone"
+    ]
+  },
+  {
+    "image": "data/images/0282.jpg",
+    "label": "bowl",
+    "path": [
+      "object",
+      "food_containers",
+      "bowl"
+    ]
+  },
+  {
+    "image": "data/images/0029.jpg",
+    "label": "apple",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "apple"
+    ]
+  },
+  {
+    "image": "data/images/0306.jpg",
+    "label": "bridge",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "bridge"
+    ]
+  },
+  {
+    "image": "data/images/1173.jpg",
+    "label": "seal",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "seal"
+    ]
+  },
+  {
+    "image": "data/images/0869.jpg",
+    "label": "orange",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "orange"
+    ]
+  },
+  {
+    "image": "data/images/0839.jpg",
+    "label": "mushroom",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "mushroom"
+    ]
+  },
+  {
+    "image": "data/images/1484.jpg",
+    "label": "tulip",
+    "path": [
+      "plant",
+      "flowers",
+      "tulip"
+    ]
+  },
+  {
+    "image": "data/images/0746.jpg",
+    "label": "lamp",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "lamp"
+    ]
+  },
+  {
+    "image": "data/images/1110.jpg",
+    "label": "road",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "road"
+    ]
+  },
+  {
+    "image": "data/images/0733.jpg",
+    "label": "keyboard",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "keyboard"
+    ]
+  },
+  {
+    "image": "data/images/1415.jpg",
+    "label": "tiger",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "tiger"
+    ]
+  },
+  {
+    "image": "data/images/0263.jpg",
+    "label": "bowl",
+    "path": [
+      "object",
+      "food_containers",
+      "bowl"
+    ]
+  },
+  {
+    "image": "data/images/0988.jpg",
+    "label": "pear",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "pear"
+    ]
+  },
+  {
+    "image": "data/images/0125.jpg",
+    "label": "beaver",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "beaver"
+    ]
+  },
+  {
+    "image": "data/images/1008.jpg",
+    "label": "plate",
+    "path": [
+      "object",
+      "food_containers",
+      "plate"
+    ]
+  },
+  {
+    "image": "data/images/0908.jpg",
+    "label": "orchid",
+    "path": [
+      "plant",
+      "flowers",
+      "orchid"
+    ]
+  },
+  {
+    "image": "data/images/1574.jpg",
+    "label": "wolf",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "wolf"
+    ]
+  },
+  {
+    "image": "data/images/0206.jpg",
+    "label": "beetle",
+    "path": [
+      "animal",
+      "insects",
+      "beetle"
+    ]
+  },
+  {
+    "image": "data/images/0767.jpg",
+    "label": "lamp",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "lamp"
+    ]
+  },
+  {
+    "image": "data/images/0434.jpg",
+    "label": "caterpillar",
+    "path": [
+      "animal",
+      "insects",
+      "caterpillar"
+    ]
+  },
+  {
+    "image": "data/images/0335.jpg",
+    "label": "butterfly",
+    "path": [
+      "animal",
+      "insects",
+      "butterfly"
+    ]
+  },
+  {
+    "image": "data/images/0066.jpg",
+    "label": "bear",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "bear"
+    ]
+  },
+  {
+    "image": "data/images/0927.jpg",
+    "label": "orchid",
+    "path": [
+      "plant",
+      "flowers",
+      "orchid"
+    ]
+  },
+  {
+    "image": "data/images/0491.jpg",
+    "label": "clock",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "clock"
+    ]
+  },
+  {
+    "image": "data/images/0731.jpg",
+    "label": "keyboard",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "keyboard"
+    ]
+  },
+  {
+    "image": "data/images/0490.jpg",
+    "label": "clock",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "clock"
+    ]
+  },
+  {
+    "image": "data/images/0136.jpg",
+    "label": "bed",
+    "path": [
+      "object",
+      "household_furniture",
+      "bed"
+    ]
+  },
+  {
+    "image": "data/images/0633.jpg",
+    "label": "dolphin",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "dolphin"
+    ]
+  },
+  {
+    "image": "data/images/1249.jpg",
+    "label": "sunflower",
+    "path": [
+      "plant",
+      "flowers",
+      "sunflower"
+    ]
+  },
+  {
+    "image": "data/images/0902.jpg",
+    "label": "orchid",
+    "path": [
+      "plant",
+      "flowers",
+      "orchid"
+    ]
+  },
+  {
+    "image": "data/images/1208.jpg",
+    "label": "shark",
+    "path": [
+      "animal",
+      "fish",
+      "shark"
+    ]
+  },
+  {
+    "image": "data/images/1256.jpg",
+    "label": "sunflower",
+    "path": [
+      "plant",
+      "flowers",
+      "sunflower"
+    ]
+  },
+  {
+    "image": "data/images/1513.jpg",
+    "label": "wardrobe",
+    "path": [
+      "object",
+      "household_furniture",
+      "wardrobe"
+    ]
+  },
+  {
+    "image": "data/images/0557.jpg",
+    "label": "couch",
+    "path": [
+      "object",
+      "household_furniture",
+      "couch"
+    ]
+  },
+  {
+    "image": "data/images/0287.jpg",
+    "label": "bowl",
+    "path": [
+      "object",
+      "food_containers",
+      "bowl"
+    ]
+  },
+  {
+    "image": "data/images/0903.jpg",
+    "label": "orchid",
+    "path": [
+      "plant",
+      "flowers",
+      "orchid"
+    ]
+  },
+  {
+    "image": "data/images/0661.jpg",
+    "label": "flatfish",
+    "path": [
+      "animal",
+      "fish",
+      "flatfish"
+    ]
+  },
+  {
+    "image": "data/images/1437.jpg",
+    "label": "tiger",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "tiger"
+    ]
+  },
+  {
+    "image": "data/images/1150.jpg",
+    "label": "rose",
+    "path": [
+      "plant",
+      "flowers",
+      "rose"
+    ]
+  },
+  {
+    "image": "data/images/0460.jpg",
+    "label": "chair",
+    "path": [
+      "object",
+      "household_furniture",
+      "chair"
+    ]
+  },
+  {
+    "image": "data/images/0868.jpg",
+    "label": "orange",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "orange"
+    ]
+  },
+  {
+    "image": "data/images/1188.jpg",
+    "label": "shark",
+    "path": [
+      "animal",
+      "fish",
+      "shark"
+    ]
+  },
+  {
+    "image": "data/images/1503.jpg",
+    "label": "tulip",
+    "path": [
+      "plant",
+      "flowers",
+      "tulip"
+    ]
+  },
+  {
+    "image": "data/images/0487.jpg",
+    "label": "clock",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "clock"
+    ]
+  },
+  {
+    "image": "data/images/0236.jpg",
+    "label": "bottle",
+    "path": [
+      "object",
+      "food_containers",
+      "bottle"
+    ]
+  },
+  {
+    "image": "data/images/1343.jpg",
+    "label": "table",
+    "path": [
+      "object",
+      "household_furniture",
+      "table"
+    ]
+  },
+  {
+    "image": "data/images/0744.jpg",
+    "label": "lamp",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "lamp"
+    ]
+  },
+  {
+    "image": "data/images/0646.jpg",
+    "label": "flatfish",
+    "path": [
+      "animal",
+      "fish",
+      "flatfish"
+    ]
+  },
+  {
+    "image": "data/images/1230.jpg",
+    "label": "skyscraper",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "skyscraper"
+    ]
+  },
+  {
+    "image": "data/images/0540.jpg",
+    "label": "cockroach",
+    "path": [
+      "animal",
+      "insects",
+      "cockroach"
+    ]
+  },
+  {
+    "image": "data/images/1350.jpg",
+    "label": "telephone",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "telephone"
+    ]
+  },
+  {
+    "image": "data/images/0269.jpg",
+    "label": "bowl",
+    "path": [
+      "object",
+      "food_containers",
+      "bowl"
+    ]
+  },
+  {
+    "image": "data/images/0639.jpg",
+    "label": "dolphin",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "dolphin"
+    ]
+  },
+  {
+    "image": "data/images/0981.jpg",
+    "label": "pear",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "pear"
+    ]
+  },
+  {
+    "image": "data/images/0961.jpg",
+    "label": "pear",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "pear"
+    ]
+  },
+  {
+    "image": "data/images/1278.jpg",
+    "label": "sunflower",
+    "path": [
+      "plant",
+      "flowers",
+      "sunflower"
+    ]
+  },
+  {
+    "image": "data/images/1164.jpg",
+    "label": "seal",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "seal"
+    ]
+  },
+  {
+    "image": "data/images/1519.jpg",
+    "label": "wardrobe",
+    "path": [
+      "object",
+      "household_furniture",
+      "wardrobe"
+    ]
+  },
+  {
+    "image": "data/images/0108.jpg",
+    "label": "beaver",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "beaver"
+    ]
+  },
+  {
+    "image": "data/images/1088.jpg",
+    "label": "ray",
+    "path": [
+      "animal",
+      "fish",
+      "ray"
+    ]
+  },
+  {
+    "image": "data/images/0372.jpg",
+    "label": "can",
+    "path": [
+      "object",
+      "food_containers",
+      "can"
+    ]
+  },
+  {
+    "image": "data/images/0003.jpg",
+    "label": "apple",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "apple"
+    ]
+  },
+  {
+    "image": "data/images/1420.jpg",
+    "label": "tiger",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "tiger"
+    ]
+  },
+  {
+    "image": "data/images/0933.jpg",
+    "label": "otter",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "otter"
+    ]
+  },
+  {
+    "image": "data/images/1085.jpg",
+    "label": "ray",
+    "path": [
+      "animal",
+      "fish",
+      "ray"
+    ]
+  },
+  {
+    "image": "data/images/1302.jpg",
+    "label": "sweet_pepper",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "sweet_pepper"
+    ]
+  },
+  {
+    "image": "data/images/1235.jpg",
+    "label": "skyscraper",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "skyscraper"
+    ]
+  },
+  {
+    "image": "data/images/1104.jpg",
+    "label": "road",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "road"
+    ]
+  },
+  {
+    "image": "data/images/1346.jpg",
+    "label": "telephone",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "telephone"
+    ]
+  },
+  {
+    "image": "data/images/0223.jpg",
+    "label": "beetle",
+    "path": [
+      "animal",
+      "insects",
+      "beetle"
+    ]
+  },
+  {
+    "image": "data/images/1010.jpg",
+    "label": "plate",
+    "path": [
+      "object",
+      "food_containers",
+      "plate"
+    ]
+  },
+  {
+    "image": "data/images/1114.jpg",
+    "label": "road",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "road"
+    ]
+  },
+  {
+    "image": "data/images/0033.jpg",
+    "label": "aquarium_fish",
+    "path": [
+      "animal",
+      "fish",
+      "aquarium_fish"
+    ]
+  },
+  {
+    "image": "data/images/0507.jpg",
+    "label": "clock",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "clock"
+    ]
+  },
+  {
+    "image": "data/images/0668.jpg",
+    "label": "flatfish",
+    "path": [
+      "animal",
+      "fish",
+      "flatfish"
+    ]
+  },
+  {
+    "image": "data/images/1525.jpg",
+    "label": "wardrobe",
+    "path": [
+      "object",
+      "household_furniture",
+      "wardrobe"
+    ]
+  },
+  {
+    "image": "data/images/0736.jpg",
+    "label": "keyboard",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "keyboard"
+    ]
+  },
+  {
+    "image": "data/images/0567.jpg",
+    "label": "couch",
+    "path": [
+      "object",
+      "household_furniture",
+      "couch"
+    ]
+  },
+  {
+    "image": "data/images/1163.jpg",
+    "label": "seal",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "seal"
+    ]
+  },
+  {
+    "image": "data/images/0097.jpg",
+    "label": "beaver",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "beaver"
+    ]
+  },
+  {
+    "image": "data/images/1097.jpg",
+    "label": "road",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "road"
+    ]
+  },
+  {
+    "image": "data/images/1332.jpg",
+    "label": "table",
+    "path": [
+      "object",
+      "household_furniture",
+      "table"
+    ]
+  },
+  {
+    "image": "data/images/1132.jpg",
+    "label": "rose",
+    "path": [
+      "plant",
+      "flowers",
+      "rose"
+    ]
+  },
+  {
+    "image": "data/images/0037.jpg",
+    "label": "aquarium_fish",
+    "path": [
+      "animal",
+      "fish",
+      "aquarium_fish"
+    ]
+  },
+  {
+    "image": "data/images/1303.jpg",
+    "label": "sweet_pepper",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "sweet_pepper"
+    ]
+  },
+  {
+    "image": "data/images/0551.jpg",
+    "label": "couch",
+    "path": [
+      "object",
+      "household_furniture",
+      "couch"
+    ]
+  },
+  {
+    "image": "data/images/0480.jpg",
+    "label": "chair",
+    "path": [
+      "object",
+      "household_furniture",
+      "chair"
+    ]
+  },
+  {
+    "image": "data/images/1186.jpg",
+    "label": "shark",
+    "path": [
+      "animal",
+      "fish",
+      "shark"
+    ]
+  },
+  {
+    "image": "data/images/0938.jpg",
+    "label": "otter",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "otter"
+    ]
+  },
+  {
+    "image": "data/images/0894.jpg",
+    "label": "orange",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "orange"
+    ]
+  },
+  {
+    "image": "data/images/0371.jpg",
+    "label": "can",
+    "path": [
+      "object",
+      "food_containers",
+      "can"
+    ]
+  },
+  {
+    "image": "data/images/0858.jpg",
+    "label": "mushroom",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "mushroom"
+    ]
+  },
+  {
+    "image": "data/images/0866.jpg",
+    "label": "orange",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "orange"
+    ]
+  },
+  {
+    "image": "data/images/0359.jpg",
+    "label": "can",
+    "path": [
+      "object",
+      "food_containers",
+      "can"
+    ]
+  },
+  {
+    "image": "data/images/0268.jpg",
+    "label": "bowl",
+    "path": [
+      "object",
+      "food_containers",
+      "bowl"
+    ]
+  },
+  {
+    "image": "data/images/0607.jpg",
+    "label": "cup",
+    "path": [
+      "object",
+      "food_containers",
+      "cup"
+    ]
+  },
+  {
+    "image": "data/images/0030.jpg",
+    "label": "apple",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "apple"
+    ]
+  },
+  {
+    "image": "data/images/1575.jpg",
+    "label": "wolf",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "wolf"
+    ]
+  },
+  {
+    "image": "data/images/1093.jpg",
+    "label": "road",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "road"
+    ]
+  },
+  {
+    "image": "data/images/0483.jpg",
+    "label": "clock",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "clock"
+    ]
+  },
+  {
+    "image": "data/images/1148.jpg",
+    "label": "rose",
+    "path": [
+      "plant",
+      "flowers",
+      "rose"
+    ]
+  },
+  {
+    "image": "data/images/0656.jpg",
+    "label": "flatfish",
+    "path": [
+      "animal",
+      "fish",
+      "flatfish"
+    ]
+  },
+  {
+    "image": "data/images/1308.jpg",
+    "label": "sweet_pepper",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "sweet_pepper"
+    ]
+  },
+  {
+    "image": "data/images/0237.jpg",
+    "label": "bottle",
+    "path": [
+      "object",
+      "food_containers",
+      "bottle"
+    ]
+  },
+  {
+    "image": "data/images/0924.jpg",
+    "label": "orchid",
+    "path": [
+      "plant",
+      "flowers",
+      "orchid"
+    ]
+  },
+  {
+    "image": "data/images/0588.jpg",
+    "label": "cup",
+    "path": [
+      "object",
+      "food_containers",
+      "cup"
+    ]
+  },
+  {
+    "image": "data/images/1130.jpg",
+    "label": "rose",
+    "path": [
+      "plant",
+      "flowers",
+      "rose"
+    ]
+  },
+  {
+    "image": "data/images/0344.jpg",
+    "label": "butterfly",
+    "path": [
+      "animal",
+      "insects",
+      "butterfly"
+    ]
+  },
+  {
+    "image": "data/images/1232.jpg",
+    "label": "skyscraper",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "skyscraper"
+    ]
+  },
+  {
+    "image": "data/images/1518.jpg",
+    "label": "wardrobe",
+    "path": [
+      "object",
+      "household_furniture",
+      "wardrobe"
+    ]
+  },
+  {
+    "image": "data/images/0447.jpg",
+    "label": "caterpillar",
+    "path": [
+      "animal",
+      "insects",
+      "caterpillar"
+    ]
+  },
+  {
+    "image": "data/images/0727.jpg",
+    "label": "keyboard",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "keyboard"
+    ]
+  },
+  {
+    "image": "data/images/1218.jpg",
+    "label": "skyscraper",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "skyscraper"
+    ]
+  },
+  {
+    "image": "data/images/0709.jpg",
+    "label": "keyboard",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "keyboard"
+    ]
+  },
+  {
+    "image": "data/images/0542.jpg",
+    "label": "cockroach",
+    "path": [
+      "animal",
+      "insects",
+      "cockroach"
+    ]
+  },
+  {
+    "image": "data/images/0578.jpg",
+    "label": "cup",
+    "path": [
+      "object",
+      "food_containers",
+      "cup"
+    ]
+  },
+  {
+    "image": "data/images/1267.jpg",
+    "label": "sunflower",
+    "path": [
+      "plant",
+      "flowers",
+      "sunflower"
+    ]
+  },
+  {
+    "image": "data/images/0835.jpg",
+    "label": "mushroom",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "mushroom"
+    ]
+  },
+  {
+    "image": "data/images/0450.jpg",
+    "label": "chair",
+    "path": [
+      "object",
+      "household_furniture",
+      "chair"
+    ]
+  },
+  {
+    "image": "data/images/1071.jpg",
+    "label": "ray",
+    "path": [
+      "animal",
+      "fish",
+      "ray"
+    ]
+  },
+  {
+    "image": "data/images/0564.jpg",
+    "label": "couch",
+    "path": [
+      "object",
+      "household_furniture",
+      "couch"
+    ]
+  },
+  {
+    "image": "data/images/1486.jpg",
+    "label": "tulip",
+    "path": [
+      "plant",
+      "flowers",
+      "tulip"
+    ]
+  },
+  {
+    "image": "data/images/1057.jpg",
+    "label": "ray",
+    "path": [
+      "animal",
+      "fish",
+      "ray"
+    ]
+  },
+  {
+    "image": "data/images/0461.jpg",
+    "label": "chair",
+    "path": [
+      "object",
+      "household_furniture",
+      "chair"
+    ]
+  },
+  {
+    "image": "data/images/0023.jpg",
+    "label": "apple",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "apple"
+    ]
+  },
+  {
+    "image": "data/images/1430.jpg",
+    "label": "tiger",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "tiger"
+    ]
+  },
+  {
+    "image": "data/images/1327.jpg",
+    "label": "table",
+    "path": [
+      "object",
+      "household_furniture",
+      "table"
+    ]
+  },
+  {
+    "image": "data/images/0382.jpg",
+    "label": "can",
+    "path": [
+      "object",
+      "food_containers",
+      "can"
+    ]
+  },
+  {
+    "image": "data/images/0756.jpg",
+    "label": "lamp",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "lamp"
+    ]
+  },
+  {
+    "image": "data/images/1500.jpg",
+    "label": "tulip",
+    "path": [
+      "plant",
+      "flowers",
+      "tulip"
+    ]
+  },
+  {
+    "image": "data/images/0128.jpg",
+    "label": "beaver",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "beaver"
+    ]
+  },
+  {
+    "image": "data/images/1491.jpg",
+    "label": "tulip",
+    "path": [
+      "plant",
+      "flowers",
+      "tulip"
+    ]
+  },
+  {
+    "image": "data/images/0840.jpg",
+    "label": "mushroom",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "mushroom"
+    ]
+  },
+  {
+    "image": "data/images/0534.jpg",
+    "label": "cockroach",
+    "path": [
+      "animal",
+      "insects",
+      "cockroach"
+    ]
+  },
+  {
+    "image": "data/images/0653.jpg",
+    "label": "flatfish",
+    "path": [
+      "animal",
+      "fish",
+      "flatfish"
+    ]
+  },
+  {
+    "image": "data/images/1324.jpg",
+    "label": "table",
+    "path": [
+      "object",
+      "household_furniture",
+      "table"
+    ]
+  },
+  {
+    "image": "data/images/0937.jpg",
+    "label": "otter",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "otter"
+    ]
+  },
+  {
+    "image": "data/images/1031.jpg",
+    "label": "poppy",
+    "path": [
+      "plant",
+      "flowers",
+      "poppy"
+    ]
+  },
+  {
+    "image": "data/images/1487.jpg",
+    "label": "tulip",
+    "path": [
+      "plant",
+      "flowers",
+      "tulip"
+    ]
+  },
+  {
+    "image": "data/images/0171.jpg",
+    "label": "bee",
+    "path": [
+      "animal",
+      "insects",
+      "bee"
+    ]
+  },
+  {
+    "image": "data/images/0025.jpg",
+    "label": "apple",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "apple"
+    ]
+  },
+  {
+    "image": "data/images/0875.jpg",
+    "label": "orange",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "orange"
+    ]
+  },
+  {
+    "image": "data/images/0523.jpg",
+    "label": "cockroach",
+    "path": [
+      "animal",
+      "insects",
+      "cockroach"
+    ]
+  },
+  {
+    "image": "data/images/0252.jpg",
+    "label": "bottle",
+    "path": [
+      "object",
+      "food_containers",
+      "bottle"
+    ]
+  },
+  {
+    "image": "data/images/0443.jpg",
+    "label": "caterpillar",
+    "path": [
+      "animal",
+      "insects",
+      "caterpillar"
+    ]
+  },
+  {
+    "image": "data/images/0690.jpg",
+    "label": "house",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "house"
+    ]
+  },
+  {
+    "image": "data/images/0451.jpg",
+    "label": "chair",
+    "path": [
+      "object",
+      "household_furniture",
+      "chair"
+    ]
+  },
+  {
+    "image": "data/images/1529.jpg",
+    "label": "wardrobe",
+    "path": [
+      "object",
+      "household_furniture",
+      "wardrobe"
+    ]
+  },
+  {
+    "image": "data/images/1003.jpg",
+    "label": "plate",
+    "path": [
+      "object",
+      "food_containers",
+      "plate"
+    ]
+  },
+  {
+    "image": "data/images/0711.jpg",
+    "label": "keyboard",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "keyboard"
+    ]
+  },
+  {
+    "image": "data/images/0417.jpg",
+    "label": "caterpillar",
+    "path": [
+      "animal",
+      "insects",
+      "caterpillar"
+    ]
+  },
+  {
+    "image": "data/images/0120.jpg",
+    "label": "beaver",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "beaver"
+    ]
+  },
+  {
+    "image": "data/images/0420.jpg",
+    "label": "caterpillar",
+    "path": [
+      "animal",
+      "insects",
+      "caterpillar"
+    ]
+  },
+  {
+    "image": "data/images/1457.jpg",
+    "label": "trout",
+    "path": [
+      "animal",
+      "fish",
+      "trout"
+    ]
+  },
+  {
+    "image": "data/images/1561.jpg",
+    "label": "whale",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "whale"
+    ]
+  },
+  {
+    "image": "data/images/1506.jpg",
+    "label": "wardrobe",
+    "path": [
+      "object",
+      "household_furniture",
+      "wardrobe"
+    ]
+  },
+  {
+    "image": "data/images/1497.jpg",
+    "label": "tulip",
+    "path": [
+      "plant",
+      "flowers",
+      "tulip"
+    ]
+  },
+  {
+    "image": "data/images/0880.jpg",
+    "label": "orange",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "orange"
+    ]
+  },
+  {
+    "image": "data/images/0147.jpg",
+    "label": "bed",
+    "path": [
+      "object",
+      "household_furniture",
+      "bed"
+    ]
+  },
+  {
+    "image": "data/images/0432.jpg",
+    "label": "caterpillar",
+    "path": [
+      "animal",
+      "insects",
+      "caterpillar"
+    ]
+  },
+  {
+    "image": "data/images/0397.jpg",
+    "label": "castle",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "castle"
+    ]
+  },
+  {
+    "image": "data/images/0283.jpg",
+    "label": "bowl",
+    "path": [
+      "object",
+      "food_containers",
+      "bowl"
+    ]
+  },
+  {
+    "image": "data/images/1314.jpg",
+    "label": "table",
+    "path": [
+      "object",
+      "household_furniture",
+      "table"
+    ]
+  },
+  {
+    "image": "data/images/1434.jpg",
+    "label": "tiger",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "tiger"
+    ]
+  },
+  {
+    "image": "data/images/0765.jpg",
+    "label": "lamp",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "lamp"
+    ]
+  },
+  {
+    "image": "data/images/1508.jpg",
+    "label": "wardrobe",
+    "path": [
+      "object",
+      "household_furniture",
+      "wardrobe"
+    ]
+  },
+  {
+    "image": "data/images/1024.jpg",
+    "label": "plate",
+    "path": [
+      "object",
+      "food_containers",
+      "plate"
+    ]
+  },
+  {
+    "image": "data/images/1193.jpg",
+    "label": "shark",
+    "path": [
+      "animal",
+      "fish",
+      "shark"
+    ]
+  },
+  {
+    "image": "data/images/0039.jpg",
+    "label": "aquarium_fish",
+    "path": [
+      "animal",
+      "fish",
+      "aquarium_fish"
+    ]
+  },
+  {
+    "image": "data/images/0573.jpg",
+    "label": "couch",
+    "path": [
+      "object",
+      "household_furniture",
+      "couch"
+    ]
+  },
+  {
+    "image": "data/images/1139.jpg",
+    "label": "rose",
+    "path": [
+      "plant",
+      "flowers",
+      "rose"
+    ]
+  },
+  {
+    "image": "data/images/1493.jpg",
+    "label": "tulip",
+    "path": [
+      "plant",
+      "flowers",
+      "tulip"
+    ]
+  },
+  {
+    "image": "data/images/0395.jpg",
+    "label": "castle",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "castle"
+    ]
+  },
+  {
+    "image": "data/images/0049.jpg",
+    "label": "aquarium_fish",
+    "path": [
+      "animal",
+      "fish",
+      "aquarium_fish"
+    ]
+  },
+  {
+    "image": "data/images/1229.jpg",
+    "label": "skyscraper",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "skyscraper"
+    ]
+  },
+  {
+    "image": "data/images/1425.jpg",
+    "label": "tiger",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "tiger"
+    ]
+  },
+  {
+    "image": "data/images/1245.jpg",
+    "label": "skyscraper",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "skyscraper"
+    ]
+  },
+  {
+    "image": "data/images/1204.jpg",
+    "label": "shark",
+    "path": [
+      "animal",
+      "fish",
+      "shark"
+    ]
+  },
+  {
+    "image": "data/images/0054.jpg",
+    "label": "aquarium_fish",
+    "path": [
+      "animal",
+      "fish",
+      "aquarium_fish"
+    ]
+  },
+  {
+    "image": "data/images/0651.jpg",
+    "label": "flatfish",
+    "path": [
+      "animal",
+      "fish",
+      "flatfish"
+    ]
+  },
+  {
+    "image": "data/images/0207.jpg",
+    "label": "beetle",
+    "path": [
+      "animal",
+      "insects",
+      "beetle"
+    ]
+  },
+  {
+    "image": "data/images/0919.jpg",
+    "label": "orchid",
+    "path": [
+      "plant",
+      "flowers",
+      "orchid"
+    ]
+  },
+  {
+    "image": "data/images/1151.jpg",
+    "label": "rose",
+    "path": [
+      "plant",
+      "flowers",
+      "rose"
+    ]
+  },
+  {
+    "image": "data/images/1510.jpg",
+    "label": "wardrobe",
+    "path": [
+      "object",
+      "household_furniture",
+      "wardrobe"
+    ]
+  },
+  {
+    "image": "data/images/1239.jpg",
+    "label": "skyscraper",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "skyscraper"
+    ]
+  },
+  {
+    "image": "data/images/0769.jpg",
+    "label": "leopard",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "leopard"
+    ]
+  },
+  {
+    "image": "data/images/1200.jpg",
+    "label": "shark",
+    "path": [
+      "animal",
+      "fish",
+      "shark"
+    ]
+  },
+  {
+    "image": "data/images/0717.jpg",
+    "label": "keyboard",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "keyboard"
+    ]
+  },
+  {
+    "image": "data/images/0412.jpg",
+    "label": "castle",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "castle"
+    ]
+  },
+  {
+    "image": "data/images/1383.jpg",
+    "label": "television",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "television"
+    ]
+  },
+  {
+    "image": "data/images/1103.jpg",
+    "label": "road",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "road"
+    ]
+  },
+  {
+    "image": "data/images/1436.jpg",
+    "label": "tiger",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "tiger"
+    ]
+  },
+  {
+    "image": "data/images/0975.jpg",
+    "label": "pear",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "pear"
+    ]
+  },
+  {
+    "image": "data/images/0221.jpg",
+    "label": "beetle",
+    "path": [
+      "animal",
+      "insects",
+      "beetle"
+    ]
+  },
+  {
+    "image": "data/images/1571.jpg",
+    "label": "wolf",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "wolf"
+    ]
+  },
+  {
+    "image": "data/images/0286.jpg",
+    "label": "bowl",
+    "path": [
+      "object",
+      "food_containers",
+      "bowl"
+    ]
+  },
+  {
+    "image": "data/images/1463.jpg",
+    "label": "trout",
+    "path": [
+      "animal",
+      "fish",
+      "trout"
+    ]
+  },
+  {
+    "image": "data/images/0084.jpg",
+    "label": "bear",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "bear"
+    ]
+  },
+  {
+    "image": "data/images/1060.jpg",
+    "label": "ray",
+    "path": [
+      "animal",
+      "fish",
+      "ray"
+    ]
+  },
+  {
+    "image": "data/images/0837.jpg",
+    "label": "mushroom",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "mushroom"
+    ]
+  },
+  {
+    "image": "data/images/0532.jpg",
+    "label": "cockroach",
+    "path": [
+      "animal",
+      "insects",
+      "cockroach"
+    ]
+  },
+  {
+    "image": "data/images/1304.jpg",
+    "label": "sweet_pepper",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "sweet_pepper"
+    ]
+  },
+  {
+    "image": "data/images/1404.jpg",
+    "label": "television",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "television"
+    ]
+  },
+  {
+    "image": "data/images/0836.jpg",
+    "label": "mushroom",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "mushroom"
+    ]
+  },
+  {
+    "image": "data/images/0906.jpg",
+    "label": "orchid",
+    "path": [
+      "plant",
+      "flowers",
+      "orchid"
+    ]
+  },
+  {
+    "image": "data/images/1340.jpg",
+    "label": "table",
+    "path": [
+      "object",
+      "household_furniture",
+      "table"
+    ]
+  },
+  {
+    "image": "data/images/0085.jpg",
+    "label": "bear",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "bear"
+    ]
+  },
+  {
+    "image": "data/images/0336.jpg",
+    "label": "butterfly",
+    "path": [
+      "animal",
+      "insects",
+      "butterfly"
+    ]
+  },
+  {
+    "image": "data/images/0613.jpg",
+    "label": "dolphin",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "dolphin"
+    ]
+  },
+  {
+    "image": "data/images/0955.jpg",
+    "label": "otter",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "otter"
+    ]
+  },
+  {
+    "image": "data/images/1167.jpg",
+    "label": "seal",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "seal"
+    ]
+  },
+  {
+    "image": "data/images/0261.jpg",
+    "label": "bowl",
+    "path": [
+      "object",
+      "food_containers",
+      "bowl"
+    ]
+  },
+  {
+    "image": "data/images/1051.jpg",
+    "label": "poppy",
+    "path": [
+      "plant",
+      "flowers",
+      "poppy"
+    ]
+  },
+  {
+    "image": "data/images/1589.jpg",
+    "label": "wolf",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "wolf"
+    ]
+  },
+  {
+    "image": "data/images/1435.jpg",
+    "label": "tiger",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "tiger"
+    ]
+  },
+  {
+    "image": "data/images/1115.jpg",
+    "label": "road",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "road"
+    ]
+  },
+  {
+    "image": "data/images/0974.jpg",
+    "label": "pear",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "pear"
+    ]
+  },
+  {
+    "image": "data/images/0729.jpg",
+    "label": "keyboard",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "keyboard"
+    ]
+  },
+  {
+    "image": "data/images/1469.jpg",
+    "label": "trout",
+    "path": [
+      "animal",
+      "fish",
+      "trout"
+    ]
+  },
+  {
+    "image": "data/images/0258.jpg",
+    "label": "bowl",
+    "path": [
+      "object",
+      "food_containers",
+      "bowl"
+    ]
+  },
+  {
+    "image": "data/images/1374.jpg",
+    "label": "telephone",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "telephone"
+    ]
+  },
+  {
+    "image": "data/images/0010.jpg",
+    "label": "apple",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "apple"
+    ]
+  },
+  {
+    "image": "data/images/0996.jpg",
+    "label": "plate",
+    "path": [
+      "object",
+      "food_containers",
+      "plate"
+    ]
+  },
+  {
+    "image": "data/images/0865.jpg",
+    "label": "orange",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "orange"
+    ]
+  },
+  {
+    "image": "data/images/1175.jpg",
+    "label": "seal",
+    "path": [
+      "animal",
+      "aquatic_mammals",
+      "seal"
+    ]
+  },
+  {
+    "image": "data/images/0083.jpg",
+    "label": "bear",
+    "path": [
+      "animal",
+      "large_carnivores",
+      "bear"
+    ]
+  },
+  {
+    "image": "data/images/0230.jpg",
+    "label": "bottle",
+    "path": [
+      "object",
+      "food_containers",
+      "bottle"
+    ]
+  },
+  {
+    "image": "data/images/1458.jpg",
+    "label": "trout",
+    "path": [
+      "animal",
+      "fish",
+      "trout"
+    ]
+  },
+  {
+    "image": "data/images/1216.jpg",
+    "label": "shark",
+    "path": [
+      "animal",
+      "fish",
+      "shark"
+    ]
+  },
+  {
+    "image": "data/images/1007.jpg",
+    "label": "plate",
+    "path": [
+      "object",
+      "food_containers",
+      "plate"
+    ]
+  },
+  {
+    "image": "data/images/0510.jpg",
+    "label": "clock",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "clock"
+    ]
+  },
+  {
+    "image": "data/images/0713.jpg",
+    "label": "keyboard",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "keyboard"
+    ]
+  },
+  {
+    "image": "data/images/1197.jpg",
+    "label": "shark",
+    "path": [
+      "animal",
+      "fish",
+      "shark"
+    ]
+  },
+  {
+    "image": "data/images/0878.jpg",
+    "label": "orange",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "orange"
+    ]
+  },
+  {
+    "image": "data/images/0522.jpg",
+    "label": "cockroach",
+    "path": [
+      "animal",
+      "insects",
+      "cockroach"
+    ]
+  },
+  {
+    "image": "data/images/0354.jpg",
+    "label": "can",
+    "path": [
+      "object",
+      "food_containers",
+      "can"
+    ]
+  },
+  {
+    "image": "data/images/0184.jpg",
+    "label": "bee",
+    "path": [
+      "animal",
+      "insects",
+      "bee"
+    ]
+  },
+  {
+    "image": "data/images/0396.jpg",
+    "label": "castle",
+    "path": [
+      "scene",
+      "large_man_made_outdoor_things",
+      "castle"
+    ]
+  },
+  {
+    "image": "data/images/0466.jpg",
+    "label": "chair",
+    "path": [
+      "object",
+      "household_furniture",
+      "chair"
+    ]
+  },
+  {
+    "image": "data/images/1442.jpg",
+    "label": "trout",
+    "path": [
+      "animal",
+      "fish",
+      "trout"
+    ]
+  },
+  {
+    "image": "data/images/0019.jpg",
+    "label": "apple",
+    "path": [
+      "plant",
+      "fruit_and_vegetables",
+      "apple"
+    ]
+  },
+  {
+    "image": "data/images/0719.jpg",
+    "label": "keyboard",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "keyboard"
+    ]
+  },
+  {
+    "image": "data/images/0489.jpg",
+    "label": "clock",
+    "path": [
+      "object",
+      "household_electrical_devices",
+      "clock"
+    ]
+  },
+  {
+    "image": "data/images/0429.jpg",
+    "label": "caterpillar",
+    "path": [
+      "animal",
+      "insects",
+      "caterpillar"
+    ]
+  }
+]
