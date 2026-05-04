@@ -46,3 +46,7 @@ Thumbs.db
 
 # Large generated data (uncomment if you do not want images in git)
 # data/images/
+
+# Phase 3 CLIP runs (checkpoints + results)
+runs/
+wandb/

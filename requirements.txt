@@ -7,3 +7,10 @@ scikit-learn>=1.4.0
 # run the notebook
 jupyter>=1.0.0
 ipykernel>=6.29.0
+
+# CLIP Phase 3 (ViT-B/32, W&B)
+open_clip_torch>=2.24.0
+wandb>=0.17.0
+ftfy
+regex
+tqdm
