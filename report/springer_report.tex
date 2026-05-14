@@ -95,20 +95,26 @@ uses linear probing, adapters, prompt tuning, or partial fine-tuning. These
 methods trade off computational cost and task-specific flexibility.
 
 Hierarchical classification has a long history in computer vision and machine
-learning. Instead of treating all errors equally, hierarchical methods exploit
-relationships among labels. Some approaches modify the loss, some constrain
-predictions to respect a tree, and others evaluate predictions with
-hierarchy-aware distances. A key motivation is that semantic structure can
-regularize learning and provide more informative error signals than flat
-classification alone.
+learning, with surveys emphasizing that the hierarchy can affect both model
+training and evaluation \cite{silla2011survey}. Instead of treating all errors
+equally, hierarchical methods exploit relationships among labels. Some
+approaches modify the loss, some constrain predictions to respect a tree, and
+others evaluate predictions with hierarchy-aware distances. A key motivation
+is that semantic structure can regularize learning and provide more informative
+error signals than flat classification alone.
 
 Noisy-label learning is also closely related. In standard noisy-label settings,
-the class label itself may be corrupted. This work differs in that the leaf
-label remains clean while the auxiliary parent label is corrupted. The setting
-is common in practice: a fine label may be curated manually while higher-level
-metadata is inherited from a weak or inconsistent taxonomy. This makes the
-problem especially subtle, because the primary target is correct but the
-auxiliary supervision can still damage the learned representation.
+the class label itself may be corrupted, and prior work has proposed loss
+correction methods that estimate or compensate for label-transition noise
+\cite{patrini2017noise}. This work differs in that the leaf label remains
+clean while the auxiliary parent label is corrupted. The setting is common in
+practice: a fine label may be curated manually while higher-level metadata is
+inherited from a weak or inconsistent taxonomy. This makes the problem
+especially subtle, because the primary target is correct but the auxiliary
+supervision can still damage the learned representation. The structured noise
+conditions also connect to shortcut-learning analyses: a model can exploit a
+spurious but coherent signal when it is predictive during training, even if the
+signal encodes the wrong abstraction \cite{geirhos2020shortcut}.
 
 \section{Methodology}
 \subsection{Dataset Construction}
@@ -415,7 +421,7 @@ noise processes based on observed annotation errors. Another useful direction
 is to design hierarchy-aware losses that can detect and down-weight suspicious
 parent targets while preserving the benefits of clean hierarchical supervision.
 
-\begin{thebibliography}{4}
+\begin{thebibliography}{7}
 
 \bibitem{radford2021clip}
 A. Radford et al., ``Learning transferable visual models from natural language
@@ -432,6 +438,21 @@ University of Toronto, Tech. Rep., 2009.
 \bibitem{guo2017calibration}
 C. Guo, G. Pleiss, Y. Sun, and K. Q. Weinberger, ``On calibration of modern
 neural networks,'' in \emph{Proc. ICML}, 2017.
+
+\bibitem{silla2011survey}
+C. N. Silla Jr. and A. A. Freitas, ``A survey of hierarchical classification
+across different application domains,'' \emph{Data Mining and Knowledge
+Discovery}, vol. 22, no. 1--2, pp. 31--72, 2011.
+
+\bibitem{patrini2017noise}
+G. Patrini, A. Rozza, A. K. Menon, R. Nock, and L. Qu, ``Making deep neural
+networks robust to label noise: A loss correction approach,'' in
+\emph{Proc. CVPR}, 2017, pp. 1944--1952.
+
+\bibitem{geirhos2020shortcut}
+R. Geirhos, J.-H. Jacobsen, C. Michaelis, R. Zemel, W. Brendel, M. Bethge,
+and F. A. Wichmann, ``Shortcut learning in deep neural networks,''
+\emph{Nature Machine Intelligence}, vol. 2, pp. 665--673, 2020.
 
 \end{thebibliography}
 
