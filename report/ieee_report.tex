@@ -14,67 +14,214 @@
 
 \author{
 \IEEEauthorblockN{Submission Report}
-\IEEEauthorblockA{VLM Fine-Tuning Experiments}
+\IEEEauthorblockA{VLM Fine-Tuning Experiments\\
+GitHub: \url{https://github.com/manuvikash/VLM-finetune}}
 }
 
 \maketitle
 
 \begin{abstract}
-Vision-language models are often adapted to domain-specific recognition tasks using labels that are organized in a taxonomy. In practice, such taxonomies can be noisy: coarse labels may be incomplete, inconsistent, or systematically shifted across data sources. This report studies how hierarchy-aware adaptation of CLIP behaves as the parent-class supervision is corrupted. We build a CIFAR-100 hierarchy with 100 leaf classes, 20 parent classes, and six top-level domains, then compare zero-shot CLIP, flat supervised adaptation, clean hierarchy-aware adaptation, and noisy hierarchy-aware adaptation. To run a controlled multi-seed study efficiently, OpenCLIP ViT-B/32 image embeddings are cached and a shared residual adapter plus leaf and parent heads is trained. The hierarchy objective combines direct parent classification with a differentiable leaf-to-parent consistency loss. Across three seeds, clean hierarchy-aware adaptation reaches 73.20\% leaf accuracy, comparable to flat adaptation at 73.15\%. Uniform parent corruption has limited effect on leaf accuracy, but structured noise is substantially more damaging: in-domain corruption reduces accuracy to 63.97\% at full corruption, and cyclic systematic corruption reduces it to 47.93\%. The results suggest that hierarchy-aware training is robust to diffuse random taxonomy errors but vulnerable to coherent, systematic taxonomy shifts.
+Vision-language models are often adapted to domain-specific recognition tasks
+using labels that are organized in a taxonomy. In practice, these taxonomies
+are rarely perfect: parent labels can be missing, ambiguous, inconsistently
+mapped across sources, or systematically wrong. This paper studies how
+hierarchy-aware adaptation of CLIP behaves when parent-class supervision is
+corrupted. We construct a three-level CIFAR-100 hierarchy with 100 leaf
+classes, 20 parent classes, and six top-level domains, then compare zero-shot
+CLIP, flat supervised adaptation, clean hierarchy-aware adaptation, and noisy
+hierarchy-aware adaptation. To make a multi-seed degradation study feasible on
+a commodity 4GB GPU, we cache OpenCLIP ViT-B/32 image embeddings and train a
+lightweight residual adapter with leaf and parent classification heads. The
+hierarchy objective combines direct parent classification with a differentiable
+leaf-to-parent consistency loss, allowing parent supervision to influence the
+fine-grained decision boundary. Across three seeds, flat adaptation reaches
+73.15\% leaf accuracy and clean hierarchy-aware adaptation reaches 73.20\%.
+Uniform parent-label corruption is relatively benign, retaining 71.19\% leaf
+accuracy even at full corruption. However, structured taxonomy noise is far
+more damaging: in-domain corruption drops to 63.97\%, while cyclic systematic
+corruption drops to 47.93\%. These results show that the danger in hierarchical
+supervision is not only the amount of taxonomy noise, but whether the noise is
+coherent enough to teach the model a wrong ontology.
 \end{abstract}
 
 \begin{IEEEkeywords}
-vision-language models, CLIP, hierarchical classification, noisy labels, taxonomy, robustness
+vision-language models, CLIP, hierarchical classification, noisy labels,
+taxonomy, robustness, reproducibility
 \end{IEEEkeywords}
 
 \section{Introduction}
-Hierarchy-aware classification uses more than a leaf label: it also trains a model to respect intermediate categories such as ``vehicle,'' ``large natural outdoor scene,'' or ``aquatic mammal.'' This extra supervision can be useful when fine-grained classes are visually related, but it introduces a new failure mode. If the hierarchy is wrong, then the model receives a training signal that may conflict with the visual task.
+Large vision-language models (VLMs) such as CLIP are widely used as foundation
+models for downstream visual recognition. A common adaptation strategy is to
+freeze or lightly tune the visual backbone, then train task-specific heads on
+top of the learned image representation. Many real classification tasks are
+not flat, however. Product catalogs, species datasets, medical image
+ontologies, and remote-sensing taxonomies all organize labels into a hierarchy.
+For example, an image may be labeled as a fine-grained leaf class such as
+``pickup truck,'' a parent class such as ``vehicle,'' and a broader top-level
+domain such as ``object'' or ``scene.''
 
-This project asks three practical questions. First, does a hierarchy-aware objective improve over a flat supervised adapter on a CLIP backbone? Second, how quickly does performance degrade as parent labels become noisy? Third, are all noise processes equally harmful, or is structured taxonomy noise worse than random corruption?
+Hierarchical supervision can provide useful inductive bias. If a model
+confuses two leaf classes under the same parent, the error is usually less
+severe than confusing classes across unrelated parents. A parent-level loss can
+encourage features that respect this structure and may improve calibration,
+top-k behavior, or robustness when leaf labels are sparse. Yet this benefit
+comes with a practical risk. Real-world taxonomies are often noisy. Parent
+classes may be assigned by separate annotators, inherited from legacy data
+sources, or merged from incompatible schemas. In such cases, hierarchy-aware
+training can inject supervision that conflicts with the leaf task.
 
-\section{Method}
-\subsection{Backbone and Adapter}
-The base model is OpenCLIP ViT-B/32 with OpenAI pretrained weights \cite{radford2021clip,ilharco2021openclip}. For the main sweep, image embeddings are extracted once and normalized. A small residual adapter is then trained:
+This paper studies the robustness of hierarchy-aware CLIP adaptation under
+controlled taxonomy noise. The goal is not simply to show whether hierarchy
+helps on clean CIFAR-100, but to identify when hierarchical supervision becomes
+harmful. We focus on three questions:
+\begin{enumerate}
+\item Does hierarchy-aware adaptation improve over flat supervised adaptation?
+\item How does leaf accuracy degrade as parent-label corruption increases?
+\item Are structured taxonomy errors more damaging than random parent noise?
+\end{enumerate}
+
+The main contribution is an end-to-end reproducible experiment pipeline that
+builds a CIFAR-100 hierarchy, runs multi-seed noise sweeps, exports paper-ready
+figures and CSV tables, and provides an IEEE-format report. The empirical
+finding is clear: hierarchy-aware adaptation is robust to diffuse uniform
+parent noise, but vulnerable to coherent systematic noise.
+
+\section{Related Work}
+CLIP introduced contrastive language-image pretraining at web scale, enabling
+strong zero-shot transfer through natural language prompts \cite{radford2021clip}.
+OpenCLIP provides open implementations and pretrained checkpoints that make
+CLIP-style models practical for research use \cite{ilharco2021openclip}.
+Because full fine-tuning of VLMs can be expensive, downstream adaptation often
+uses linear probing, adapters, prompt tuning, or partial fine-tuning. These
+methods trade off computational cost and task-specific flexibility.
+
+Hierarchical classification has a long history in computer vision and machine
+learning. Instead of treating all errors equally, hierarchical methods exploit
+relationships among labels. Some approaches modify the loss, some constrain
+predictions to respect a tree, and others evaluate predictions with
+hierarchy-aware distances. A key motivation is that semantic structure can
+regularize learning and provide more informative error signals than flat
+classification alone.
+
+Noisy-label learning is also closely related. In standard noisy-label settings,
+the class label itself may be corrupted. This work differs in that the leaf
+label remains clean while the auxiliary parent label is corrupted. The setting
+is common in practice: a fine label may be curated manually while higher-level
+metadata is inherited from a weak or inconsistent taxonomy. This makes the
+problem especially subtle, because the primary target is correct but the
+auxiliary supervision can still damage the learned representation.
+
+\section{Methodology}
+\subsection{Dataset Construction}
+The data pipeline converts CIFAR-100 into a three-level hierarchy. CIFAR-100
+contains 100 fine classes and 20 coarse superclasses \cite{krizhevsky2009learning}.
+We use each fine class as a leaf label and each coarse superclass as a parent
+label. A top-level domain is added manually for each parent group, yielding
+paths of the form:
+\begin{equation}
+\mathrm{domain} \rightarrow \mathrm{parent} \rightarrow \mathrm{leaf}.
+\end{equation}
+The full official CIFAR-100 split is used: 50,000 training images and 10,000
+test images. This avoids ambiguity introduced by random train-test splits and
+makes the experiment easier to reproduce.
+
+\subsection{Model Architecture}
+The visual backbone is OpenCLIP ViT-B/32 with OpenAI pretrained weights. In the
+main sweep, image embeddings are extracted once and L2-normalized. Cached
+features allow many taxonomy-noise configurations to be evaluated without
+repeatedly running the vision transformer. This design is computationally
+important for commodity hardware, but it still allows a trainable shared
+representation through a residual adapter:
 \begin{equation}
 h(x) = z(x) + \mathrm{LN}(W_2\,\mathrm{GELU}(W_1z(x))),
 \end{equation}
-where $z(x)$ is the frozen CLIP image embedding. The adapter output feeds a leaf classifier and, for hierarchy-aware runs, a parent classifier.
+where $z(x)$ is the frozen CLIP image embedding. The adapter output $h(x)$ is
+fed to a leaf head. In hierarchy-aware runs, it is also fed to a parent head.
+The flat model and hierarchy-aware model therefore share the same feature
+cache and adapter family; the difference is the presence or absence of the
+hierarchy loss.
 
-\subsection{Hierarchy-Aware Loss}
-Flat adaptation optimizes leaf cross entropy only:
+\subsection{Training Objectives}
+The flat adaptation objective is standard leaf cross entropy:
 \begin{equation}
-\mathcal{L}_{flat} = \mathrm{CE}(y, \hat{y}).
+\mathcal{L}_{flat} = \mathrm{CE}(y,\hat{y}),
 \end{equation}
-Hierarchy-aware adaptation adds parent supervision:
+where $y$ is the leaf label and $\hat{y}$ is the leaf prediction.
+
+The hierarchy-aware objective adds parent supervision:
 \begin{equation}
 \mathcal{L} =
 \mathrm{CE}(y,\hat{y}) +
 \lambda\left[(1-\alpha)\mathrm{CE}(p,\hat{p}) +
 \alpha\mathrm{CE}(p,g(\hat{y}))\right].
 \end{equation}
-Here $y$ is the leaf class, $p$ is the parent class, $\hat{p}$ is the parent-head prediction, and $g(\hat{y})$ aggregates leaf logits into parent logits by parent-wise log-sum-exp. This consistency term makes parent supervision act on the leaf decision boundary, which is necessary for parent-taxonomy noise to affect fine-grained predictions in a cached-feature experiment. We use $\lambda=1.0$ and $\alpha=0.8$.
+Here $p$ is the parent target, $\hat{p}$ is the parent-head prediction, and
+$g(\hat{y})$ aggregates leaf logits into parent logits using parent-wise
+log-sum-exp. This aggregation makes the auxiliary parent target act directly
+on the leaf decision boundary. Without this coupling, a frozen-feature model
+with independent heads can absorb parent-label noise in the parent head while
+leaving leaf predictions almost unchanged. We use $\lambda=1.0$ and
+$\alpha=0.8$ in the final sweep.
 
-\subsection{Taxonomy Noise}
-Only training parent labels are corrupted; validation and test labels remain clean. Three corruption processes are evaluated:
+\subsection{Taxonomy Noise Models}
+Only training parent labels are corrupted. Leaf labels, validation targets, and
+test targets remain clean. Three noise mechanisms are studied:
 \begin{itemize}
-\item \textbf{Uniform:} replace the true parent with a uniformly sampled different parent.
-\item \textbf{In-domain:} replace the parent with another parent under the same top-level domain when possible.
-\item \textbf{Cyclic:} replace the parent with the next parent in a deterministic sorted cycle.
+\item \textbf{Uniform noise:} with probability $\rho$, replace the true parent
+with a uniformly sampled different parent.
+\item \textbf{In-domain noise:} with probability $\rho$, replace the true
+parent with another parent that shares the same top-level domain when such a
+parent exists. This simulates plausible taxonomy confusion among related
+groups.
+\item \textbf{Cyclic noise:} with probability $\rho$, replace the true parent
+with the next parent in a deterministic sorted cycle. This simulates a coherent
+schema mapping error.
 \end{itemize}
-Uniform noise simulates diffuse annotation mistakes, while cyclic noise simulates a systematic taxonomy mapping error.
+The corruption fraction $\rho$ is swept over
+$\{0.0,0.05,0.1,0.2,0.3,0.5,0.7,1.0\}$.
 
-\section{Experimental Setup}
-The dataset is CIFAR-100 \cite{krizhevsky2009learning}, converted into a three-level hierarchy: domain, parent/coarse class, and leaf/fine class. The full official split is used: 50,000 training images and 10,000 test images. The hierarchy contains 100 leaf classes, 20 parent classes, and six domains.
+\section{Experiments}
+\subsection{Baselines}
+Four primary conditions are evaluated. The first is zero-shot CLIP, using text
+prompts of the form ``a photo of a \{class\}.'' The second is flat supervised
+adaptation, which trains the residual adapter and leaf head with leaf labels
+only. The third is hierarchy-aware adaptation with clean parent labels. The
+fourth is hierarchy-aware adaptation with corrupted parent labels.
 
-All experiments use three seeds: 42, 123, and 456. The adapter is trained for 30 epochs with AdamW, learning rate $10^{-3}$, weight decay $10^{-4}$, batch size 8192, adapter width 256, and dropout 0.05. Metrics include leaf top-1 accuracy, top-5 accuracy, parent accuracy, hierarchical distance, severity-weighted accuracy, and expected calibration error (ECE) \cite{guo2017calibration}.
+\subsection{Hyperparameters}
+All supervised adapter experiments are run with three seeds: 42, 123, and 456.
+The adapter is trained for 30 epochs with AdamW, learning rate $10^{-3}$,
+weight decay $10^{-4}$, batch size 8192, adapter width 256, and dropout 0.05.
+The feature extraction batch size is 256. All experiments are run with
+Weights \& Biases disabled and write deterministic JSON rows to
+\texttt{runs/results.json}.
+
+\subsection{Metrics}
+We report six metrics. Leaf accuracy is the primary fine-grained top-1 metric.
+Top-5 accuracy measures whether the correct leaf appears among the five most
+likely predictions. Parent accuracy measures whether the predicted parent is
+correct, either from the parent head or from the predicted leaf's canonical
+parent. Hierarchical distance measures tree distance between predicted and
+true leaves: 0 for correct leaf, 2 for same-parent mistakes, 4 for same-domain
+mistakes, and 6 for cross-domain mistakes. Severity-weighted accuracy gives
+1.0 credit for a correct leaf, 0.5 credit for a wrong leaf under the same
+parent, and 0.0 otherwise. Expected calibration error (ECE) is computed with
+15 equal-width confidence bins \cite{guo2017calibration}.
 
 \section{Results}
-\subsection{Main Comparison}
-Table~\ref{tab:main} shows that supervised adaptation substantially improves over zero-shot CLIP. Clean hierarchy-aware adaptation is statistically similar to flat adaptation in leaf accuracy, but has slightly better hierarchical distance, severity-weighted accuracy, and calibration. Uniform 20\% parent noise causes only a small leaf-accuracy drop.
+\subsection{Main Results}
+Table~\ref{tab:main} summarizes the main comparison. Zero-shot CLIP obtains
+56.05\% leaf accuracy. Both supervised adapters provide a large gain, reaching
+approximately 73\% leaf accuracy. Clean hierarchy-aware adaptation is
+statistically similar to flat adaptation in leaf accuracy, but it improves
+hierarchical distance, severity-weighted accuracy, and calibration. Under
+20\% uniform parent noise, leaf accuracy falls modestly to 72.56\%, but ECE
+increases from 0.0179 to 0.0692. This indicates that mild taxonomy noise may
+leave top-1 predictions mostly intact while still degrading confidence quality.
 
 \begin{table*}[t]
 \centering
-\caption{Main results on full CIFAR-100 hierarchy. Mean $\pm$ standard deviation is reported across three seeds where applicable.}
+\caption{Main results on the full CIFAR-100 hierarchy. Mean $\pm$ standard deviation is reported across three seeds where applicable.}
 \label{tab:main}
 \begin{tabular}{lcccccc}
 \toprule
@@ -88,8 +235,14 @@ Hierarchy, uniform 20\% noise & $72.56 \pm 0.12$ & $92.96 \pm 0.16$ & $78.65 \pm
 \end{tabular}
 \end{table*}
 
-\subsection{Noise Degradation}
-Figure~\ref{fig:noise_by_type} is the central result. The effect of parent noise depends strongly on the corruption mechanism. Uniform noise is surprisingly benign: even at 100\% corruption, leaf accuracy remains 71.19\%. In-domain noise is more harmful, falling to 63.97\%. Cyclic noise is most damaging, dropping from 73.20\% with clean parents to 47.93\% at full corruption.
+\subsection{Degradation by Noise Type}
+The central result is shown in Fig.~\ref{fig:noise_by_type} and
+Table~\ref{tab:noise_type}. Uniform noise is surprisingly robust. Even when
+every training parent label is replaced by a random wrong parent, leaf accuracy
+remains 71.19\%, only about two percentage points below the clean
+hierarchy-aware result. In-domain noise is more damaging, reducing leaf
+accuracy to 63.97\% at full corruption. Cyclic noise is most harmful, dropping
+to 47.93\% at full corruption.
 
 \begin{figure}[t]
 \centering
@@ -113,53 +266,107 @@ Cyclic & $73.20$ & $71.70$ & $67.35$ & $47.93$ \\
 \end{tabular}
 \end{table}
 
-Aggregating over all noise types, parent accuracy falls much faster than leaf accuracy, as shown in Fig.~\ref{fig:noise_overall}. At 100\% corruption, the parent head no longer learns the clean taxonomy, while the leaf classifier still preserves some discriminative power unless the noise is systematic.
+These differences show that the corruption process matters more than the
+corruption fraction alone. Uniform corruption distributes wrong parent labels
+across the taxonomy, so the auxiliary signal is noisy but not consistently
+misleading in one direction. In-domain corruption is semantically plausible and
+therefore more likely to interfere with boundaries among related visual
+groups. Cyclic corruption is coherent and systematic; the model receives a
+stable but wrong mapping between leaves and parents, which strongly damages
+the coupled leaf-to-parent consistency objective.
+
+\subsection{Parent Accuracy and Calibration}
+Fig.~\ref{fig:noise_overall} aggregates hierarchy-aware rows across noise
+types. Parent accuracy collapses as parent corruption increases, especially at
+high corruption fractions. Leaf accuracy degrades more slowly because the leaf
+labels remain clean and the CLIP representation is strong. Calibration,
+however, is more sensitive. For uniform noise, ECE rises from 0.0179 under
+clean hierarchy supervision to 0.3178 at full corruption, even though leaf
+accuracy remains above 71\%. This suggests that noisy parent supervision can
+harm uncertainty estimates before it severely harms top-1 accuracy.
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=\linewidth]{noise_degradation.png}
-\caption{Overall degradation across all recorded hierarchy-noise rows. Parent accuracy collapses as parent supervision becomes corrupted; leaf accuracy is more robust but still degrades under structured noise.}
+\caption{Overall degradation across all hierarchy-noise rows. Parent accuracy collapses as parent supervision becomes corrupted; leaf accuracy is more robust but still degrades under structured noise.}
 \label{fig:noise_overall}
 \end{figure}
 
-\section{Discussion}
-The experiments support two conclusions. First, hierarchy-aware adaptation is not automatically better than flat adaptation for CIFAR-100 leaf classification. Clean hierarchy-aware training matches flat adaptation, improves calibration, and slightly improves hierarchical distance, but it does not produce a large top-1 gain.
-
-Second, the type of taxonomy noise matters more than the raw corruption fraction. Uniform noise acts partly like regularization because wrong parents are scattered across the taxonomy. In-domain noise is more plausible and more damaging because it confuses visually or semantically closer parent groups. Cyclic noise is worst because it is coherent: the model receives a stable but wrong mapping between leaf decisions and parent supervision.
-
-This distinction is important for real datasets. Random annotation mistakes may be tolerable, but systematic ontology mismatches across labeling sources can significantly damage hierarchy-aware adaptation.
-
-\section{Limitations}
-The main sweep uses cached CLIP embeddings and trains a residual adapter rather than fully updating the ViT backbone. This makes the multi-seed noise study feasible on a 4GB laptop GPU, but it is not identical to full end-to-end fine-tuning. The repository keeps the full fine-tuning script for follow-up runs. The study also uses CIFAR-100, whose hierarchy is clean and balanced; real-world taxonomies may be deeper, imbalanced, and multi-parent.
+\subsection{Interpretation}
+The results support two main interpretations. First, hierarchy-aware adaptation
+is not automatically superior to flat adaptation when leaf labels are abundant.
+On CIFAR-100, clean hierarchy supervision mainly improves secondary metrics
+such as hierarchical distance and calibration. Second, taxonomy-noise
+robustness depends heavily on whether errors are independent or structured.
+This is relevant to real deployments because systematic ontology mismatches
+are common when labels are merged from multiple sources.
 
 \section{Reproducibility}
-The experiment artifacts were generated with:
+The full source code, experiment scripts, generated results, figures, and
+LaTeX report are maintained in the GitHub repository:
+\begin{center}
+\url{https://github.com/manuvikash/VLM-finetune}
+\end{center}
+The committed experiment artifacts include \texttt{runs/results.json},
+\texttt{results/noise\_type\_sweep.csv}, and all figures used in this paper.
+The generated JPEG image directory is intentionally ignored by git because it
+contains 60,000 reproducible CIFAR-derived files. It can be regenerated from
+the committed manifests and builder script.
+
+The main commands are:
 \begin{verbatim}
-python build_dataset.py --num-coarse 20 --per-class 0 --use-test-split
-python feature_sweep.py --epochs 30 --seeds 42 123 456 \
-  --noise-fractions 0.0 0.05 0.1 0.2 0.3 0.5 0.7 1.0 \
-  --noise-types uniform in_domain cyclic \
-  --lambda-parent 1.0 --consistency-weight 0.8 --lr 0.001
-python analysis.py --export-csv results --plot --plot-dir figures
+python build_dataset.py
+  --num-coarse 20 --per-class 0
+  --use-test-split
+
+python feature_sweep.py
+  --epochs 30 --seeds 42 123 456
+  --noise-fractions 0.0 0.05 0.1 0.2
+  0.3 0.5 0.7 1.0
+  --noise-types uniform in_domain cyclic
+  --lambda-parent 1.0
+  --consistency-weight 0.8 --lr 0.001
+
+python analysis.py
+  --export-csv results
+  --plot --plot-dir figures
 \end{verbatim}
-The primary outputs are \texttt{runs/results.json}, \texttt{results/noise\_type\_sweep.csv}, and the figures under \texttt{figures/}.
 
 \section{Conclusion}
-Hierarchy-aware CLIP adaptation is robust to diffuse random parent-label corruption but vulnerable to structured taxonomy noise. On full CIFAR-100, clean hierarchy-aware adaptation matches flat adaptation at roughly 73\% leaf accuracy. Uniform noise reduces accuracy only slightly, but systematic cyclic corruption reduces leaf accuracy by more than 25 percentage points. For practical VLM fine-tuning, the key risk is therefore not merely the amount of taxonomy noise, but whether that noise is coherent enough to teach the model a wrong hierarchy.
+This paper evaluated hierarchy-aware CLIP adaptation under controlled taxonomy
+noise. On the full CIFAR-100 hierarchy, clean hierarchy-aware adaptation
+matches flat adaptation in leaf accuracy and modestly improves hierarchical
+distance and calibration. The main finding is that robustness depends strongly
+on the type of taxonomy error. Uniform parent-label noise is largely tolerated,
+but structured noise can severely harm fine-grained recognition. At full
+corruption, uniform noise retains 71.19\% leaf accuracy, in-domain noise drops
+to 63.97\%, and cyclic systematic noise drops to 47.93\%. For practical VLM
+fine-tuning, the most important question is therefore not only how many parent
+labels are noisy, but whether the errors encode a coherent wrong taxonomy.
+
+Future work should repeat the study with full end-to-end backbone fine-tuning,
+larger VLMs, deeper real-world taxonomies, and asymmetric noise processes based
+on observed annotation errors. Another useful direction is to design
+hierarchy-aware losses that can detect and down-weight suspicious parent
+targets while preserving the benefits of clean hierarchical supervision.
 
 \begin{thebibliography}{1}
 
 \bibitem{radford2021clip}
-A. Radford \emph{et al.}, ``Learning transferable visual models from natural language supervision,'' in \emph{Proc. ICML}, 2021.
+A. Radford \emph{et al.}, ``Learning transferable visual models from natural
+language supervision,'' in \emph{Proc. ICML}, 2021.
 
 \bibitem{ilharco2021openclip}
-G. Ilharco \emph{et al.}, ``OpenCLIP,'' 2021. [Online]. Available: \url{https://github.com/mlfoundations/open_clip}
+G. Ilharco \emph{et al.}, ``OpenCLIP,'' 2021. [Online]. Available:
+\url{https://github.com/mlfoundations/open_clip}
 
 \bibitem{krizhevsky2009learning}
-A. Krizhevsky, ``Learning multiple layers of features from tiny images,'' University of Toronto, Tech. Rep., 2009.
+A. Krizhevsky, ``Learning multiple layers of features from tiny images,''
+University of Toronto, Tech. Rep., 2009.
 
 \bibitem{guo2017calibration}
-C. Guo, G. Pleiss, Y. Sun, and K. Q. Weinberger, ``On calibration of modern neural networks,'' in \emph{Proc. ICML}, 2017.
+C. Guo, G. Pleiss, Y. Sun, and K. Q. Weinberger, ``On calibration of modern
+neural networks,'' in \emph{Proc. ICML}, 2017.
 
 \end{thebibliography}
 

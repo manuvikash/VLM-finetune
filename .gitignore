@@ -22,6 +22,14 @@ build/
 # Jupyter
 .ipynb_checkpoints/
 
+# LaTeX build intermediates
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+
 # Testing / typing
 .pytest_cache/
 .mypy_cache/
