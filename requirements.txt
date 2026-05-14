@@ -14,3 +14,8 @@ wandb>=0.17.0
 ftfy
 regex
 tqdm
+
+# analysis and plotting
+numpy>=1.24.0
+pandas>=2.0.0
+matplotlib>=3.7.0

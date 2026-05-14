@@ -8,12 +8,20 @@ Prompt template: "a photo of a {leaf}" with underscores replaced by spaces.
 from __future__ import annotations
 
 import argparse
+import json
 from pathlib import Path
 
 import open_clip
 import torch
 
-from dataset import append_results_json, build_leaf_mapping, leaf_to_parent_maps, load_manifest
+from dataset import (
+    append_results_json,
+    build_leaf_mapping,
+    build_parent_to_domain,
+    leaf_to_parent_maps,
+    load_manifest,
+)
+from metrics import compute_all_metrics, per_class_accuracy
 from model import build_zeroshot_text_features
 
 
@@ -53,6 +61,12 @@ def main() -> None:
     parser.add_argument("--test-json", type=Path, default=Path("data/test.json"))
     parser.add_argument("--batch-size", type=int, default=32)
     parser.add_argument(
+        "--seed",
+        type=int,
+        default=42,
+        help="Recorded in results for consistency (evaluation is deterministic).",
+    )
+    parser.add_argument(
         "--no-wandb",
         action="store_true",
         help="Disable Weights & Biases (useful for offline smoke runs).",
@@ -69,6 +83,7 @@ def main() -> None:
     leaf_names = [name for name, _ in sorted(leaf2id.items(), key=lambda kv: kv[1])]
 
     leaf_to_par = leaf_to_parent_maps(train_entries)
+    parent_to_dom = build_parent_to_domain(train_entries)
 
     train_labels = set(leaf2id)
     for s in test_entries:
@@ -89,7 +104,7 @@ def main() -> None:
         clip_model, tokenizer, leaf_names, device=device
     )
 
-    run_cfg = {"mode": "zero_shot", "train_json": str(args.train_json)}
+    run_cfg = {"mode": "zero_shot", "train_json": str(args.train_json), "seed": args.seed}
     wandb_run = None
     if not args.no_wandb:
         import wandb
@@ -106,47 +121,69 @@ def main() -> None:
         pin_memory=device.type == "cuda",
     )
 
-    correct_leaf = 0
-    correct_parent = 0
-    total = 0
+    all_logits: list[torch.Tensor] = []
+    all_targets: list[torch.Tensor] = []
 
     with torch.no_grad(), torch.amp.autocast("cuda", enabled=device.type == "cuda"):
         for imgs, ys in loader:
             imgs = imgs.to(device, non_blocking=True)
-            ys = ys.to(device, non_blocking=True)
             feats = clip_model.encode_image(imgs).float()
             feats = feats / feats.norm(dim=-1, keepdim=True)
             logits = feats @ text_feats.T
-            pred = logits.argmax(dim=1)
+            all_logits.append(logits.cpu())
+            all_targets.append(ys)
 
-            correct_leaf += (pred == ys).sum().item()
-            for p, yt in zip(pred.tolist(), ys.tolist()):
-                true_leaf = leaf_names[yt]
-                pred_leaf = leaf_names[int(p)]
-                true_par = leaf_to_par[true_leaf]
-                pred_par = leaf_to_par[pred_leaf]
-                correct_parent += int(pred_par == true_par)
-            total += ys.numel()
+    cat_logits = torch.cat(all_logits)
+    cat_targets = torch.cat(all_targets)
 
-    acc_leaf = 100.0 * correct_leaf / max(total, 1)
-    acc_par = 100.0 * correct_parent / max(total, 1)
-    print(f"Zero-shot top-1 (leaf): {acc_leaf:.2f}% ({correct_leaf}/{total})")
-    print(f"Parent accuracy (derived): {acc_par:.2f}% ({correct_parent}/{total})")
+    test_m = compute_all_metrics(
+        cat_logits,
+        cat_targets,
+        leaf_names,
+        leaf_to_par,
+        parent_to_dom,
+    )
+
+    print(
+        f"Zero-shot  leaf_acc={test_m['leaf_acc']:.2f}% top5={test_m['top5_acc']:.2f}% "
+        f"parent_acc={test_m['parent_acc']:.2f}% hier_dist={test_m['hier_dist']:.3f} "
+        f"sev_w_acc={test_m['severity_weighted_acc']:.2f}% ece={test_m['ece']:.4f}"
+    )
+
+    pc = per_class_accuracy(
+        cat_logits.argmax(dim=1).tolist(),
+        cat_targets.tolist(),
+        leaf_names,
+        leaf_to_par,
+    )
+    pc_dir = Path(args.runs_dir) / "clip_zeroshot"
+    pc_dir.mkdir(parents=True, exist_ok=True)
+    with open(pc_dir / "per_class.json", "w", encoding="utf-8") as f:
+        json.dump(pc, f, indent=2)
 
     if wandb_run is not None:
-        wandb_run.summary["final_accuracy"] = acc_leaf
-        wandb_run.summary["final_parent_accuracy"] = acc_par
+        for k, v in test_m.items():
+            wandb_run.summary[f"final_{k}"] = v
         wandb_run.finish()
 
     append_results_json(
         args.runs_dir / "results.json",
         {
             "run_name": "clip_zeroshot",
+            "run_id": "clip_zeroshot",
             "model": "CLIP",
             "training": "zero-shot",
             "taxonomy": "N/A",
-            "final_accuracy": acc_leaf,
-            "final_parent_accuracy": acc_par,
+            "seed": args.seed,
+            "noise_fraction": 0.0,
+            "lambda_parent": 0.0,
+            "epochs": 0,
+            "final_accuracy": test_m["leaf_acc"],
+            "final_parent_accuracy": test_m["parent_acc"],
+            "top5_accuracy": test_m["top5_acc"],
+            "hier_dist": test_m["hier_dist"],
+            "severity_weighted_acc": test_m["severity_weighted_acc"],
+            "ece": test_m["ece"],
         },
     )
 

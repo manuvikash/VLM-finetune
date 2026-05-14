@@ -1,0 +1,34 @@
+{
+  "dataset": {
+    "train": 50000,
+    "test": 10000,
+    "leaf_classes": 100,
+    "parent_classes": 20
+  },
+  "epochs": 30,
+  "lambda_parent": 1.0,
+  "adapter_dim": 256,
+  "dropout": 0.05,
+  "consistency_weight": 0.8,
+  "seeds": [
+    42,
+    123,
+    456
+  ],
+  "noise_fractions": [
+    0.0,
+    0.05,
+    0.1,
+    0.2,
+    0.3,
+    0.5,
+    0.7,
+    1.0
+  ],
+  "noise_types": [
+    "uniform",
+    "in_domain",
+    "cyclic"
+  ],
+  "elapsed_sec": 2303.9632761999965
+}

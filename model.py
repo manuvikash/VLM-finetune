@@ -23,10 +23,13 @@ def create_clip_preprocesses():
 
 def _infer_visual_embed_dim(visual: nn.Module, *, device: torch.device) -> int:
     visual.eval()
+    visual.to(device)
     with torch.no_grad():
         dummy = torch.zeros(1, 3, 224, 224, device=device, dtype=torch.float32)
         out = visual(dummy)
-    return int(out.shape[-1])
+    dim = int(out.shape[-1])
+    visual.to("cpu")
+    return dim
 
 
 class CLIPHierClassifier(nn.Module):
@@ -59,7 +62,7 @@ class CLIPHierClassifier(nn.Module):
                 raise ValueError("hierarchy mode requires num_parent >= 2")
             self.num_parent = num_parent
 
-        infer_dev = torch.device("cpu")
+        infer_dev = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         feat_dim = _infer_visual_embed_dim(self.visual, device=infer_dev)
 
         self.leaf_head = nn.Linear(feat_dim, num_leaf)

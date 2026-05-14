@@ -6,10 +6,13 @@ CLIP fine-tuning (flat vs hierarchy-aware) with W&B logging and checkpointing.
 from __future__ import annotations
 
 import argparse
+import json
+import random
 import time
 from pathlib import Path
 from typing import Literal
 
+import numpy as np
 import torch
 import torch.nn as nn
 from torch.optim import AdamW
@@ -20,15 +23,27 @@ from dataset import (
     append_results_json,
     build_leaf_mapping,
     build_parent_mapping,
+    build_parent_to_domain,
     leaf_to_parent_maps,
     load_manifest,
     make_noisy_parents,
     stratified_train_val_split,
 )
+from metrics import compute_all_metrics, per_class_accuracy
 from model import CLIPHierClassifier, create_clip_preprocesses
 
 
 WANDB_PROJECT = "vlm-hierarchy-noise"
+
+
+def set_seed(seed: int) -> None:
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(seed)
+        torch.backends.cudnn.deterministic = True
+        torch.backends.cudnn.benchmark = False
 
 
 def wandb_run_name(mode: Literal["flat", "hierarchy"], taxonomy: str) -> str:
@@ -123,6 +138,38 @@ def evaluate_loader(
     }
 
 
+@torch.no_grad()
+def collect_predictions(
+    model: CLIPHierClassifier,
+    loader: DataLoader,
+    device: torch.device,
+    use_amp_cuda: bool,
+) -> tuple[torch.Tensor, torch.Tensor, torch.Tensor | None, torch.Tensor]:
+    """Run model on loader, return (leaf_logits, leaf_targets, parent_logits|None, parent_targets)."""
+    model.eval()
+    ll_buf: list[torch.Tensor] = []
+    lt_buf: list[torch.Tensor] = []
+    pl_buf: list[torch.Tensor] = []
+    pt_buf: list[torch.Tensor] = []
+
+    for x, y_leaf, y_parent in loader:
+        x = x.to(device, non_blocking=True)
+        with torch.amp.autocast("cuda", enabled=use_amp_cuda):
+            logits_leaf, logits_parent = model(x)
+        ll_buf.append(logits_leaf.float().cpu())
+        lt_buf.append(y_leaf)
+        if logits_parent is not None:
+            pl_buf.append(logits_parent.float().cpu())
+        pt_buf.append(y_parent)
+
+    return (
+        torch.cat(ll_buf),
+        torch.cat(lt_buf),
+        torch.cat(pl_buf) if pl_buf else None,
+        torch.cat(pt_buf),
+    )
+
+
 def train_one_epoch(
     model: CLIPHierClassifier,
     loader: DataLoader,
@@ -136,7 +183,7 @@ def train_one_epoch(
     use_amp_cuda: bool,
     epoch_idx: int,
 ) -> dict[str, float]:
-    _ = epoch_idx  # placeholder for occasional debug logging
+    _ = epoch_idx
     model.train()
     total = 0
     leaf_correct = 0
@@ -207,8 +254,6 @@ def train_one_epoch(
     return out
 
 
-
-
 def main() -> None:
     parser = argparse.ArgumentParser(description="Fine-tune CLIP ViT-B/32 on hierarchical JSON data.")
     parser.add_argument("--data-root", type=Path, default=Path("."))
@@ -240,6 +285,8 @@ def main() -> None:
     parser.add_argument("--runs-dir", type=Path, default=Path("runs"))
     args = parser.parse_args()
 
+    set_seed(args.seed)
+
     taxonomy_for_log = "n/a" if args.mode == "flat" else args.taxonomy
     root = args.data_root.resolve()
     full_train = load_manifest(args.train_json)
@@ -249,6 +296,7 @@ def main() -> None:
     parent2id = build_parent_mapping(full_train)
     id_to_leaf = [name for name, _ in sorted(leaf2id.items(), key=lambda kv: kv[1])]
     leaf_to_par_map = leaf_to_parent_maps(full_train)
+    parent_to_dom = build_parent_to_domain(full_train)
 
     train_labels = set(leaf2id)
     for s in test_entries:
@@ -330,13 +378,20 @@ def main() -> None:
 
     run_name = wandb_run_name(args.mode, args.taxonomy)
 
+    if args.mode == "flat":
+        run_id = f"clip_flat_s{args.seed}"
+    elif args.taxonomy == "clean":
+        run_id = f"clip_hier_clean_lam{args.lambda_parent}_s{args.seed}"
+    else:
+        run_id = f"clip_hier_noisy_nf{args.noise_fraction}_lam{args.lambda_parent}_s{args.seed}"
+
     wandb_run = None
     if not args.no_wandb:
         import wandb
 
         wandb_run = wandb.init(
             project=args.wandb_project,
-            name=run_name,
+            name=f"{run_name}_s{args.seed}",
             config={
                 "mode": args.mode,
                 "taxonomy_type": taxonomy_for_log,
@@ -353,7 +408,7 @@ def main() -> None:
             },
         )
 
-    ckpt_dir = (args.runs_dir / run_name).resolve()
+    ckpt_dir = (args.runs_dir / run_id).resolve()
     ckpt_dir.mkdir(parents=True, exist_ok=True)
     best_path = ckpt_dir / "best.pt"
 
@@ -443,29 +498,42 @@ def main() -> None:
     if best_state is not None:
         model.load_state_dict({k: v.to(device) for k, v in best_state.items()})
 
-    test_metrics = evaluate_loader(
-        model,
-        test_loader,
-        device,
-        mode=args.mode,
-        criterion=criterion,
-        lambda_parent=args.lambda_parent,
-        use_amp_cuda=use_amp_cuda,
-        id_to_leaf=id_to_leaf,
-        leaf_to_par=leaf_to_par_map,
+    # --- Detailed test evaluation ---
+    leaf_logits, leaf_targets, parent_logits, parent_targets = collect_predictions(
+        model, test_loader, device, use_amp_cuda
+    )
+    test_m = compute_all_metrics(
+        leaf_logits,
+        leaf_targets,
+        id_to_leaf,
+        leaf_to_par_map,
+        parent_to_dom,
+        all_parent_logits=parent_logits,
+        all_parent_targets=parent_targets,
     )
 
     print()
     print(
-        f"Test top-1: {test_metrics['leaf_acc']:.2f}% | parent_acc: {test_metrics['parent_acc']:.2f}%"
+        f"Test leaf_acc={test_m['leaf_acc']:.2f}% top5={test_m['top5_acc']:.2f}% "
+        f"parent_acc={test_m['parent_acc']:.2f}% hier_dist={test_m['hier_dist']:.3f} "
+        f"sev_w_acc={test_m['severity_weighted_acc']:.2f}% ece={test_m['ece']:.4f}"
     )
+
+    pc = per_class_accuracy(
+        leaf_logits.argmax(dim=1).tolist(),
+        leaf_targets.tolist(),
+        id_to_leaf,
+        leaf_to_par_map,
+    )
+    with open(ckpt_dir / "per_class.json", "w", encoding="utf-8") as f:
+        json.dump(pc, f, indent=2)
 
     if wandb_run is not None:
         import wandb
 
-        wandb_run.summary["final_accuracy"] = test_metrics["leaf_acc"]
-        wandb_run.summary["final_parent_accuracy"] = test_metrics["parent_acc"]
-        artifact = wandb.Artifact(run_name + "_checkpoint", type="model")
+        for k, v in test_m.items():
+            wandb_run.summary[f"final_{k}"] = v
+        artifact = wandb.Artifact(run_id + "_checkpoint", type="model")
         if best_path.exists():
             artifact.add_file(str(best_path))
         wandb_run.log_artifact(artifact)
@@ -475,11 +543,24 @@ def main() -> None:
         args.runs_dir / "results.json",
         {
             "run_name": run_name,
+            "run_id": run_id,
             "model": "CLIP",
             "training": "fine-tuned" if args.mode == "flat" else "hierarchy",
             "taxonomy": taxonomy_for_log,
-            "final_accuracy": test_metrics["leaf_acc"],
-            "final_parent_accuracy": test_metrics["parent_acc"],
+            "seed": args.seed,
+            "noise_fraction": (
+                args.noise_fraction
+                if args.mode == "hierarchy" and args.taxonomy == "noisy"
+                else 0.0
+            ),
+            "lambda_parent": args.lambda_parent if args.mode == "hierarchy" else 0.0,
+            "epochs": args.epochs,
+            "final_accuracy": test_m["leaf_acc"],
+            "final_parent_accuracy": test_m["parent_acc"],
+            "top5_accuracy": test_m["top5_acc"],
+            "hier_dist": test_m["hier_dist"],
+            "severity_weighted_acc": test_m["severity_weighted_acc"],
+            "ece": test_m["ece"],
             "checkpoint": str(best_path) if best_path.exists() else None,
         },
     )

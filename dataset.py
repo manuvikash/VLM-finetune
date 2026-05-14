@@ -98,17 +98,28 @@ def make_noisy_parents(
     *,
     fraction: float = 0.2,
     seed: int = 42,
+    noise_type: str = "uniform",
+    parent_to_domain: dict[str, str] | None = None,
 ) -> list[int]:
     """
     Per-sample corrupted parent IDs for hierarchy loss (training only).
 
-    Each entry: with probability `fraction`, replace true parent id with uniform
-    random *different* parent id. Otherwise keep true parent.
+    Each entry: with probability `fraction`, replace true parent id using one of:
+      - uniform: random different parent.
+      - in_domain: random different parent sharing the same top-level domain.
+      - cyclic: deterministic next parent in sorted parent-id order.
+    Otherwise keep true parent.
     """
     if not 0 <= fraction <= 1:
         raise ValueError("fraction must be in [0, 1]")
+    if noise_type not in {"uniform", "in_domain", "cyclic"}:
+        raise ValueError("noise_type must be one of: uniform, in_domain, cyclic")
+    if noise_type == "in_domain" and parent_to_domain is None:
+        raise ValueError("in_domain noise requires parent_to_domain mapping")
+
     rng = random.Random(seed)
     parent_vals = sorted(parent2id.values())
+    id_to_parent = {idx: name for name, idx in parent2id.items()}
     if fraction > 0 and len(parent_vals) < 2:
         raise ValueError("Need at least 2 distinct parents to apply taxonomy noise.")
 
@@ -119,8 +130,22 @@ def make_noisy_parents(
         if fraction <= 0 or rng.random() >= fraction:
             out.append(tid)
         else:
-            others = [i for i in parent_vals if i != tid]
-            out.append(rng.choice(others))
+            if noise_type == "cyclic":
+                pos = parent_vals.index(tid)
+                out.append(parent_vals[(pos + 1) % len(parent_vals)])
+            elif noise_type == "in_domain":
+                assert parent_to_domain is not None
+                true_domain = parent_to_domain[true_par]
+                others = [
+                    i for i in parent_vals
+                    if i != tid and parent_to_domain.get(id_to_parent[i]) == true_domain
+                ]
+                if not others:
+                    others = [i for i in parent_vals if i != tid]
+                out.append(rng.choice(others))
+            else:
+                others = [i for i in parent_vals if i != tid]
+                out.append(rng.choice(others))
     return out
 
 
@@ -177,6 +202,16 @@ class HierarchyJsonDataset(Dataset):
 def true_parent_ids_for_entries(entries: list[dict], parent2id: dict[str, int]) -> list[int]:
     """Ground-truth parent id per sample (for val metrics aligned with taxonomy)."""
     return [parent2id[extract_parent(s["path"])] for s in entries]
+
+
+def build_parent_to_domain(samples: list[dict]) -> dict[str, str]:
+    """Map parent (path[-2]) -> domain (path[0]) from manifest entries."""
+    mapping: dict[str, set[str]] = {}
+    for s in samples:
+        p = s["path"]
+        if len(p) >= 3:
+            mapping.setdefault(p[-2], set()).add(p[0])
+    return {par: next(iter(doms)) for par, doms in mapping.items()}
 
 
 def append_results_json(path: Path | str, row: dict[str, Any]) -> None:

@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
 """
-Aggregate experiment rows from runs/results.json (PRD comparison table).
+Aggregate experiment rows from runs/results.json into comparison tables.
 
-Optional: load a checkpoint and print test metrics (--checkpoint).
+Supports both legacy (single-run) and new (multi-seed) result schemas.
+For detailed analysis with mean/std and plots, use analysis.py.
 """
 
 from __future__ import annotations
 
 import argparse
 import json
+from collections import defaultdict
 from pathlib import Path
 
 import torch
@@ -17,12 +19,20 @@ from dataset import HierarchyJsonDataset, leaf_to_parent_maps, load_manifest
 from model import CLIPHierClassifier, create_clip_preprocesses
 
 
-# (run_key in JSON, Model, Training column, Taxonomy column)
 PRD_ROWS = [
     ("clip_zeroshot", "CLIP", "zero-shot", "N/A"),
     ("clip_flat", "CLIP", "fine-tuned", "n/a"),
     ("clip_hier_clean", "CLIP", "hierarchy", "clean"),
     ("clip_hier_noisy", "CLIP", "hierarchy", "noisy"),
+]
+
+METRIC_COLS = [
+    ("final_accuracy", "Leaf Acc"),
+    ("top5_accuracy", "Top-5"),
+    ("final_parent_accuracy", "Parent Acc"),
+    ("hier_dist", "Hier Dist"),
+    ("severity_weighted_acc", "Sev-W Acc"),
+    ("ece", "ECE"),
 ]
 
 
@@ -33,35 +43,47 @@ def load_rows(path: Path) -> list[dict]:
         return json.load(f)
 
 
-def rows_by_latest_run(entries: list[dict]) -> dict[str, dict]:
-    """Last occurrence wins per run_name."""
-    out: dict[str, dict] = {}
+def rows_grouped_by_run(entries: list[dict]) -> dict[str, list[dict]]:
+    """Group all entries by run_name for multi-seed aggregation."""
+    groups: dict[str, list[dict]] = defaultdict(list)
     for r in entries:
         rn = r.get("run_name")
         if rn:
-            out[str(rn)] = r
-    return out
+            groups[str(rn)].append(r)
+    return dict(groups)
 
 
 def fmt_pct(v: float) -> str:
     return f"{v:.2f}%"
 
 
-def print_table(by_run: dict[str, dict]) -> None:
-    print("| Model | Training | Taxonomy | Accuracy | Parent Acc |")
-    print("| ----- | ---------- | -------- | -------- | ----------- |")
+def fmt_metric(rows: list[dict], key: str) -> str:
+    """Format metric as mean +/- std if multiple rows, else single value."""
+    vals = [r[key] for r in rows if key in r and isinstance(r[key], (int, float))]
+    if not vals:
+        return "---"
+    if len(vals) == 1:
+        if key in ("ece", "hier_dist"):
+            return f"{vals[0]:.4f}"
+        return fmt_pct(vals[0])
+    import numpy as np
+
+    mean = np.mean(vals)
+    std = np.std(vals, ddof=1)
+    if key in ("ece", "hier_dist"):
+        return f"{mean:.4f} +/- {std:.4f}"
+    return f"{mean:.2f} +/- {std:.2f}"
+
+
+def print_table(groups: dict[str, list[dict]]) -> None:
+    header = "| Model | Training | Taxonomy | " + " | ".join(h for _, h in METRIC_COLS) + " |"
+    sep = "| " + " | ".join("---" for _ in range(3 + len(METRIC_COLS))) + " |"
+    print(header)
+    print(sep)
     for run_key, model, train_label, tax_label in PRD_ROWS:
-        r = by_run.get(run_key)
-        acc_s = "---"
-        par_s = "---"
-        if r is not None:
-            fa = r.get("final_accuracy")
-            fp = r.get("final_parent_accuracy")
-            if isinstance(fa, (int, float)):
-                acc_s = fmt_pct(float(fa))
-            if isinstance(fp, (int, float)):
-                par_s = fmt_pct(float(fp))
-        print(f"| {model} | {train_label} | {tax_label} | {acc_s} | {par_s} |")
+        rows = groups.get(run_key, [])
+        cols = [fmt_metric(rows, k) for k, _ in METRIC_COLS]
+        print(f"| {model} | {train_label} | {tax_label} | " + " | ".join(cols) + " |")
 
 
 def _torch_load_ckpt(path: Path, *, map_location: str | torch.device = "cpu"):
@@ -84,18 +106,9 @@ def eval_checkpoint(path: Path, ns: argparse.Namespace) -> None:
     parent2id = ckpt["parent2id"]
     leaf_to_par_map = leaf_to_parent_maps(train_entries)
 
-    ds = HierarchyJsonDataset(
-        test_entries,
-        leaf2id,
-        parent2id,
-        eval_pp,
-        root,
-    )
+    ds = HierarchyJsonDataset(test_entries, leaf2id, parent2id, eval_pp, root)
     dl = torch.utils.data.DataLoader(
-        ds,
-        batch_size=ns.batch_size,
-        shuffle=False,
-        num_workers=0,
+        ds, batch_size=ns.batch_size, shuffle=False, num_workers=0,
         pin_memory=torch.cuda.is_available(),
     )
 
@@ -140,7 +153,7 @@ def eval_checkpoint(path: Path, ns: argparse.Namespace) -> None:
 
 
 def main() -> None:
-    p = argparse.ArgumentParser(description="Print PRD comparison table from runs/results.json.")
+    p = argparse.ArgumentParser(description="Print comparison table from runs/results.json.")
     p.add_argument("--runs-dir", type=Path, default=Path("runs"))
     p.add_argument("--results-json", type=Path, default=None)
     p.add_argument("--checkpoint", type=Path, default=None)
@@ -167,9 +180,9 @@ def main() -> None:
         print(f"No results at {res_path}.")
         return
 
-    by_run = rows_by_latest_run(rows)
+    groups = rows_grouped_by_run(rows)
     print(f"Loaded {len(rows)} row(s) from {res_path}.\n")
-    print_table(by_run)
+    print_table(groups)
 
 
 if __name__ == "__main__":
