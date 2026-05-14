@@ -11,6 +11,7 @@ script keeps the same leaf + parent objective and metrics as train.py.
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import random
 import time
@@ -374,6 +375,67 @@ def result_row(
     }
 
 
+def append_per_parent_rows(
+    path: Path,
+    *,
+    run_id: str,
+    run_name: str,
+    seed: int,
+    noise_type: str,
+    noise_fraction: float,
+    leaf_logits: torch.Tensor,
+    parent_logits: torch.Tensor | None,
+    test_leaf_targets: torch.Tensor,
+    test_parent_targets: torch.Tensor,
+    id_to_parent: list[str],
+    leaf_parent_ids: torch.Tensor,
+) -> None:
+    """Append per-true-parent leaf and parent accuracy rows for heatmaps."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    new_file = not path.exists()
+    leaf_preds = leaf_logits.argmax(dim=1)
+    if parent_logits is not None:
+        parent_preds = parent_logits.argmax(dim=1)
+    else:
+        parent_preds = leaf_parent_ids[leaf_preds]
+
+    fields = [
+        "run_id",
+        "run_name",
+        "seed",
+        "noise_type",
+        "noise_fraction",
+        "parent",
+        "parent_id",
+        "n",
+        "leaf_accuracy",
+        "parent_accuracy",
+    ]
+    with open(path, "a", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=fields)
+        if new_file:
+            writer.writeheader()
+        for parent_id, parent in enumerate(id_to_parent):
+            mask = test_parent_targets == parent_id
+            n = int(mask.sum().item())
+            if n == 0:
+                continue
+            leaf_acc = 100.0 * (leaf_preds[mask] == test_leaf_targets[mask]).float().mean().item()
+            parent_acc = 100.0 * (parent_preds[mask] == test_parent_targets[mask]).float().mean().item()
+            writer.writerow({
+                "run_id": run_id,
+                "run_name": run_name,
+                "seed": seed,
+                "noise_type": noise_type,
+                "noise_fraction": noise_fraction,
+                "parent": parent,
+                "parent_id": parent_id,
+                "n": n,
+                "leaf_accuracy": f"{leaf_acc:.6f}",
+                "parent_accuracy": f"{parent_acc:.6f}",
+            })
+
+
 def main() -> None:
     p = argparse.ArgumentParser(description="Run cached CLIP-feature hierarchy noise sweeps.")
     p.add_argument("--data-root", type=Path, default=Path("."))
@@ -408,8 +470,10 @@ def main() -> None:
     leaf_to_par = leaf_to_parent_maps(train_entries)
     parent_to_domain = build_parent_to_domain(train_entries)
     leaf_parent_ids = leaf_parent_ids_from_maps(id_to_leaf, leaf_to_par, parent2id)
+    id_to_parent = [name for name, _ in sorted(parent2id.items(), key=lambda kv: kv[1])]
 
     results_path = args.runs_dir / "results.json"
+    per_parent_path = args.runs_dir / "per_parent_metrics.csv"
     t0 = time.perf_counter()
 
     zs = run_zeroshot(
@@ -478,6 +542,20 @@ def main() -> None:
                 metrics=metrics,
             )
             append_results_json(results_path, row)
+            append_per_parent_rows(
+                per_parent_path,
+                run_id=row["run_id"],
+                run_name=row["run_name"],
+                seed=seed,
+                noise_type=noise_type,
+                noise_fraction=nf,
+                leaf_logits=ll,
+                parent_logits=pp,
+                test_leaf_targets=test_y,
+                test_parent_targets=test_p,
+                id_to_parent=id_to_parent,
+                leaf_parent_ids=leaf_parent_ids,
+            )
             print(f"{row['run_id']}: leaf={row['final_accuracy']:.2f} parent={row['final_parent_accuracy']:.2f}")
 
         for noise_type in args.noise_types:
@@ -533,6 +611,20 @@ def main() -> None:
                     metrics=metrics,
                 )
                 append_results_json(results_path, row)
+                append_per_parent_rows(
+                    per_parent_path,
+                    run_id=row["run_id"],
+                    run_name=row["run_name"],
+                    seed=seed,
+                    noise_type=noise_type,
+                    noise_fraction=nf,
+                    leaf_logits=ll,
+                    parent_logits=pp,
+                    test_leaf_targets=test_y,
+                    test_parent_targets=test_p,
+                    id_to_parent=id_to_parent,
+                    leaf_parent_ids=leaf_parent_ids,
+                )
                 print(
                     f"{row['run_id']}: leaf={row['final_accuracy']:.2f} "
                     f"parent={row['final_parent_accuracy']:.2f} hier_dist={row['hier_dist']:.3f}"

@@ -11,6 +11,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 from collections import defaultdict
 from pathlib import Path
@@ -359,6 +360,110 @@ def generate_plots(rows: list[dict], out_dir: Path) -> None:
         plt.close(fig)
         print(f"  Saved {out_dir / 'noise_degradation_by_type.png'}")
 
+        # Plot 1c: Calibration degradation by corruption type
+        fig, ax = plt.subplots(figsize=(8, 5))
+        for nt in noise_types:
+            by_nf: dict[float, list[float]] = defaultdict(list)
+            by_nf[0.0].extend([r["ece"] for r in clean_rows if "ece" in r])
+            for r in noisy_rows:
+                if r.get("noise_type") == nt and "ece" in r:
+                    by_nf[r.get("noise_fraction", 0.0)].append(r["ece"])
+            nfs = sorted(n for n, vals in by_nf.items() if vals)
+            means = [np.mean(by_nf[n]) for n in nfs]
+            stds = [np.std(by_nf[n], ddof=1) if len(by_nf[n]) > 1 else 0 for n in nfs]
+            ax.errorbar(nfs, means, yerr=stds, marker="o", capsize=4, label=nt)
+        ax.set_xlabel("Taxonomy Noise Fraction")
+        ax.set_ylabel("Expected Calibration Error")
+        ax.set_title("Calibration Degradation by Noise Type")
+        ax.legend(title="Noise type")
+        ax.grid(True, alpha=0.3)
+        fig.tight_layout()
+        fig.savefig(out_dir / "ece_by_noise_type.png", dpi=150)
+        plt.close(fig)
+        print(f"  Saved {out_dir / 'ece_by_noise_type.png'}")
+
+        # Plot 1d: Hierarchical distance by corruption type
+        fig, ax = plt.subplots(figsize=(8, 5))
+        for nt in noise_types:
+            by_nf: dict[float, list[float]] = defaultdict(list)
+            by_nf[0.0].extend([r["hier_dist"] for r in clean_rows if "hier_dist" in r])
+            for r in noisy_rows:
+                if r.get("noise_type") == nt and "hier_dist" in r:
+                    by_nf[r.get("noise_fraction", 0.0)].append(r["hier_dist"])
+            nfs = sorted(n for n, vals in by_nf.items() if vals)
+            means = [np.mean(by_nf[n]) for n in nfs]
+            stds = [np.std(by_nf[n], ddof=1) if len(by_nf[n]) > 1 else 0 for n in nfs]
+            ax.errorbar(nfs, means, yerr=stds, marker="o", capsize=4, label=nt)
+        ax.set_xlabel("Taxonomy Noise Fraction")
+        ax.set_ylabel("Mean Hierarchical Distance")
+        ax.set_title("Semantic Error Severity by Noise Type")
+        ax.legend(title="Noise type")
+        ax.grid(True, alpha=0.3)
+        fig.tight_layout()
+        fig.savefig(out_dir / "hier_distance_by_noise_type.png", dpi=150)
+        plt.close(fig)
+        print(f"  Saved {out_dir / 'hier_distance_by_noise_type.png'}")
+
+        # Plot 1e: Accuracy drop relative to clean hierarchy baseline
+        clean_vals = [r["final_accuracy"] for r in clean_rows if "final_accuracy" in r]
+        clean_mean = float(np.mean(clean_vals)) if clean_vals else float("nan")
+        fig, ax = plt.subplots(figsize=(8, 5))
+        for nt in noise_types:
+            by_nf: dict[float, list[float]] = defaultdict(list)
+            by_nf[0.0].append(clean_mean)
+            for r in noisy_rows:
+                if r.get("noise_type") == nt and "final_accuracy" in r:
+                    by_nf[r.get("noise_fraction", 0.0)].append(r["final_accuracy"])
+            nfs = sorted(n for n, vals in by_nf.items() if vals)
+            means = [np.mean(by_nf[n]) - clean_mean for n in nfs]
+            stds = [np.std(by_nf[n], ddof=1) if len(by_nf[n]) > 1 else 0 for n in nfs]
+            ax.errorbar(nfs, means, yerr=stds, marker="o", capsize=4, label=nt)
+        ax.axhline(0.0, color="black", linewidth=1, alpha=0.6)
+        ax.set_xlabel("Taxonomy Noise Fraction")
+        ax.set_ylabel("Leaf Accuracy Change vs. Clean (pp)")
+        ax.set_title("Accuracy Degradation Relative to Clean Hierarchy")
+        ax.legend(title="Noise type")
+        ax.grid(True, alpha=0.3)
+        fig.tight_layout()
+        fig.savefig(out_dir / "accuracy_delta_by_noise_type.png", dpi=150)
+        plt.close(fig)
+        print(f"  Saved {out_dir / 'accuracy_delta_by_noise_type.png'}")
+
+        # Plot 1f: Leaf accuracy vs. parent accuracy
+        fig, ax = plt.subplots(figsize=(7, 5))
+        markers = {"uniform": "o", "in_domain": "s", "cyclic": "^"}
+        for nt in noise_types:
+            xs = [
+                r["final_parent_accuracy"] for r in noisy_rows
+                if r.get("noise_type") == nt and "final_parent_accuracy" in r
+            ]
+            ys = [
+                r["final_accuracy"] for r in noisy_rows
+                if r.get("noise_type") == nt and "final_accuracy" in r
+            ]
+            ax.scatter(xs, ys, alpha=0.75, s=55, marker=markers.get(nt, "o"), label=nt)
+        clean_parent = [r["final_parent_accuracy"] for r in clean_rows if "final_parent_accuracy" in r]
+        clean_leaf = [r["final_accuracy"] for r in clean_rows if "final_accuracy" in r]
+        if clean_parent and clean_leaf:
+            ax.scatter(
+                [np.mean(clean_parent)],
+                [np.mean(clean_leaf)],
+                color="black",
+                marker="*",
+                s=160,
+                label="clean mean",
+                zorder=5,
+            )
+        ax.set_xlabel("Parent Accuracy (%)")
+        ax.set_ylabel("Leaf Accuracy (%)")
+        ax.set_title("Leaf Accuracy vs. Parent Accuracy")
+        ax.legend()
+        ax.grid(True, alpha=0.3)
+        fig.tight_layout()
+        fig.savefig(out_dir / "leaf_vs_parent_accuracy.png", dpi=150)
+        plt.close(fig)
+        print(f"  Saved {out_dir / 'leaf_vs_parent_accuracy.png'}")
+
     # Plot 2: Main comparison bar chart
     conds = [
         ("clip_zeroshot", "Zero-shot"),
@@ -401,6 +506,63 @@ def generate_plots(rows: list[dict], out_dir: Path) -> None:
             print(f"  Saved {out_dir / 'comparison_bar.png'}")
 
 
+def generate_parent_heatmap(per_parent_csv: Path, out_dir: Path, *, noise_type: str = "cyclic") -> None:
+    if not per_parent_csv.exists():
+        print(f"No per-parent CSV at {per_parent_csv}; skipping heatmap.")
+        return
+    try:
+        import matplotlib
+        matplotlib.use("Agg")
+        import matplotlib.pyplot as plt
+    except ImportError:
+        print("matplotlib not installed; skipping heatmap.")
+        return
+
+    rows: list[dict] = []
+    with open(per_parent_csv, newline="", encoding="utf-8") as f:
+        rows = list(csv.DictReader(f))
+
+    clean = [r for r in rows if r.get("run_name") == "clip_hier_clean"]
+    noisy = [
+        r for r in rows
+        if r.get("run_name") == "clip_hier_noisy" and r.get("noise_type") == noise_type
+    ]
+    if not noisy:
+        print(f"No per-parent rows for noise_type={noise_type}; skipping heatmap.")
+        return
+
+    by_parent_nf: dict[tuple[str, float], list[float]] = defaultdict(list)
+    for r in clean:
+        by_parent_nf[(r["parent"], 0.0)].append(float(r["leaf_accuracy"]))
+    for r in noisy:
+        by_parent_nf[(r["parent"], float(r["noise_fraction"]))].append(float(r["leaf_accuracy"]))
+
+    parents = sorted({p for p, _ in by_parent_nf})
+    nfs = sorted({nf for _, nf in by_parent_nf})
+    matrix = np.full((len(parents), len(nfs)), np.nan)
+    for i, parent in enumerate(parents):
+        for j, nf in enumerate(nfs):
+            vals = by_parent_nf.get((parent, nf), [])
+            if vals:
+                matrix[i, j] = np.mean(vals)
+
+    out_dir.mkdir(parents=True, exist_ok=True)
+    fig, ax = plt.subplots(figsize=(8, 7))
+    im = ax.imshow(matrix, aspect="auto", cmap="viridis", vmin=25, vmax=90)
+    ax.set_xticks(np.arange(len(nfs)))
+    ax.set_xticklabels([f"{nf:.2f}" for nf in nfs], rotation=45, ha="right")
+    ax.set_yticks(np.arange(len(parents)))
+    ax.set_yticklabels([p.replace("_", " ") for p in parents], fontsize=8)
+    ax.set_xlabel("Taxonomy Noise Fraction")
+    ax.set_title(f"Per-Parent Leaf Accuracy Heatmap ({noise_type} noise)")
+    cbar = fig.colorbar(im, ax=ax)
+    cbar.set_label("Leaf Accuracy (%)")
+    fig.tight_layout()
+    fig.savefig(out_dir / f"per_parent_heatmap_{noise_type}.png", dpi=150)
+    plt.close(fig)
+    print(f"  Saved {out_dir / f'per_parent_heatmap_{noise_type}.png'}")
+
+
 def main() -> None:
     p = argparse.ArgumentParser(description="Analyze experiment results for paper figures.")
     p.add_argument("--results-json", type=Path, default=Path("runs/results.json"))
@@ -410,6 +572,7 @@ def main() -> None:
     )
     p.add_argument("--plot", action="store_true", help="Generate matplotlib figures.")
     p.add_argument("--plot-dir", type=Path, default=Path("figures"))
+    p.add_argument("--per-parent-csv", type=Path, default=Path("runs/per_parent_metrics.csv"))
     args = p.parse_args()
 
     rows = load_results(args.results_json)
@@ -425,6 +588,7 @@ def main() -> None:
 
     if args.plot:
         generate_plots(rows, args.plot_dir)
+        generate_parent_heatmap(args.per_parent_csv, args.plot_dir, noise_type="cyclic")
 
 
 if __name__ == "__main__":
